@@ -7,7 +7,7 @@
 - [X] Create Ground Rules
 - [ ] Complete Problem Statement
 - [X] Create Time Log
-- [ ] Update Team Tesume if needed
+- [ ] Update Team Resume if needed
 
 ### Week 2
 
