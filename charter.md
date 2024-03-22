@@ -4,6 +4,7 @@
 - Rule 3: Everyone is respectful
 - Rule 4: We should have deadlines established, preferably in the beginning of the week
 - Rule 5: For any code change issues a message in Slack is preferable
+- Rule 6: We should update the time log whenever we have completed work either during the meeting or individual work
 
 
 Deadlines:
