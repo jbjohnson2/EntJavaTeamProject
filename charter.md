@@ -5,7 +5,7 @@
 - Rule 4: We should have deadlines established, preferably in the beginning of the week
 - Rule 5: For any code change issues a message in Slack is preferable
 - Rule 6: We should update the time log whenever we have completed work either during the meeting or individual work
-
+- Rule 7: If we complete work during the weekend or at other unexpected times, we should write in Slack as a heads-up.
 
 Deadlines:
 
