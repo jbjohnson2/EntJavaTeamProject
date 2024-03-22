@@ -1,0 +1,40 @@
+Wisconsin Festivals Database
+
+tables
+
+Region
+    id
+    name
+        North Central
+        Northwestern
+        Fox Valley
+        Northeastern
+        South Central
+        South Eastern
+        Greater Milwaukee
+
+
+Type
+    id
+    type
+        music
+        film
+        food
+        cultural
+        arts
+        community
+        misc/other
+        (any others?)
+
+
+Festival
+    id
+    name
+    region_id
+    type_id
+    dates/month/time of year?
+
+
+endpoints could be
+get  /regions/region id
+or  /festivals? region.id=3&category.id=2 and then handle filter by the parameters in the controller
