@@ -4,9 +4,9 @@
 
 - [X] Create Github repository
 - [X] Create project plan
-- [X] Create Ground Rules
-- [ ] Complete Problem Statement
+- [X] Complete Problem Statement
 - [X] Create Time Log
+- [X] Design and Create Database
 - [ ] Update Team Resume if needed
 
 ### Week 2
