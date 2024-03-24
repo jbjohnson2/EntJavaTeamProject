@@ -6,7 +6,9 @@
 - [X] Create project plan
 - [X] Complete Problem Statement
 - [X] Create Time Log
-- [X] Design and Create Database
+- [X] Design Database
+- [X] Create Database
+- [ ] Create Entities
 - [ ] Update Team Resume if needed
 
 ### Week 2
