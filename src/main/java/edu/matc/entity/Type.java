@@ -1,19 +1,23 @@
 package edu.matc.entity;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import org.hibernate.annotations.GenericGenerator;
+
 /**
  * This class represents a type
  */
 public class Type {
+    @Id
+    @GeneratedValue(strategy= GenerationType.AUTO, generator="native")
+    @GenericGenerator(name = "native",strategy = "native")
     private int typeID;
 
-    /**
-     * Gets type.
-     *
-     * @return the type
-     */
-    public String getType() {
-        return type;
-    }
+    @Column(name = "type")
+    private String type;
+
 
     /**
      * Instantiates a new Type.
@@ -31,17 +35,6 @@ public class Type {
     }
 
     /**
-     * Sets type.
-     *
-     * @param type the type
-     */
-    public void setType(String type) {
-        this.type = type;
-    }
-
-    private String type;
-
-    /**
      * Gets type id.
      *
      * @return the type id
@@ -57,6 +50,24 @@ public class Type {
      */
     public void setTypeID(int typeID) {
         this.typeID = typeID;
+    }
+
+    /**
+     * Gets type.
+     *
+     * @return the type
+     */
+    public String getType() {
+        return type;
+    }
+
+    /**
+     * Sets type.
+     *
+     * @param type the type
+     */
+    public void setType(String type) {
+        this.type = type;
     }
 
     @Override

@@ -1,12 +1,29 @@
 package edu.matc.entity;
 
+import jakarta.persistence.*;
+import org.hibernate.annotations.GenericGenerator;
+
+
 import java.util.Date;
 
+
+@Entity
+@Table(name="Festival")
 public class Festival {
+    @Id
+    @GeneratedValue(strategy= GenerationType.AUTO, generator="native")
+    @GenericGenerator(name = "native",strategy = "native")
     int festivalID;
+
+    @Column(name = "festival_name")
     String festivalName;
+
+    @Column(name = "region_id")
     int regionID;
+
+    @Column(name = "type_id")
     int typeID;
+    @Column(name = "festival_start_date")
     Date festivalStartDate;
 
     public Festival() {

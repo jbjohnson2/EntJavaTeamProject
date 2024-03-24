@@ -1,11 +1,20 @@
 package edu.matc.entity;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import org.hibernate.annotations.GenericGenerator;
+
 /**
  * class represents a  region.
  */
 public class Region {
-
+    @Id
+    @GeneratedValue(strategy= GenerationType.AUTO, generator="native")
+    @GenericGenerator(name = "native",strategy = "native")
     private int regionID;
+    @Column (name = "region_name")
     private String regionName;
 
     /**
