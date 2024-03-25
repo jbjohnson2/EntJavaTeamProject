@@ -1,0 +1,14 @@
+GET All festivals
+
+GET festival by Regin
+
+GET festival by Type
+
+Post  add festival
+
+GET festival by type and region
+
+Documentation
+
+Index page
+    links that take you to the api request

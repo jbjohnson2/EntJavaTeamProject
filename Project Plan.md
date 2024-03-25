@@ -17,10 +17,10 @@
 
 - [X] Meeting Monday, March 25th at 10AM
 - [X] Add Technologies to readMe 
-- [X] Add Links to TimeLog and Project Plan to readMe 
+- [ ] Add Links to TimeLog and Project Plan to readMe 
 - [ ] 
 - [ ] 
-- [ ] 
+- [ ] Map the Json
 - [ ] Meeting Friday, March 28th at 10AM
 
 
