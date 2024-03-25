@@ -13,6 +13,7 @@ import javax.ws.rs.core.Response;
 public class Festivals {
     // The Java method will process HTTP GET requests
     private GenericDao genericDao;
+    private String output;
 
     /**
      * Instantiates a new Festival.
@@ -31,7 +32,7 @@ public class Festivals {
      */
     public Response getMessage() {
         // Return a simple message
-        String output = "Here's all the festivals: " + genericDao.getAll();
+        output = "Here's all the festivals: " + genericDao.getAll();
         return Response.status(200).entity(output).build();
     }
 
@@ -46,9 +47,17 @@ public class Festivals {
      * This method's purpose is to get the festival by id
      */
     public Response getFestivalById(@PathParam("param") int id) {
-
+        
         // Return the festival specified by the id
-        String output = "Here's the festival: " + genericDao.getById(id);
+        if (genericDao.getById(id) == null) {
+
+            output = "No festivals could be found";
+
+        } else {
+
+            output = "Here's the festival: " + genericDao.getById(id);
+        }
+
         return Response.status(200).entity(output).build();
     }
 }
