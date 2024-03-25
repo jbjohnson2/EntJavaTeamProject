@@ -14,7 +14,7 @@ import javax.ws.rs.core.Response;
 import java.util.List;
 
 @Path("/festivals/json")
-public class festivalsJSON {
+public class FestivalsJSON {
     private final Logger logger = LogManager.getLogger(this.getClass());
 
     // The Java method will process HTTP GET requests
