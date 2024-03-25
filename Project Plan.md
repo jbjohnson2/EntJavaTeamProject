@@ -8,14 +8,16 @@
 - [X] Create Time Log
 - [X] Design Database
 - [X] Create Database
-- [ ] Create Entities
-- [ ] Update Team Resume if needed
+- [X] Create Entities
+- [X] Update Team Resume if needed
+- [X] Create Dao
+- [X] Add Link to Project to Student Repo
 
 ### Week 2
 
 - [ ] Meeting Monday, March 25th at 10AM
-- [ ] 
-- [ ] 
+- [ ] Add Technologies to readMe
+- [ ] Add Links to TimeLog and Project Plan to readMe
 - [ ] 
 - [ ] 
 - [ ] 
