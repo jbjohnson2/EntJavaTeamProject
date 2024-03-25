@@ -16,8 +16,8 @@ can find it and attend.
 | Database         | MySQL     | 8.3.0       |
 | Logging          | Log4j     | 2.17.1      |
 | Unit Testing     | jUnit     | 4.12        |
-| REST Web Service | jersey    | 4.12        |
-| Database Mapping | Hibernate | 4.12        |
+| REST Web Service | jersey    | 2.29.1      |
+| Database Mapping | Hibernate | 6.4.3.Final |
 
 
 #### [TimeLog](Time Log.md)
