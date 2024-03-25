@@ -3,7 +3,7 @@
 |-----------|------------------------------------------------------------------------|-------|-------|-------------|
 | 03//22/24 | Team meeting  to create charter, project plan, time log, etc           | 1     |       | All         |
 | 03/22/24  | Add problem statement, database notes and format time log/project plan | 1     |       | JC          |
-| 03/24/24  | Add entities, dao, dao tests, propertiesLoader, sessionfactory         | 2     |       | JC          |
+| 03/24/24  | Add entities, dao, dao tests, propertiesLoader, sessionFactory         | 2     |       | JC          |
 |           |                                                                        |       |       |             |
 |           |                                                                        |       |       |             |
 |           |                                                                        |       |       |             |
