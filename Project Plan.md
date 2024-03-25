@@ -19,7 +19,8 @@
 - [X] Add Technologies to readMe 
 - [ ] Add Links to TimeLog and Project Plan to readMe 
 - [ ] 
-- [ ] 
+- [ ] Add 
+- [ ] Add objectMapper
 - [ ] Map the Json
 - [ ] Meeting Friday, March 28th at 10AM
 
