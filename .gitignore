@@ -29,7 +29,7 @@ dba*
 ## File-based project format:
 *.iws
 
-## Plugin-specific files:
+## Plugin-specific files:g
 
 # IntelliJ
 /out/
@@ -52,4 +52,4 @@ crashlytics-build.properties
 fabric.properties
 /src/test/resources/
 /src/main/resources/
-/DesignDocuments/festivalsDB_test.sql
+/src/test/resources/cleanDB.sql

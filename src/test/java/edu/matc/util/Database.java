@@ -34,8 +34,6 @@ public class Database implements PropertiesLoader {
     private Database() {
         try {
             properties = loadProperties("/database.properties");
-        } catch (IOException ioException){
-            logger.error("PL Error" + ioException);
         } catch (Exception exception) {
             logger.error("Exception" + exception);
         }
