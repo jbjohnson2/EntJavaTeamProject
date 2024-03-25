@@ -15,9 +15,9 @@
 
 ### Week 2
 
-- [ ] Meeting Monday, March 25th at 10AM
-- [ ] Add Technologies to readMe (Jimmy)
-- [ ] Add Links to TimeLog and Project Plan to readMe 
+- [X] Meeting Monday, March 25th at 10AM
+- [X] Add Technologies to readMe 
+- [X] Add Links to TimeLog and Project Plan to readMe 
 - [ ] 
 - [ ] 
 - [ ] 
