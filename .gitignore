@@ -29,7 +29,7 @@ dba*
 ## File-based project format:
 *.iws
 
-## Plugin-specific files:
+## Plugin-specific files:g
 
 # IntelliJ
 /out/
