@@ -16,8 +16,7 @@ public class HelloApplication extends Application {
     @Override
     public Set<Class<?>> getClasses() {
         HashSet h = new HashSet<Class<?>>();
-        h.add(HelloWorld.class);
-        h.add(FestivalsJSON.class);
+        h.add(HelloWorld.class );
         return h;
     }
 }
