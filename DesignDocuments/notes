@@ -1,6 +1,8 @@
+
+
 GET All festivals
 
-GET festival by Regin
+GET festival by Region
 
 GET festival by Type
 
@@ -8,7 +10,9 @@ Post  add festival
 
 GET festival by type and region
 
-Documentation
+Documentation page
 
 Index page
     links that take you to the api request
+
+    first-returning plain text?
