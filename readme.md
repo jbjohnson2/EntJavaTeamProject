@@ -8,3 +8,12 @@ can be hard to reach all of your potential attendees.
 The Wisconsin Festival Tracker can help you find all the festivals that you wish to attend. You can find festivals 
 of a certain type or in a specific region. As an organizer(or festival goer) you can add a festival so that others 
 can find it and attend.
+
+### Specs
+| Category         | Type      | Version     |
+|------------------|-----------|-------------|
+| Database         | MySQL     | 8.3.0       |
+| Logging          | Log4j     | 2.17.1      |
+| Unit Testing     | jUnit     | 4.12        |
+| REST Web Service | jersey    | 4.12        |
+| Database Mapping | Hibernate | 4.12        |
