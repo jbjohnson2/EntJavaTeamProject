@@ -11,6 +11,7 @@ import org.hibernate.annotations.GenericGenerator;
  */
 public class Type {
     @Id
+    @Column(name = "type_id")
     @GeneratedValue(strategy= GenerationType.AUTO, generator="native")
     @GenericGenerator(name = "native",strategy = "native")
     private int typeID;
