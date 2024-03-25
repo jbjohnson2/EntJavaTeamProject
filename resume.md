@@ -9,14 +9,14 @@
 | Likes competition?                      |             |
 | Likes to lead?                          |             |
 | Likes to follow/follow directions?      | Oscar, Jen  |
-| Thinks fast on their feet?              |             |
+| Thinks fast on their feet?              | Jimmy       |
 | Makes decisions quickly?                | Jen         |
 | Is a thinker, rather than a talker?     | Oscar       |
 | Is a talker, rather than a thinker?     |             |
 | Is organized?                           | Oscar       |
 | Is good with numbers, stats, data?      | Oscar       |
 | Can create effective slides?            | Oscar       |
-| Is a strong writer?                     |             |
+| Is a strong writer?                     | Jimmy       |
 | Likes to pull ideas together?           |             |
 | Can draw?                               | Oscar       |
 | Can handle criticism?                   | Oscar, Jen  |
@@ -31,6 +31,6 @@
 | Has had to hire someone?                |             |
 | Has been on call during an emergency?   |             |
 | Has performed in front of a crowd?      |             |
-| Can speak more than one language?       |             |
+| Can speak more than one language?       | Jimmy       |
 | Has started their own business?         |             |
 | Had done some higher ed courses before? | Jen         |
