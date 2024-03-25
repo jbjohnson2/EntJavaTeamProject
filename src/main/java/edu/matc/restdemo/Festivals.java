@@ -3,13 +3,11 @@ package edu.matc.restdemo;
 import edu.matc.entity.Festival;
 import edu.matc.persistence.GenericDao;
 
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.Produces;
+import javax.ws.rs.*;
 import javax.ws.rs.core.Response;
 
 /**
- * This class' purpose is to return all festivals
+ * This class' purpose is to return festivals
  */
 @Path("/festivals")
 public class Festivals {
@@ -34,6 +32,23 @@ public class Festivals {
     public Response getMessage() {
         // Return a simple message
         String output = "Here's all the festivals: " + genericDao.getAll();
+        return Response.status(200).entity(output).build();
+    }
+
+    @GET
+
+    @Path("/{param}")
+
+
+    @Produces("text/plain")
+
+    /**
+     * This method's purpose is to get the festival by id
+     */
+    public Response getFestivalById(@PathParam("param") int id) {
+
+        // Return the user specified by the id
+        String output = "Here's the festival: " + genericDao.getById(id);
         return Response.status(200).entity(output).build();
     }
 }
