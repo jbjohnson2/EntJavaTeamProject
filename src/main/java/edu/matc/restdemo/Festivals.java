@@ -47,7 +47,7 @@ public class Festivals {
      */
     public Response getFestivalById(@PathParam("param") int id) {
 
-        // Return the user specified by the id
+        // Return the festival specified by the id
         String output = "Here's the festival: " + genericDao.getById(id);
         return Response.status(200).entity(output).build();
     }
