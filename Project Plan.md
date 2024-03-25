@@ -16,21 +16,22 @@
 ### Week 2
 
 - [X] Meeting Monday, March 25th at 10AM
-- [X] Add Technologies to readMe 
-- [ ] Add Links to TimeLog and Project Plan to readMe 
-- [ ] GetAll 
-- [ ] GetByRegion
-- [ ] GETbyType
-- [ ] Post
-- [ ] Add objectMapper
-- [ ] Map the Json
+- [ ] Add Technologies to readMe 
+- [X] Add Links to TimeLog and Project Plan to readMe 
+- [X] Create GetAllFestivals ()
+- [ ] Create getAllRegions
+- [ ] Create getAllTypes 
+- [ ] GetByRegion(Oscar)
+- [ ] GETbyType(Oscar)
+- [ ] Post (Jen)
+- [ ] JSON
 - [ ] Meeting Friday, March 28th at 10AM
 
 
 ### Week 3
 
-- [ ] 
-- [ ] 
+- [ ] Display the data
+- [ ] Work on documentation page
 - [ ] 
 - [ ] 
 - [ ] 
