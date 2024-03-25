@@ -8,3 +8,11 @@ can be hard to reach all of your potential attendees.
 The Wisconsin Festival Tracker can help you find all the festivals that you wish to attend. You can find festivals 
 of a certain type or in a specific region. As an organizer(or festival goer) you can add a festival so that others 
 can find it and attend.
+
+
+
+
+
+#### [TimeLog](Time Log.md)
+
+#### [Project Plan](Project Plan.md)
