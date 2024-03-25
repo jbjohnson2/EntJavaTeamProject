@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="SqlDialectMappings">
-<<<<<<< HEAD
+    <file url="file://$PROJECT_DIR$/DesignDocuments/dump.sql" dialect="MySQL" />
     <file url="file://$PROJECT_DIR$/DesignDocuments/festivalsDB.sql" dialect="MySQL" />
-    <file url="file://$PROJECT_DIR$/src/test/resources/cleanDB.sql" dialect="MySQL" />
-=======
-    <file url="file://$PROJECT_DIR$/dba/festivalsDB.sql" dialect="MySQL" />
->>>>>>> 464697f9921166125fbd519014e8ae982e91322c
   </component>
 </project>

@@ -29,6 +29,8 @@ public class FestivalsJSON {
 
         try {
             festivalsJsonString = objectMapper.writeValueAsString(festivals);
+            logger.info(festivalsJsonString);
+            logger.info(Response.status(200).entity(festivalsJsonString).build());
             return Response.status(200).entity(festivalsJsonString).build();
         } catch (JsonProcessingException jsonProcessingException) {
             logger.error("Error making json file", jsonProcessingException);
