@@ -21,6 +21,8 @@
 - [X] Create GetAllFestivals ()
 - [ ] Create getAllRegions
 - [ ] Create getAllTypes 
+- [ ] Get FestivalbyName
+- [ ] Get FestivalbyID(Jimmy)
 - [ ] GetByRegion(Oscar)
 - [ ] GETbyType(Oscar)
 - [ ] Post (Jen)
