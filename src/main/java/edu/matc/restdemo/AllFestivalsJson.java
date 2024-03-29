@@ -14,13 +14,13 @@ import javax.ws.rs.core.Response;
 import java.util.List;
 
 @Path("/festivals/json")
-public class FestivalsJSON {
+public class AllFestivalsJson {
     private final Logger logger = LogManager.getLogger(this.getClass());
 
     // The Java method will process HTTP GET requests
     @GET
     // The Java method will produce content identified by the MIME Media type "text/plain"
-    @Produces("text/json")
+    @Produces("application/json")
     public Response getMessage() {
         ObjectMapper objectMapper = new ObjectMapper();
         GenericDao<Festival> festivalDao = new GenericDao<>(Festival.class);
