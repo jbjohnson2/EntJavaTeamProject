@@ -20,6 +20,6 @@ can find it and attend.
 | Database Mapping | Hibernate | 6.4.3.Final |
 
 
-#### [TimeLog](Time Log.md)
+#### [TimeLog](https://github.com/jbjohnson2/EntJavaTeamProject/blob/main/Time%20Log.md)
 
 #### [Project Plan](Project Plan.md)

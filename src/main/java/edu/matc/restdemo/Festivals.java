@@ -39,15 +39,14 @@ public class Festivals {
     @GET
 
     @Path("/{param}")
-
-
+    
     @Produces("text/plain")
 
     /**
      * This method's purpose is to get the festival by id
      */
     public Response getFestivalById(@PathParam("param") int id) {
-        
+
         // Return the festival specified by the id
         if (genericDao.getById(id) == null) {
 
