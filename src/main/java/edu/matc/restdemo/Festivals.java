@@ -10,6 +10,7 @@ import javax.ws.rs.core.Response;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.core.JsonProcessingException;
 
+import java.time.LocalDate;
 import java.util.List;
 
 /**
@@ -89,5 +90,29 @@ public class Festivals {
         }
 
         return Response.status(500).entity(festivalsJsonString).build();
+    }
+
+    @POST
+    @Path("/{name}/{regionId}/{typeId}/{date}")
+    /**
+     * This method's purpose is to return all festivals
+     */
+    public Response postFestivals(@PathParam("name") String name,
+                                  @PathParam("regionId") int regionId,
+                                  @PathParam("typeId") int typeId,
+                                  @PathParam("date") String date) {
+        genericDao = new GenericDao<>(Festival.class);
+        Festival festival = new Festival();
+        LocalDate localDate = LocalDate.parse(date);
+
+        festival.setFestivalName(name);
+        festival.setRegionID(regionId);
+        festival.setTypeID(typeId);
+        festival.setFestivalStartDate(localDate);
+
+        int id = genericDao.insert(festival);
+
+        String output = "You've successfully added a festival with an Id of " + id;
+        return Response.status(200).entity(output).build();
     }
 }
