@@ -21,17 +21,17 @@
 - [X] Create GetAllFestivals ()
 - [X] Create getAllRegions
 - [X] Create getAllTypes 
-- [ ] Get FestivalbyName(Jen)
-- [ ] Get FestvalbyRegion(Jen)
-- [ ] Get FestivalbyType(Jen)
+- [ ] Get FestivalbyName
+- [ ] Get FestvalbyRegion
+- [ ] Get FestivalbyType
 - [X] Get FestivalbyID(Jimmy)
-- [ ] GetALLRegion(Oscar)
-- [ ] GETALLbyType(Oscar)
-- [ ] Post (Jen)
-- [ ] combine classes for regions/ festivals/ types
-- [ ] update problem statement (jen)
-- [ ] add dao tests for region 
-- [ ] add dao tests for type
+- [X] GetALLRegion(Oscar)
+- [X] GETALLbyType(Oscar)
+- [ ] Post
+- [X] combine classes for regions/ festivals/ types
+- [X] update problem statement (jen)
+- [ ] add dao tests for region (jen)
+- [ ] add dao tests for type(jen)
 - [ ] add test for Festivals
 - [ ] add test for Regions
 - [ ] add test for Types
