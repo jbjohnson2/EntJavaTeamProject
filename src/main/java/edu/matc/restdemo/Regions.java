@@ -9,12 +9,13 @@ import org.apache.logging.log4j.Logger;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.Response;
 import java.util.List;
 
-@Path("/regions/json")
-public class AllRegionsJson {
+@Path("/regions")
+public class Regions {
     private final Logger logger = LogManager.getLogger(this.getClass());
 
     @GET
@@ -37,5 +38,15 @@ public class AllRegionsJson {
         }
 
         return Response.status(500).entity(regionsString).build();
+    }
+
+    @GET
+    @Path("/{id}")
+    @Produces("application/json")
+    public Response getMessage(@PathParam("id") int id) {
+        GenericDao<Region> regionDao = new GenericDao<>(Region.class);
+        Region region = regionDao.getById(id);
+
+        return Response.status(500).entity(region.getRegionName()).build();
     }
 }

@@ -19,6 +19,7 @@ import java.util.List;
 public class Festivals {
     // The Java method will process HTTP GET requests
     private GenericDao genericDao;
+    private final Logger logger = LogManager.getLogger(this.getClass());
     private String output;
 
     /**
@@ -65,8 +66,6 @@ public class Festivals {
 
         return Response.status(200).entity(output).build();
     }
-
-    private final Logger logger = LogManager.getLogger(this.getClass());
 
     // The Java method will process HTTP GET requests
     @GET

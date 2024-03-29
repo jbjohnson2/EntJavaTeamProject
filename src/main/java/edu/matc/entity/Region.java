@@ -5,10 +5,13 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import org.hibernate.annotations.GenericGenerator;
+import jakarta.persistence.*;
 
 /**
  * class represents a  region.
  */
+@Entity
+@Table(name="Region")
 public class Region {
     @Id
     @Column(name = "region_id")
