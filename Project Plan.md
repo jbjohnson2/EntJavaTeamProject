@@ -27,7 +27,7 @@
 - [ ] GETbyType(Oscar)
 - [ ] Post (Jen)
 - [ ] JSON
-- [ ] Meeting Friday, March 28th at 10AM
+- [ ] Meeting Friday, March 29th at 10AM
 
 
 ### Week 3
