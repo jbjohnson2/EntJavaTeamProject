@@ -30,7 +30,7 @@ public class Festivals {
     /**
      * This method's purpose is to return all festivals
      */
-    public Response getMessage() {
+    public Response getFestivals() {
         // Return a simple message
         output = "Here's all the festivals: " + genericDao.getAll();
         return Response.status(200).entity(output).build();
