@@ -85,7 +85,7 @@ public class Festivals {
             logger.info(Response.status(200).entity(festivalsJsonString).build());
             return Response.status(200).entity(festivalsJsonString).build();
         } catch (JsonProcessingException jsonProcessingException) {
-            logger.error("Error making json file", jsonProcessingException);
+            logger.error("Error processing json file", jsonProcessingException);
         }
 
         return Response.status(500).entity(festivalsJsonString).build();

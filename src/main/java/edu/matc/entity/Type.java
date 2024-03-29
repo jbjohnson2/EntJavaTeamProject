@@ -1,14 +1,13 @@
 package edu.matc.entity;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import org.hibernate.annotations.GenericGenerator;
 
 /**
  * This class represents a type
  */
+@Entity
+@Table(name="Type")
 public class Type {
     @Id
     @Column(name = "type_id")
