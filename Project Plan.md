@@ -30,6 +30,11 @@
 - [ ] Post (Jen)
 - [ ] combine classes for regions/ festivals/ types
 - [ ] update problem statement (jen)
+- [ ] add dao tests for region 
+- [ ] add dao tests for type
+- [ ] add test for Festivals
+- [ ] add test for Regions
+- [ ] add test for Types
 - [X] update team charter
 - [X] Meeting Friday, March 29th at 10AM
 
