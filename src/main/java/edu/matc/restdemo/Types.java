@@ -9,12 +9,13 @@ import org.apache.logging.log4j.Logger;
 
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
+import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.Response;
 import java.util.List;
 
-@Path("/types/json")
-public class AllTypesJson {
+@Path("/types")
+public class Types {
     private final Logger logger = LogManager.getLogger(this.getClass());
 
     @GET
@@ -37,5 +38,15 @@ public class AllTypesJson {
         }
 
         return Response.status(500).entity(typesString).build();
+    }
+
+    @GET
+    @Path("/{id}")
+    @Produces("application/json")
+    public Response getMessage(@PathParam("id") int id) {
+        GenericDao<Type> typeDao = new GenericDao<>(Type.class);
+        Type type = typeDao.getById(id);
+
+        return Response.status(500).entity(type.getType()).build();
     }
 }

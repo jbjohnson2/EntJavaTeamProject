@@ -19,9 +19,8 @@ public class HelloApplication extends Application {
 
         h.add(HelloWorld.class);
         h.add(Regions.class);
-        h.add(AllTypesJson.class);
+        h.add(Types.class);
         h.add(Festivals.class);
-        h.add(TypeById.class);
 
         return h;
     }
