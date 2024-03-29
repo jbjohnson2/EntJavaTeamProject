@@ -19,15 +19,19 @@
 - [ ] Add Technologies to readMe 
 - [X] Add Links to TimeLog and Project Plan to readMe 
 - [X] Create GetAllFestivals ()
-- [ ] Create getAllRegions
-- [ ] Create getAllTypes 
-- [ ] Get FestivalbyName
-- [ ] Get FestivalbyID(Jimmy)
-- [ ] GetByRegion(Oscar)
-- [ ] GETbyType(Oscar)
+- [X] Create getAllRegions
+- [X] Create getAllTypes 
+- [ ] Get FestivalbyName(Jen)
+- [ ] Get FestvalbyRegion(Jen)
+- [ ] Get FestivalbyType(Jen)
+- [X] Get FestivalbyID(Jimmy)
+- [ ] GetALLRegion(Oscar)
+- [ ] GETALLbyType(Oscar)
 - [ ] Post (Jen)
-- [ ] JSON
-- [ ] Meeting Friday, March 29th at 10AM
+- [ ] combine classes for regions/ festivals/ types
+- [ ] update problem statement (jen)
+- [X] update team charter
+- [X] Meeting Friday, March 29th at 10AM
 
 
 ### Week 3
