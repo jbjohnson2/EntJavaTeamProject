@@ -8,8 +8,8 @@
 | 03/25/24 | Team meeting                                                           | 2     |       | All         |
 | 03/29/24 | Added classes to get by id and get all for regions and types           | 1     |       | oj          |
 | 03/29/24 | Team meeting                                                           | 2     |       | All         |
-|          |                                                                        |       |       |             |
-|          |                                                                        |       |       |             |
+|          | add post                                                               |       |       | oj          |
+|          | refactor/combine classes                                               |       |       | jb          |
 |          |                                                                        |       |       |             |
 |          |                                                                        |       |       |             |
 |          |                                                                        |       |       |             |
