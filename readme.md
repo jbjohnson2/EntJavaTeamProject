@@ -22,4 +22,4 @@ can find it and attend.
 
 #### [TimeLog](https://github.com/jbjohnson2/EntJavaTeamProject/blob/main/Time%20Log.md)
 
-#### [Project Plan](Project Plan.md)
+#### [Project Plan](https://github.com/jbjohnson2/EntJavaTeamProject/blob/main/Project%20Plan.md)
