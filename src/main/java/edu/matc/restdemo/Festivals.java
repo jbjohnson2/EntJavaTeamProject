@@ -2,9 +2,15 @@ package edu.matc.restdemo;
 
 import edu.matc.entity.Festival;
 import edu.matc.persistence.GenericDao;
-
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import javax.ws.rs.*;
 import javax.ws.rs.core.Response;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.core.JsonProcessingException;
+
+import java.util.List;
 
 /**
  * This class' purpose is to return festivals
@@ -58,5 +64,31 @@ public class Festivals {
         }
 
         return Response.status(200).entity(output).build();
+    }
+
+    private final Logger logger = LogManager.getLogger(this.getClass());
+
+    // The Java method will process HTTP GET requests
+    @GET
+
+    @Path("/json")
+    // The Java method will produce content identified by the MIME Media type "text/plain"
+    @Produces("application/json")
+    public Response getMessage() {
+        ObjectMapper objectMapper = new ObjectMapper();
+        GenericDao<Festival> festivalDao = new GenericDao<>(Festival.class);
+        List<Festival> festivals = festivalDao.getAll();
+        String festivalsJsonString = "Error making json file";
+
+        try {
+            festivalsJsonString = objectMapper.writeValueAsString(festivals);
+            logger.info(festivalsJsonString);
+            logger.info(Response.status(200).entity(festivalsJsonString).build());
+            return Response.status(200).entity(festivalsJsonString).build();
+        } catch (JsonProcessingException jsonProcessingException) {
+            logger.error("Error making json file", jsonProcessingException);
+        }
+
+        return Response.status(500).entity(festivalsJsonString).build();
     }
 }

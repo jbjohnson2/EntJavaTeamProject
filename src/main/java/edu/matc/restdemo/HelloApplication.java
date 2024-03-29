@@ -18,7 +18,6 @@ public class HelloApplication extends Application {
         HashSet h = new HashSet<Class<?>>();
 
         h.add(HelloWorld.class);
-        h.add(AllFestivalsJson.class);
         h.add(AllRegionsJson.class);
         h.add(AllTypesJson.class);
         h.add(Festivals.class);
