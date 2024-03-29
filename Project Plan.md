@@ -40,12 +40,12 @@
 
 
 ### Week 3
-
+- [ ] Meeting Tuesday April 2nd at 9am 
 - [ ] Display the data
 - [ ] Work on documentation page
 - [ ] 
 - [ ] 
-- [ ] 
+- [ ] Meeting Friday April at 10am 
 
 #### April 5th - Project complete and ready for review 
 #### April 9th - Record Presentation
