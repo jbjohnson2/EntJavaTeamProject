@@ -7,6 +7,8 @@
 - Rule 6: We should update the time log whenever we have completed work either during the meeting or individual work
 - Rule 7: If we complete work during the weekend or at other unexpected times, we should write in Slack as a heads-up
 
+
+
 Deadlines:
 
     April 5th: Code completion.
