@@ -12,8 +12,6 @@ of a certain type or in a specific region. As an organizer(or festival goer) you
 can find it and attend.  As a developer you can find a list of festivals statewide, by region, or by type to include in 
 your community page, business page, or any other applicable page. 
 
-TODO : update for use as a developer
-
 
 ### Specs
 | Category         | Type      | Version     |
