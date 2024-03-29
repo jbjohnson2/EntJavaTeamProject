@@ -27,7 +27,7 @@
 - [X] Get FestivalbyID(Jimmy)
 - [X] GetALLRegion(Oscar)
 - [X] GETALLbyType(Oscar)
-- [ ] Post
+- [ ] Post - need to update to check if region/ type exits
 - [X] combine classes for regions/ festivals/ types
 - [X] update problem statement (jen)
 - [ ] add dao tests for region (jen)
