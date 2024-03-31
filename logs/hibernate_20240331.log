@@ -1,0 +1,1406 @@
+[DEBUG] 2024-03-31 16:23:11.626 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.boot.beanvalidation.BeanValidationIntegrator].
+[DEBUG] 2024-03-31 16:23:11.628 [main] IntegratorServiceImpl - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+[INFO ] 2024-03-31 16:23:11.640 [main] Version - HHH000412: Hibernate ORM core version 6.4.3.Final
+[DEBUG] 2024-03-31 16:23:11.641 [main] Environment - HHH000206: 'hibernate.properties' not found
+[DEBUG] 2024-03-31 16:23:11.663 [main] LocalXmlResourceResolver - Checking public/system identifiers `-//Hibernate/Hibernate Configuration DTD//EN`/`http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd` as DTD references
+[DEBUG] 2024-03-31 16:23:11.666 [main] JaxbCfgProcessor - cfg.xml document did not define namespaces; wrapping in custom event reader to introduce namespace information
+[DEBUG] 2024-03-31 16:23:11.746 [main] factory - Ignoring CDI for resolving IdentifierGenerator instances as extended or delayed CDI support was enabled
+[DEBUG] 2024-03-31 16:23:11.747 [main] factory - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+[DEBUG] 2024-03-31 16:23:11.747 [main] factory - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+[DEBUG] 2024-03-31 16:23:11.747 [main] factory - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+[DEBUG] 2024-03-31 16:23:11.747 [main] factory - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+[DEBUG] 2024-03-31 16:23:11.747 [main] factory - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+[DEBUG] 2024-03-31 16:23:11.748 [main] factory - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+[DEBUG] 2024-03-31 16:23:11.748 [main] factory - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+[DEBUG] 2024-03-31 16:23:11.748 [main] factory - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[DEBUG] 2024-03-31 16:23:11.749 [main] factory - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+[DEBUG] 2024-03-31 16:23:11.749 [main] factory - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+[DEBUG] 2024-03-31 16:23:11.749 [main] factory - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[DEBUG] 2024-03-31 16:23:11.749 [main] factory - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+[DEBUG] 2024-03-31 16:23:11.752 [main] RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+[INFO ] 2024-03-31 16:23:11.752 [main] RegionFactoryInitiator - HHH000026: Second-level cache disabled
+[DEBUG] 2024-03-31 16:23:11.788 [main] BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BasicTypeReference@599e4d41
+[DEBUG] 2024-03-31 16:23:11.788 [main] BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BasicTypeReference@599e4d41
+[DEBUG] 2024-03-31 16:23:11.788 [main] BasicTypeRegistry - Adding type registration java.lang.Boolean -> org.hibernate.type.BasicTypeReference@599e4d41
+[DEBUG] 2024-03-31 16:23:11.788 [main] BasicTypeRegistry - Adding type registration numeric_boolean -> org.hibernate.type.BasicTypeReference@328d044f
+[DEBUG] 2024-03-31 16:23:11.788 [main] BasicTypeRegistry - Adding type registration org.hibernate.type.NumericBooleanConverter -> org.hibernate.type.BasicTypeReference@328d044f
+[DEBUG] 2024-03-31 16:23:11.788 [main] BasicTypeRegistry - Adding type registration true_false -> org.hibernate.type.BasicTypeReference@10f7c76
+[DEBUG] 2024-03-31 16:23:11.788 [main] BasicTypeRegistry - Adding type registration org.hibernate.type.TrueFalseConverter -> org.hibernate.type.BasicTypeReference@10f7c76
+[DEBUG] 2024-03-31 16:23:11.788 [main] BasicTypeRegistry - Adding type registration yes_no -> org.hibernate.type.BasicTypeReference@4745e9c
+[DEBUG] 2024-03-31 16:23:11.788 [main] BasicTypeRegistry - Adding type registration org.hibernate.type.YesNoConverter -> org.hibernate.type.BasicTypeReference@4745e9c
+[DEBUG] 2024-03-31 16:23:11.788 [main] BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.BasicTypeReference@2f2bff16
+[DEBUG] 2024-03-31 16:23:11.788 [main] BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.BasicTypeReference@2f2bff16
+[DEBUG] 2024-03-31 16:23:11.788 [main] BasicTypeRegistry - Adding type registration java.lang.Byte -> org.hibernate.type.BasicTypeReference@2f2bff16
+[DEBUG] 2024-03-31 16:23:11.788 [main] BasicTypeRegistry - Adding type registration binary -> org.hibernate.type.BasicTypeReference@75de29c0
+[DEBUG] 2024-03-31 16:23:11.788 [main] BasicTypeRegistry - Adding type registration byte[] -> org.hibernate.type.BasicTypeReference@75de29c0
+[DEBUG] 2024-03-31 16:23:11.788 [main] BasicTypeRegistry - Adding type registration [B -> org.hibernate.type.BasicTypeReference@75de29c0
+[DEBUG] 2024-03-31 16:23:11.788 [main] BasicTypeRegistry - Adding type registration binary_wrapper -> org.hibernate.type.BasicTypeReference@fc807c1
+[DEBUG] 2024-03-31 16:23:11.788 [main] BasicTypeRegistry - Adding type registration wrapper-binary -> org.hibernate.type.BasicTypeReference@fc807c1
+[DEBUG] 2024-03-31 16:23:11.788 [main] BasicTypeRegistry - Adding type registration image -> org.hibernate.type.BasicTypeReference@296e281a
+[DEBUG] 2024-03-31 16:23:11.788 [main] BasicTypeRegistry - Adding type registration blob -> org.hibernate.type.BasicTypeReference@59cda16e
+[DEBUG] 2024-03-31 16:23:11.788 [main] BasicTypeRegistry - Adding type registration java.sql.Blob -> org.hibernate.type.BasicTypeReference@59cda16e
+[DEBUG] 2024-03-31 16:23:11.788 [main] BasicTypeRegistry - Adding type registration materialized_blob -> org.hibernate.type.BasicTypeReference@5dd903be
+[DEBUG] 2024-03-31 16:23:11.788 [main] BasicTypeRegistry - Adding type registration materialized_blob_wrapper -> org.hibernate.type.BasicTypeReference@12e0f1cb
+[DEBUG] 2024-03-31 16:23:11.788 [main] BasicTypeRegistry - Adding type registration short -> org.hibernate.type.BasicTypeReference@4a163575
+[DEBUG] 2024-03-31 16:23:11.788 [main] BasicTypeRegistry - Adding type registration short -> org.hibernate.type.BasicTypeReference@4a163575
+[DEBUG] 2024-03-31 16:23:11.788 [main] BasicTypeRegistry - Adding type registration java.lang.Short -> org.hibernate.type.BasicTypeReference@4a163575
+[DEBUG] 2024-03-31 16:23:11.789 [main] BasicTypeRegistry - Adding type registration integer -> org.hibernate.type.BasicTypeReference@7e642b88
+[DEBUG] 2024-03-31 16:23:11.789 [main] BasicTypeRegistry - Adding type registration int -> org.hibernate.type.BasicTypeReference@7e642b88
+[DEBUG] 2024-03-31 16:23:11.789 [main] BasicTypeRegistry - Adding type registration java.lang.Integer -> org.hibernate.type.BasicTypeReference@7e642b88
+[DEBUG] 2024-03-31 16:23:11.789 [main] BasicTypeRegistry - Adding type registration long -> org.hibernate.type.BasicTypeReference@6b350309
+[DEBUG] 2024-03-31 16:23:11.789 [main] BasicTypeRegistry - Adding type registration long -> org.hibernate.type.BasicTypeReference@6b350309
+[DEBUG] 2024-03-31 16:23:11.789 [main] BasicTypeRegistry - Adding type registration java.lang.Long -> org.hibernate.type.BasicTypeReference@6b350309
+[DEBUG] 2024-03-31 16:23:11.789 [main] BasicTypeRegistry - Adding type registration float -> org.hibernate.type.BasicTypeReference@7ecec90d
+[DEBUG] 2024-03-31 16:23:11.789 [main] BasicTypeRegistry - Adding type registration float -> org.hibernate.type.BasicTypeReference@7ecec90d
+[DEBUG] 2024-03-31 16:23:11.789 [main] BasicTypeRegistry - Adding type registration java.lang.Float -> org.hibernate.type.BasicTypeReference@7ecec90d
+[DEBUG] 2024-03-31 16:23:11.789 [main] BasicTypeRegistry - Adding type registration double -> org.hibernate.type.BasicTypeReference@588f63c
+[DEBUG] 2024-03-31 16:23:11.789 [main] BasicTypeRegistry - Adding type registration double -> org.hibernate.type.BasicTypeReference@588f63c
+[DEBUG] 2024-03-31 16:23:11.789 [main] BasicTypeRegistry - Adding type registration java.lang.Double -> org.hibernate.type.BasicTypeReference@588f63c
+[DEBUG] 2024-03-31 16:23:11.789 [main] BasicTypeRegistry - Adding type registration big_integer -> org.hibernate.type.BasicTypeReference@5a6fa56e
+[DEBUG] 2024-03-31 16:23:11.789 [main] BasicTypeRegistry - Adding type registration java.math.BigInteger -> org.hibernate.type.BasicTypeReference@5a6fa56e
+[DEBUG] 2024-03-31 16:23:11.789 [main] BasicTypeRegistry - Adding type registration big_decimal -> org.hibernate.type.BasicTypeReference@1981d861
+[DEBUG] 2024-03-31 16:23:11.789 [main] BasicTypeRegistry - Adding type registration java.math.BigDecimal -> org.hibernate.type.BasicTypeReference@1981d861
+[DEBUG] 2024-03-31 16:23:11.789 [main] BasicTypeRegistry - Adding type registration character -> org.hibernate.type.BasicTypeReference@118ffcfd
+[DEBUG] 2024-03-31 16:23:11.789 [main] BasicTypeRegistry - Adding type registration char -> org.hibernate.type.BasicTypeReference@118ffcfd
+[DEBUG] 2024-03-31 16:23:11.789 [main] BasicTypeRegistry - Adding type registration java.lang.Character -> org.hibernate.type.BasicTypeReference@118ffcfd
+[DEBUG] 2024-03-31 16:23:11.789 [main] BasicTypeRegistry - Adding type registration character_nchar -> org.hibernate.type.BasicTypeReference@53f4c1e6
+[DEBUG] 2024-03-31 16:23:11.789 [main] BasicTypeRegistry - Adding type registration string -> org.hibernate.type.BasicTypeReference@74174a23
+[DEBUG] 2024-03-31 16:23:11.789 [main] BasicTypeRegistry - Adding type registration java.lang.String -> org.hibernate.type.BasicTypeReference@74174a23
+[DEBUG] 2024-03-31 16:23:11.789 [main] BasicTypeRegistry - Adding type registration nstring -> org.hibernate.type.BasicTypeReference@6342d610
+[DEBUG] 2024-03-31 16:23:11.789 [main] BasicTypeRegistry - Adding type registration characters -> org.hibernate.type.BasicTypeReference@dc4a691
+[DEBUG] 2024-03-31 16:23:11.789 [main] BasicTypeRegistry - Adding type registration char[] -> org.hibernate.type.BasicTypeReference@dc4a691
+[DEBUG] 2024-03-31 16:23:11.789 [main] BasicTypeRegistry - Adding type registration [C -> org.hibernate.type.BasicTypeReference@dc4a691
+[DEBUG] 2024-03-31 16:23:11.790 [main] BasicTypeRegistry - Adding type registration wrapper-characters -> org.hibernate.type.BasicTypeReference@784abd3e
+[DEBUG] 2024-03-31 16:23:11.790 [main] BasicTypeRegistry - Adding type registration text -> org.hibernate.type.BasicTypeReference@36c2b646
+[DEBUG] 2024-03-31 16:23:11.790 [main] BasicTypeRegistry - Adding type registration ntext -> org.hibernate.type.BasicTypeReference@434514d8
+[DEBUG] 2024-03-31 16:23:11.790 [main] BasicTypeRegistry - Adding type registration clob -> org.hibernate.type.BasicTypeReference@6b1dc20f
+[DEBUG] 2024-03-31 16:23:11.790 [main] BasicTypeRegistry - Adding type registration java.sql.Clob -> org.hibernate.type.BasicTypeReference@6b1dc20f
+[DEBUG] 2024-03-31 16:23:11.790 [main] BasicTypeRegistry - Adding type registration nclob -> org.hibernate.type.BasicTypeReference@4613311f
+[DEBUG] 2024-03-31 16:23:11.790 [main] BasicTypeRegistry - Adding type registration java.sql.NClob -> org.hibernate.type.BasicTypeReference@4613311f
+[DEBUG] 2024-03-31 16:23:11.790 [main] BasicTypeRegistry - Adding type registration materialized_clob -> org.hibernate.type.BasicTypeReference@6540cf1d
+[DEBUG] 2024-03-31 16:23:11.790 [main] BasicTypeRegistry - Adding type registration materialized_clob_char_array -> org.hibernate.type.BasicTypeReference@ec8f4b9
+[DEBUG] 2024-03-31 16:23:11.790 [main] BasicTypeRegistry - Adding type registration materialized_clob_character_array -> org.hibernate.type.BasicTypeReference@bc042d5
+[DEBUG] 2024-03-31 16:23:11.790 [main] BasicTypeRegistry - Adding type registration materialized_nclob -> org.hibernate.type.BasicTypeReference@5484117b
+[DEBUG] 2024-03-31 16:23:11.790 [main] BasicTypeRegistry - Adding type registration materialized_nclob_character_array -> org.hibernate.type.BasicTypeReference@37df14d1
+[DEBUG] 2024-03-31 16:23:11.790 [main] BasicTypeRegistry - Adding type registration materialized_nclob_char_array -> org.hibernate.type.BasicTypeReference@7efb53af
+[DEBUG] 2024-03-31 16:23:11.790 [main] BasicTypeRegistry - Adding type registration Duration -> org.hibernate.type.BasicTypeReference@7724704f
+[DEBUG] 2024-03-31 16:23:11.790 [main] BasicTypeRegistry - Adding type registration java.time.Duration -> org.hibernate.type.BasicTypeReference@7724704f
+[DEBUG] 2024-03-31 16:23:11.790 [main] BasicTypeRegistry - Adding type registration LocalDateTime -> org.hibernate.type.BasicTypeReference@3dfa819
+[DEBUG] 2024-03-31 16:23:11.790 [main] BasicTypeRegistry - Adding type registration java.time.LocalDateTime -> org.hibernate.type.BasicTypeReference@3dfa819
+[DEBUG] 2024-03-31 16:23:11.790 [main] BasicTypeRegistry - Adding type registration LocalDate -> org.hibernate.type.BasicTypeReference@4ce94d2f
+[DEBUG] 2024-03-31 16:23:11.790 [main] BasicTypeRegistry - Adding type registration java.time.LocalDate -> org.hibernate.type.BasicTypeReference@4ce94d2f
+[DEBUG] 2024-03-31 16:23:11.790 [main] BasicTypeRegistry - Adding type registration LocalTime -> org.hibernate.type.BasicTypeReference@68ab0936
+[DEBUG] 2024-03-31 16:23:11.790 [main] BasicTypeRegistry - Adding type registration java.time.LocalTime -> org.hibernate.type.BasicTypeReference@68ab0936
+[DEBUG] 2024-03-31 16:23:11.790 [main] BasicTypeRegistry - Adding type registration OffsetDateTime -> org.hibernate.type.BasicTypeReference@3cd9aa64
+[DEBUG] 2024-03-31 16:23:11.790 [main] BasicTypeRegistry - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.BasicTypeReference@3cd9aa64
+[DEBUG] 2024-03-31 16:23:11.791 [main] BasicTypeRegistry - Adding type registration OffsetDateTimeWithTimezone -> org.hibernate.type.BasicTypeReference@42b84286
+[DEBUG] 2024-03-31 16:23:11.791 [main] BasicTypeRegistry - Adding type registration OffsetDateTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@443effcb
+[DEBUG] 2024-03-31 16:23:11.791 [main] BasicTypeRegistry - Adding type registration OffsetTime -> org.hibernate.type.BasicTypeReference@74ecacc3
+[DEBUG] 2024-03-31 16:23:11.791 [main] BasicTypeRegistry - Adding type registration java.time.OffsetTime -> org.hibernate.type.BasicTypeReference@74ecacc3
+[DEBUG] 2024-03-31 16:23:11.791 [main] BasicTypeRegistry - Adding type registration OffsetTimeUtc -> org.hibernate.type.BasicTypeReference@517a2b0
+[DEBUG] 2024-03-31 16:23:11.791 [main] BasicTypeRegistry - Adding type registration OffsetTimeWithTimezone -> org.hibernate.type.BasicTypeReference@53b7ce6
+[DEBUG] 2024-03-31 16:23:11.791 [main] BasicTypeRegistry - Adding type registration OffsetTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@36480b2d
+[DEBUG] 2024-03-31 16:23:11.791 [main] BasicTypeRegistry - Adding type registration ZonedDateTime -> org.hibernate.type.BasicTypeReference@27d33393
+[DEBUG] 2024-03-31 16:23:11.791 [main] BasicTypeRegistry - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.BasicTypeReference@27d33393
+[DEBUG] 2024-03-31 16:23:11.791 [main] BasicTypeRegistry - Adding type registration ZonedDateTimeWithTimezone -> org.hibernate.type.BasicTypeReference@1f6917fb
+[DEBUG] 2024-03-31 16:23:11.791 [main] BasicTypeRegistry - Adding type registration ZonedDateTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@41eb94bc
+[DEBUG] 2024-03-31 16:23:11.791 [main] BasicTypeRegistry - Adding type registration date -> org.hibernate.type.BasicTypeReference@378cfecf
+[DEBUG] 2024-03-31 16:23:11.791 [main] BasicTypeRegistry - Adding type registration java.sql.Date -> org.hibernate.type.BasicTypeReference@378cfecf
+[DEBUG] 2024-03-31 16:23:11.791 [main] BasicTypeRegistry - Adding type registration time -> org.hibernate.type.BasicTypeReference@97d0c06
+[DEBUG] 2024-03-31 16:23:11.791 [main] BasicTypeRegistry - Adding type registration java.sql.Time -> org.hibernate.type.BasicTypeReference@97d0c06
+[DEBUG] 2024-03-31 16:23:11.791 [main] BasicTypeRegistry - Adding type registration timestamp -> org.hibernate.type.BasicTypeReference@5e7c141d
+[DEBUG] 2024-03-31 16:23:11.791 [main] BasicTypeRegistry - Adding type registration java.sql.Timestamp -> org.hibernate.type.BasicTypeReference@5e7c141d
+[DEBUG] 2024-03-31 16:23:11.791 [main] BasicTypeRegistry - Adding type registration java.util.Date -> org.hibernate.type.BasicTypeReference@5e7c141d
+[DEBUG] 2024-03-31 16:23:11.791 [main] BasicTypeRegistry - Adding type registration calendar -> org.hibernate.type.BasicTypeReference@43af351a
+[DEBUG] 2024-03-31 16:23:11.791 [main] BasicTypeRegistry - Adding type registration java.util.Calendar -> org.hibernate.type.BasicTypeReference@43af351a
+[DEBUG] 2024-03-31 16:23:11.791 [main] BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.BasicTypeReference@43af351a
+[DEBUG] 2024-03-31 16:23:11.791 [main] BasicTypeRegistry - Adding type registration calendar_date -> org.hibernate.type.BasicTypeReference@1305c126
+[DEBUG] 2024-03-31 16:23:11.791 [main] BasicTypeRegistry - Adding type registration calendar_time -> org.hibernate.type.BasicTypeReference@72f9f27c
+[DEBUG] 2024-03-31 16:23:11.791 [main] BasicTypeRegistry - Adding type registration instant -> org.hibernate.type.BasicTypeReference@4c1bdcc2
+[DEBUG] 2024-03-31 16:23:11.791 [main] BasicTypeRegistry - Adding type registration java.time.Instant -> org.hibernate.type.BasicTypeReference@4c1bdcc2
+[DEBUG] 2024-03-31 16:23:11.791 [main] BasicTypeRegistry - Adding type registration uuid -> org.hibernate.type.BasicTypeReference@762637be
+[DEBUG] 2024-03-31 16:23:11.791 [main] BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.BasicTypeReference@762637be
+[DEBUG] 2024-03-31 16:23:11.791 [main] BasicTypeRegistry - Adding type registration pg-uuid -> org.hibernate.type.BasicTypeReference@762637be
+[DEBUG] 2024-03-31 16:23:11.791 [main] BasicTypeRegistry - Adding type registration uuid-binary -> org.hibernate.type.BasicTypeReference@4b97c4ad
+[DEBUG] 2024-03-31 16:23:11.792 [main] BasicTypeRegistry - Adding type registration uuid-char -> org.hibernate.type.BasicTypeReference@7640a5b1
+[DEBUG] 2024-03-31 16:23:11.792 [main] BasicTypeRegistry - Adding type registration class -> org.hibernate.type.BasicTypeReference@642f9a77
+[DEBUG] 2024-03-31 16:23:11.792 [main] BasicTypeRegistry - Adding type registration java.lang.Class -> org.hibernate.type.BasicTypeReference@642f9a77
+[DEBUG] 2024-03-31 16:23:11.792 [main] BasicTypeRegistry - Adding type registration currency -> org.hibernate.type.BasicTypeReference@23f3da8b
+[DEBUG] 2024-03-31 16:23:11.792 [main] BasicTypeRegistry - Adding type registration Currency -> org.hibernate.type.BasicTypeReference@23f3da8b
+[DEBUG] 2024-03-31 16:23:11.792 [main] BasicTypeRegistry - Adding type registration java.util.Currency -> org.hibernate.type.BasicTypeReference@23f3da8b
+[DEBUG] 2024-03-31 16:23:11.792 [main] BasicTypeRegistry - Adding type registration locale -> org.hibernate.type.BasicTypeReference@5634d0f4
+[DEBUG] 2024-03-31 16:23:11.792 [main] BasicTypeRegistry - Adding type registration java.util.Locale -> org.hibernate.type.BasicTypeReference@5634d0f4
+[DEBUG] 2024-03-31 16:23:11.792 [main] BasicTypeRegistry - Adding type registration serializable -> org.hibernate.type.BasicTypeReference@252a8aae
+[DEBUG] 2024-03-31 16:23:11.792 [main] BasicTypeRegistry - Adding type registration java.io.Serializable -> org.hibernate.type.BasicTypeReference@252a8aae
+[DEBUG] 2024-03-31 16:23:11.792 [main] BasicTypeRegistry - Adding type registration timezone -> org.hibernate.type.BasicTypeReference@3d4e405e
+[DEBUG] 2024-03-31 16:23:11.792 [main] BasicTypeRegistry - Adding type registration java.util.TimeZone -> org.hibernate.type.BasicTypeReference@3d4e405e
+[DEBUG] 2024-03-31 16:23:11.792 [main] BasicTypeRegistry - Adding type registration ZoneOffset -> org.hibernate.type.BasicTypeReference@54e2fe
+[DEBUG] 2024-03-31 16:23:11.792 [main] BasicTypeRegistry - Adding type registration java.time.ZoneOffset -> org.hibernate.type.BasicTypeReference@54e2fe
+[DEBUG] 2024-03-31 16:23:11.792 [main] BasicTypeRegistry - Adding type registration url -> org.hibernate.type.BasicTypeReference@70972170
+[DEBUG] 2024-03-31 16:23:11.792 [main] BasicTypeRegistry - Adding type registration java.net.URL -> org.hibernate.type.BasicTypeReference@70972170
+[DEBUG] 2024-03-31 16:23:11.792 [main] BasicTypeRegistry - Adding type registration vector -> org.hibernate.type.BasicTypeReference@119aa36
+[DEBUG] 2024-03-31 16:23:11.792 [main] BasicTypeRegistry - Adding type registration row_version -> org.hibernate.type.BasicTypeReference@4e1a46fb
+[DEBUG] 2024-03-31 16:23:11.794 [main] BasicTypeRegistry - Adding type registration object -> org.hibernate.type.JavaObjectType@2a369e14
+[DEBUG] 2024-03-31 16:23:11.794 [main] BasicTypeRegistry - Adding type registration java.lang.Object -> org.hibernate.type.JavaObjectType@2a369e14
+[DEBUG] 2024-03-31 16:23:11.795 [main] BasicTypeRegistry - Adding type registration null -> org.hibernate.type.NullType@372ca2d6
+[DEBUG] 2024-03-31 16:23:11.795 [main] BasicTypeRegistry - Adding type registration imm_date -> org.hibernate.type.BasicTypeReference@3204e238
+[DEBUG] 2024-03-31 16:23:11.795 [main] BasicTypeRegistry - Adding type registration imm_time -> org.hibernate.type.BasicTypeReference@38ed139b
+[DEBUG] 2024-03-31 16:23:11.795 [main] BasicTypeRegistry - Adding type registration imm_timestamp -> org.hibernate.type.BasicTypeReference@a5272be
+[DEBUG] 2024-03-31 16:23:11.795 [main] BasicTypeRegistry - Adding type registration imm_calendar -> org.hibernate.type.BasicTypeReference@58ba5b30
+[DEBUG] 2024-03-31 16:23:11.795 [main] BasicTypeRegistry - Adding type registration imm_calendar_date -> org.hibernate.type.BasicTypeReference@4dba773d
+[DEBUG] 2024-03-31 16:23:11.795 [main] BasicTypeRegistry - Adding type registration imm_calendar_time -> org.hibernate.type.BasicTypeReference@1d9bd4da
+[DEBUG] 2024-03-31 16:23:11.795 [main] BasicTypeRegistry - Adding type registration imm_binary -> org.hibernate.type.BasicTypeReference@4c58255
+[DEBUG] 2024-03-31 16:23:11.795 [main] BasicTypeRegistry - Adding type registration imm_serializable -> org.hibernate.type.BasicTypeReference@eac3a26
+[INFO ] 2024-03-31 16:23:11.818 [main] c3p0 - HHH010002: C3P0 using driver: com.mysql.cj.jdbc.Driver at URL: jdbc:mysql://localhost:3306/wisconsin_festivals_local_test
+[INFO ] 2024-03-31 16:23:11.818 [main] c3p0 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO ] 2024-03-31 16:23:11.818 [main] c3p0 - HHH10001003: Autocommit mode: false
+[INFO ] 2024-03-31 16:23:11.858 [main] c3p0 - HHH10001007: JDBC isolation level: <unknown>
+[DEBUG] 2024-03-31 16:23:11.907 [main] JdbcEnvironmentInitiator - Database ->
+       name : MySQL
+    version : 8.3.0
+      major : 8
+      minor : 3
+[DEBUG] 2024-03-31 16:23:11.907 [main] JdbcEnvironmentInitiator - Driver ->
+       name : MySQL Connector/J
+    version : mysql-connector-j-8.0.33 (Revision: 7d6b0800528b6b25c68b52dc10d6c1c8429c100c)
+      major : 8
+      minor : 0
+[DEBUG] 2024-03-31 16:23:11.907 [main] JdbcEnvironmentInitiator - JDBC version : 4.2
+[DEBUG] 2024-03-31 16:23:11.931 [main] dialect - HHH035001: Using dialect: org.hibernate.dialect.MySQLDialect, version: 8.3
+[DEBUG] 2024-03-31 16:23:11.933 [main] IdentifierHelperBuilder - JDBC driver metadata reported database stores quoted identifiers in more than one case
+[DEBUG] 2024-03-31 16:23:11.933 [main] IdentifierHelperBuilder - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [MIXED]; that will likely lead to problems in schema update and validation if using quoted identifiers
+[DEBUG] 2024-03-31 16:23:11.939 [main] DdlTypeRegistry - addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1e692555) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@3ba0ae41)
+[DEBUG] 2024-03-31 16:23:11.939 [main] DdlTypeRegistry - addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@76fe6cdc) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@2ffb3aec)
+[DEBUG] 2024-03-31 16:23:11.939 [main] DdlTypeRegistry - addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@786ff1cb) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@46039a21)
+[DEBUG] 2024-03-31 16:23:11.939 [main] DdlTypeRegistry - addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@431e86b1) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@35c4e864)
+[DEBUG] 2024-03-31 16:23:11.939 [main] DdlTypeRegistry - addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@32a2a6be) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@682af059)
+[DEBUG] 2024-03-31 16:23:11.939 [main] DdlTypeRegistry - addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@5f36c8e3) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@4da39ca9)
+[DEBUG] 2024-03-31 16:23:11.939 [main] DdlTypeRegistry - addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@6a9344f5) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@5584d9c6)
+[DEBUG] 2024-03-31 16:23:11.939 [main] DdlTypeRegistry - addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@3c9c6245) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@6d0be7ab)
+[DEBUG] 2024-03-31 16:23:11.939 [main] DdlTypeRegistry - addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1d4fb213) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@6ef60295)
+[DEBUG] 2024-03-31 16:23:11.939 [main] JdbcTypeRegistry - addDescriptor(NCharTypeDescriptor) replaced previous registration(CharTypeDescriptor)
+[DEBUG] 2024-03-31 16:23:11.939 [main] JdbcTypeRegistry - addDescriptor(NVarcharTypeDescriptor) replaced previous registration(VarcharTypeDescriptor)
+[DEBUG] 2024-03-31 16:23:11.940 [main] JdbcTypeRegistry - addDescriptor(LongNVarcharTypeDescriptor) replaced previous registration(LongVarcharTypeDescriptor)
+[DEBUG] 2024-03-31 16:23:11.940 [main] JdbcTypeRegistry - addDescriptor(NClobTypeDescriptor(DEFAULT)) replaced previous registration(ClobTypeDescriptor(DEFAULT))
+[DEBUG] 2024-03-31 16:23:11.940 [main] JdbcTypeRegistry - addDescriptor(2005, ClobTypeDescriptor(STREAM_BINDING)) replaced previous registration(ClobTypeDescriptor(DEFAULT))
+[DEBUG] 2024-03-31 16:23:11.942 [main] BasicTypeRegistry - Adding type registration null -> org.hibernate.type.NullType@76544c0a
+[DEBUG] 2024-03-31 16:23:11.942 [main] BasicTypeRegistry - Type registration key [null] overrode previous entry : `org.hibernate.type.NullType@372ca2d6`
+[DEBUG] 2024-03-31 16:23:11.945 [main] BasicTypeRegistry - Adding type registration org.hibernate.type.DurationType -> basicType@1(java.time.Duration,2)
+[DEBUG] 2024-03-31 16:23:11.945 [main] BasicTypeRegistry - Adding type registration Duration -> basicType@1(java.time.Duration,2)
+[DEBUG] 2024-03-31 16:23:11.945 [main] BasicTypeRegistry - Adding type registration java.time.Duration -> basicType@1(java.time.Duration,2)
+[DEBUG] 2024-03-31 16:23:11.946 [main] BasicTypeRegistry - Adding type registration org.hibernate.type.OffsetDateTimeType -> basicType@2(java.time.OffsetDateTime,3003)
+[DEBUG] 2024-03-31 16:23:11.946 [main] BasicTypeRegistry - Adding type registration OffsetDateTime -> basicType@2(java.time.OffsetDateTime,3003)
+[DEBUG] 2024-03-31 16:23:11.946 [main] BasicTypeRegistry - Adding type registration java.time.OffsetDateTime -> basicType@2(java.time.OffsetDateTime,3003)
+[DEBUG] 2024-03-31 16:23:11.946 [main] BasicTypeRegistry - Adding type registration org.hibernate.type.ZonedDateTimeType -> basicType@3(java.time.ZonedDateTime,3003)
+[DEBUG] 2024-03-31 16:23:11.946 [main] BasicTypeRegistry - Adding type registration ZonedDateTime -> basicType@3(java.time.ZonedDateTime,3003)
+[DEBUG] 2024-03-31 16:23:11.946 [main] BasicTypeRegistry - Adding type registration java.time.ZonedDateTime -> basicType@3(java.time.ZonedDateTime,3003)
+[DEBUG] 2024-03-31 16:23:11.946 [main] BasicTypeRegistry - Adding type registration org.hibernate.type.OffsetTimeType -> basicType@4(java.time.OffsetTime,3007)
+[DEBUG] 2024-03-31 16:23:11.947 [main] BasicTypeRegistry - Adding type registration OffsetTime -> basicType@4(java.time.OffsetTime,3007)
+[DEBUG] 2024-03-31 16:23:11.947 [main] BasicTypeRegistry - Adding type registration java.time.OffsetTime -> basicType@4(java.time.OffsetTime,3007)
+[DEBUG] 2024-03-31 16:23:11.947 [main] TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@e280403] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@42f85fa4]
+[DEBUG] 2024-03-31 16:23:11.963 [main] Namespace - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+[DEBUG] 2024-03-31 16:23:11.973 [main] EntityBinder - Binding entity from annotated class: edu.matc.entity.Festival
+[DEBUG] 2024-03-31 16:23:11.976 [main] EntityBinder - Import with entity name Festival
+[DEBUG] 2024-03-31 16:23:11.978 [main] EntityBinder - Bind entity edu.matc.entity.Festival on table Festival
+[DEBUG] 2024-03-31 16:23:11.982 [main] AnnotatedColumn - Binding column: AnnotatedDiscriminatorColumn(column='DTYPE')
+[DEBUG] 2024-03-31 16:23:11.991 [main] AnnotatedColumn - Binding column: AnnotatedColumn(column='festival_id')
+[DEBUG] 2024-03-31 16:23:11.992 [main] ClassLoaderAccessImpl - Not known whether passed class name [edu.matc.entity.Festival] is safe
+[DEBUG] 2024-03-31 16:23:11.992 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : edu.matc.entity.Festival
+[DEBUG] 2024-03-31 16:23:11.993 [main] PropertyBinder - MetadataSourceProcessor property festivalID with lazy=false
+[DEBUG] 2024-03-31 16:23:11.994 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.Festival:festivalID]
+[DEBUG] 2024-03-31 16:23:11.996 [main] BasicValueBinder - building BasicValue for festivalID
+[DEBUG] 2024-03-31 16:23:11.997 [main] BasicValue - Skipping column re-registration: Festival.festival_id
+[DEBUG] 2024-03-31 16:23:11.997 [main] PropertyBinder - Building property festivalID
+[DEBUG] 2024-03-31 16:23:11.999 [main] BinderHelper - #makeIdGenerator(BasicValue([Column(festival_id)]), festivalID, org.hibernate.id.enhanced.SequenceStyleGenerator, native, ...)
+[DEBUG] 2024-03-31 16:23:12.001 [main] AnnotatedColumn - Binding column: AnnotatedColumn(column='festival_name')
+[DEBUG] 2024-03-31 16:23:12.001 [main] PropertyBinder - MetadataSourceProcessor property festivalName with lazy=false
+[DEBUG] 2024-03-31 16:23:12.001 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.Festival:festivalName]
+[DEBUG] 2024-03-31 16:23:12.001 [main] BasicValueBinder - building BasicValue for festivalName
+[DEBUG] 2024-03-31 16:23:12.001 [main] BasicValue - Skipping column re-registration: Festival.festival_name
+[DEBUG] 2024-03-31 16:23:12.001 [main] PropertyBinder - Building property festivalName
+[DEBUG] 2024-03-31 16:23:12.001 [main] AnnotatedColumn - Binding column: AnnotatedColumn(column='festival_start_date')
+[DEBUG] 2024-03-31 16:23:12.001 [main] PropertyBinder - MetadataSourceProcessor property festivalStartDate with lazy=false
+[DEBUG] 2024-03-31 16:23:12.001 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.Festival:festivalStartDate]
+[DEBUG] 2024-03-31 16:23:12.001 [main] BasicValueBinder - building BasicValue for festivalStartDate
+[DEBUG] 2024-03-31 16:23:12.001 [main] BasicValue - Skipping column re-registration: Festival.festival_start_date
+[DEBUG] 2024-03-31 16:23:12.001 [main] PropertyBinder - Building property festivalStartDate
+[DEBUG] 2024-03-31 16:23:12.002 [main] AnnotatedColumn - Binding column: AnnotatedJoinColumn(column='region_id')
+[DEBUG] 2024-03-31 16:23:12.003 [main] AnnotatedColumn - Binding column: AnnotatedColumn()
+[DEBUG] 2024-03-31 16:23:12.004 [main] PropertyBinder - Building property region
+[DEBUG] 2024-03-31 16:23:12.004 [main] AnnotatedColumn - Binding column: AnnotatedColumn(column='type_id')
+[DEBUG] 2024-03-31 16:23:12.005 [main] PropertyBinder - MetadataSourceProcessor property typeID with lazy=false
+[DEBUG] 2024-03-31 16:23:12.005 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.Festival:typeID]
+[DEBUG] 2024-03-31 16:23:12.005 [main] BasicValueBinder - building BasicValue for typeID
+[DEBUG] 2024-03-31 16:23:12.005 [main] BasicValue - Skipping column re-registration: Festival.type_id
+[DEBUG] 2024-03-31 16:23:12.005 [main] PropertyBinder - Building property typeID
+[DEBUG] 2024-03-31 16:23:12.005 [main] ClassLoaderServiceImpl - HHH000194: Package not found or wo package-info.java: edu.matc.entity
+[DEBUG] 2024-03-31 16:23:12.007 [main] EntityBinder - Binding entity from annotated class: edu.matc.entity.Region
+[DEBUG] 2024-03-31 16:23:12.007 [main] EntityBinder - Import with entity name Region
+[DEBUG] 2024-03-31 16:23:12.007 [main] EntityBinder - Bind entity edu.matc.entity.Region on table Region
+[DEBUG] 2024-03-31 16:23:12.007 [main] AnnotatedColumn - Binding column: AnnotatedDiscriminatorColumn(column='DTYPE')
+[DEBUG] 2024-03-31 16:23:12.009 [main] AnnotatedColumn - Binding column: AnnotatedColumn(column='region_id')
+[DEBUG] 2024-03-31 16:23:12.009 [main] ClassLoaderAccessImpl - Not known whether passed class name [edu.matc.entity.Region] is safe
+[DEBUG] 2024-03-31 16:23:12.009 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : edu.matc.entity.Region
+[DEBUG] 2024-03-31 16:23:12.009 [main] PropertyBinder - MetadataSourceProcessor property regionID with lazy=false
+[DEBUG] 2024-03-31 16:23:12.009 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.Region:regionID]
+[DEBUG] 2024-03-31 16:23:12.009 [main] BasicValueBinder - building BasicValue for regionID
+[DEBUG] 2024-03-31 16:23:12.009 [main] BasicValue - Skipping column re-registration: Region.region_id
+[DEBUG] 2024-03-31 16:23:12.009 [main] PropertyBinder - Building property regionID
+[DEBUG] 2024-03-31 16:23:12.009 [main] BinderHelper - #makeIdGenerator(BasicValue([Column(region_id)]), regionID, org.hibernate.id.enhanced.SequenceStyleGenerator, native, ...)
+[DEBUG] 2024-03-31 16:23:12.010 [main] AnnotatedColumn - Binding column: AnnotatedJoinColumn()
+[DEBUG] 2024-03-31 16:23:12.010 [main] AnnotatedColumn - Binding column: AnnotatedColumn()
+[DEBUG] 2024-03-31 16:23:12.014 [main] AnnotatedColumn - Binding column: IndexColumn(column='festivals_ORDER')
+[DEBUG] 2024-03-31 16:23:12.015 [main] AnnotatedColumn - Binding column: AnnotatedColumn()
+[DEBUG] 2024-03-31 16:23:12.015 [main] AnnotatedColumn - Binding column: AnnotatedColumn(column='festivals_KEY')
+[DEBUG] 2024-03-31 16:23:12.015 [main] AnnotatedColumn - Binding column: AnnotatedJoinColumn(column='festivals_KEY')
+[DEBUG] 2024-03-31 16:23:12.015 [main] AnnotatedColumn - Binding column: AnnotatedJoinColumn()
+[DEBUG] 2024-03-31 16:23:12.015 [main] AnnotatedColumn - Binding column: AnnotatedJoinColumn()
+[DEBUG] 2024-03-31 16:23:12.016 [main] CollectionBinder - Collection role: edu.matc.entity.Region.festivals
+[DEBUG] 2024-03-31 16:23:12.017 [main] PropertyBinder - Building property festivals
+[DEBUG] 2024-03-31 16:23:12.017 [main] AnnotatedColumn - Binding column: AnnotatedColumn(column='region_name')
+[DEBUG] 2024-03-31 16:23:12.017 [main] PropertyBinder - MetadataSourceProcessor property regionName with lazy=false
+[DEBUG] 2024-03-31 16:23:12.017 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.Region:regionName]
+[DEBUG] 2024-03-31 16:23:12.017 [main] BasicValueBinder - building BasicValue for regionName
+[DEBUG] 2024-03-31 16:23:12.017 [main] BasicValue - Skipping column re-registration: Region.region_name
+[DEBUG] 2024-03-31 16:23:12.017 [main] PropertyBinder - Building property regionName
+[DEBUG] 2024-03-31 16:23:12.017 [main] ClassLoaderServiceImpl - HHH000194: Package not found or wo package-info.java: edu.matc.entity
+[DEBUG] 2024-03-31 16:23:12.017 [main] EntityBinder - Binding entity from annotated class: edu.matc.entity.Type
+[DEBUG] 2024-03-31 16:23:12.018 [main] EntityBinder - Import with entity name Type
+[DEBUG] 2024-03-31 16:23:12.018 [main] EntityBinder - Bind entity edu.matc.entity.Type on table Type
+[DEBUG] 2024-03-31 16:23:12.018 [main] AnnotatedColumn - Binding column: AnnotatedDiscriminatorColumn(column='DTYPE')
+[DEBUG] 2024-03-31 16:23:12.018 [main] AnnotatedColumn - Binding column: AnnotatedColumn(column='type_id')
+[DEBUG] 2024-03-31 16:23:12.018 [main] ClassLoaderAccessImpl - Not known whether passed class name [edu.matc.entity.Type] is safe
+[DEBUG] 2024-03-31 16:23:12.018 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : edu.matc.entity.Type
+[DEBUG] 2024-03-31 16:23:12.018 [main] PropertyBinder - MetadataSourceProcessor property typeID with lazy=false
+[DEBUG] 2024-03-31 16:23:12.018 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.Type:typeID]
+[DEBUG] 2024-03-31 16:23:12.018 [main] BasicValueBinder - building BasicValue for typeID
+[DEBUG] 2024-03-31 16:23:12.018 [main] BasicValue - Skipping column re-registration: Type.type_id
+[DEBUG] 2024-03-31 16:23:12.018 [main] PropertyBinder - Building property typeID
+[DEBUG] 2024-03-31 16:23:12.018 [main] BinderHelper - #makeIdGenerator(BasicValue([Column(type_id)]), typeID, org.hibernate.id.enhanced.SequenceStyleGenerator, native, ...)
+[DEBUG] 2024-03-31 16:23:12.018 [main] AnnotatedColumn - Binding column: AnnotatedColumn(column='type')
+[DEBUG] 2024-03-31 16:23:12.018 [main] PropertyBinder - MetadataSourceProcessor property type with lazy=false
+[DEBUG] 2024-03-31 16:23:12.018 [main] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.Type:type]
+[DEBUG] 2024-03-31 16:23:12.018 [main] BasicValueBinder - building BasicValue for type
+[DEBUG] 2024-03-31 16:23:12.018 [main] BasicValue - Skipping column re-registration: Type.type
+[DEBUG] 2024-03-31 16:23:12.018 [main] PropertyBinder - Building property type
+[DEBUG] 2024-03-31 16:23:12.019 [main] ClassLoaderServiceImpl - HHH000194: Package not found or wo package-info.java: edu.matc.entity
+[DEBUG] 2024-03-31 16:23:12.019 [main] BasicValueBinder - Starting `BasicValueBinder#fillSimpleValue` for festivalID
+[DEBUG] 2024-03-31 16:23:12.019 [main] BasicValueBinder - Starting `BasicValueBinder#fillSimpleValue` for festivalName
+[DEBUG] 2024-03-31 16:23:12.020 [main] BasicValueBinder - Starting `BasicValueBinder#fillSimpleValue` for festivalStartDate
+[DEBUG] 2024-03-31 16:23:12.020 [main] BasicValueBinder - Starting `BasicValueBinder#fillSimpleValue` for typeID
+[DEBUG] 2024-03-31 16:23:12.020 [main] BasicValueBinder - Starting `BasicValueBinder#fillSimpleValue` for regionID
+[DEBUG] 2024-03-31 16:23:12.020 [main] BasicValueBinder - Starting `BasicValueBinder#fillSimpleValue` for regionName
+[DEBUG] 2024-03-31 16:23:12.020 [main] BasicValueBinder - Starting `BasicValueBinder#fillSimpleValue` for typeID
+[DEBUG] 2024-03-31 16:23:12.020 [main] BasicValueBinder - Starting `BasicValueBinder#fillSimpleValue` for type
+[DEBUG] 2024-03-31 16:23:12.022 [main] PrimaryKey - Forcing column [festival_id] to be non-null as it is part of the primary key for table [festival]
+[DEBUG] 2024-03-31 16:23:12.022 [main] PrimaryKey - Forcing column [region_id] to be non-null as it is part of the primary key for table [region]
+[DEBUG] 2024-03-31 16:23:12.022 [main] PrimaryKey - Forcing column [type_id] to be non-null as it is part of the primary key for table [type]
+[DEBUG] 2024-03-31 16:23:12.023 [main] CollectionSecondPass - Second pass for collection: edu.matc.entity.Region.festivals
+[DEBUG] 2024-03-31 16:23:12.023 [main] CollectionBinder - Binding a OneToMany: edu.matc.entity.Region.festivals through a foreign key
+[DEBUG] 2024-03-31 16:23:12.024 [main] CollectionBinder - Mapping collection: edu.matc.entity.Region.festivals -> Festival
+[DEBUG] 2024-03-31 16:23:12.024 [main] TableBinder - Retrieving property edu.matc.entity.Festival.region
+[DEBUG] 2024-03-31 16:23:12.024 [main] CollectionSecondPass - Mapped collection key: region_id, one-to-many: edu.matc.entity.Festival
+[DEBUG] 2024-03-31 16:23:12.024 [main] InFlightMetadataCollectorImpl - Resolving reference to class: edu.matc.entity.Region
+[DEBUG] 2024-03-31 16:23:12.030 [main] InFlightMetadataCollectorImpl - Resolving reference to class: edu.matc.entity.Region
+[DEBUG] 2024-03-31 16:23:12.161 [main] SessionFactoryImpl - Building session factory
+[DEBUG] 2024-03-31 16:23:12.178 [main] SessionFactoryServiceRegistryImpl - EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+[DEBUG] 2024-03-31 16:23:12.179 [main] SessionFactoryImpl - Instantiating SessionFactory with settings: {gopherProxySet=false, awt.toolkit=sun.lwawt.macosx.LWCToolkit, java.specification.version=11, sun.cpu.isalist=, hibernate.c3p0.idle_test_period=3000, sun.jnu.encoding=UTF-8, hibernate.c3p0.min_size=5, java.class.path=/Users/jennifercecil/IdeaProjects/EntJavaTeamProject/target/test-classes:/Users/jennifercecil/IdeaProjects/EntJavaTeamProject/target/classes:/Users/jennifercecil/.m2/repository/org/glassfish/jersey/containers/jersey-container-servlet/2.29.1/jersey-container-servlet-2.29.1.jar:/Users/jennifercecil/.m2/repository/org/glassfish/jersey/containers/jersey-container-servlet-core/2.29.1/jersey-container-servlet-core-2.29.1.jar:/Users/jennifercecil/.m2/repository/org/glassfish/hk2/external/jakarta.inject/2.6.1/jakarta.inject-2.6.1.jar:/Users/jennifercecil/.m2/repository/org/glassfish/jersey/core/jersey-common/2.29.1/jersey-common-2.29.1.jar:/Users/jennifercecil/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar:/Users/jennifercecil/.m2/repository/org/glassfish/hk2/osgi-resource-locator/1.0.3/osgi-resource-locator-1.0.3.jar:/Users/jennifercecil/.m2/repository/com/sun/activation/jakarta.activation/1.2.1/jakarta.activation-1.2.1.jar:/Users/jennifercecil/.m2/repository/org/glassfish/jersey/core/jersey-server/2.29.1/jersey-server-2.29.1.jar:/Users/jennifercecil/.m2/repository/org/glassfish/jersey/core/jersey-client/2.29.1/jersey-client-2.29.1.jar:/Users/jennifercecil/.m2/repository/org/glassfish/jersey/media/jersey-media-jaxb/2.29.1/jersey-media-jaxb-2.29.1.jar:/Users/jennifercecil/.m2/repository/jakarta/validation/jakarta.validation-api/2.0.2/jakarta.validation-api-2.0.2.jar:/Users/jennifercecil/.m2/repository/jakarta/ws/rs/jakarta.ws.rs-api/2.1.6/jakarta.ws.rs-api-2.1.6.jar:/Users/jennifercecil/.m2/repository/org/glassfish/jersey/inject/jersey-hk2/2.29.1/jersey-hk2-2.29.1.jar:/Users/jennifercecil/.m2/repository/org/glassfish/hk2/hk2-locator/2.6.1/hk2-locator-2.6.1.jar:/Users/jennifercecil/.m2/repository/org/glassfish/hk2/external/aopalliance-repackaged/2.6.1/aopalliance-repackaged-2.6.1.jar:/Users/jennifercecil/.m2/repository/org/glassfish/hk2/hk2-api/2.6.1/hk2-api-2.6.1.jar:/Users/jennifercecil/.m2/repository/org/glassfish/hk2/hk2-utils/2.6.1/hk2-utils-2.6.1.jar:/Users/jennifercecil/.m2/repository/org/javassist/javassist/3.22.0-CR2/javassist-3.22.0-CR2.jar:/Users/jennifercecil/.m2/repository/org/hibernate/orm/hibernate-core/6.4.3.Final/hibernate-core-6.4.3.Final.jar:/Users/jennifercecil/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.1.0/jakarta.persistence-api-3.1.0.jar:/Users/jennifercecil/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar:/Users/jennifercecil/.m2/repository/org/jboss/logging/jboss-logging/3.5.0.Final/jboss-logging-3.5.0.Final.jar:/Users/jennifercecil/.m2/repository/org/hibernate/common/hibernate-commons-annotations/6.0.6.Final/hibernate-commons-annotations-6.0.6.Final.jar:/Users/jennifercecil/.m2/repository/io/smallrye/jandex/3.1.2/jandex-3.1.2.jar:/Users/jennifercecil/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar:/Users/jennifercecil/.m2/repository/net/bytebuddy/byte-buddy/1.14.7/byte-buddy-1.14.7.jar:/Users/jennifercecil/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.0/jakarta.xml.bind-api-4.0.0.jar:/Users/jennifercecil/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.0/jakarta.activation-api-2.1.0.jar:/Users/jennifercecil/.m2/repository/org/glassfish/jaxb/jaxb-runtime/4.0.2/jaxb-runtime-4.0.2.jar:/Users/jennifercecil/.m2/repository/org/glassfish/jaxb/jaxb-core/4.0.2/jaxb-core-4.0.2.jar:/Users/jennifercecil/.m2/repository/org/eclipse/angus/angus-activation/2.0.0/angus-activation-2.0.0.jar:/Users/jennifercecil/.m2/repository/org/glassfish/jaxb/txw2/4.0.2/txw2-4.0.2.jar:/Users/jennifercecil/.m2/repository/com/sun/istack/istack-commons-runtime/4.1.1/istack-commons-runtime-4.1.1.jar:/Users/jennifercecil/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.jar:/Users/jennifercecil/.m2/repository/org/antlr/antlr4-runtime/4.13.0/antlr4-runtime-4.13.0.jar:/Users/jennifercecil/.m2/repository/org/hibernate/orm/hibernate-c3p0/6.4.3.Final/hibernate-c3p0-6.4.3.Final.jar:/Users/jennifercecil/.m2/repository/com/mchange/c3p0/0.9.5.5/c3p0-0.9.5.5.jar:/Users/jennifercecil/.m2/repository/com/mchange/mchange-commons-java/0.2.19/mchange-commons-java-0.2.19.jar:/Users/jennifercecil/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/jennifercecil/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/jennifercecil/.m2/repository/javax/javaee-web-api/7.0/javaee-web-api-7.0.jar:/Users/jennifercecil/.m2/repository/com/mysql/mysql-connector-j/8.0.33/mysql-connector-j-8.0.33.jar:/Users/jennifercecil/.m2/repository/com/google/protobuf/protobuf-java/3.21.9/protobuf-java-3.21.9.jar:/Users/jennifercecil/.m2/repository/javax/servlet/jstl/1.2/jstl-1.2.jar:/Users/jennifercecil/.m2/repository/org/apache/logging/log4j/log4j-api/2.17.1/log4j-api-2.17.1.jar:/Users/jennifercecil/.m2/repository/org/apache/logging/log4j/log4j-core/2.17.1/log4j-core-2.17.1.jar:/Users/jennifercecil/.m2/repository/org/junit/platform/junit-platform-runner/1.0.0/junit-platform-runner-1.0.0.jar:/Users/jennifercecil/.m2/repository/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar:/Users/jennifercecil/.m2/repository/org/junit/platform/junit-platform-launcher/1.0.0/junit-platform-launcher-1.0.0.jar:/Users/jennifercecil/.m2/repository/org/junit/platform/junit-platform-suite-api/1.0.0/junit-platform-suite-api-1.0.0.jar:/Users/jennifercecil/.m2/repository/org/junit/platform/junit-platform-commons/1.0.0/junit-platform-commons-1.0.0.jar:/Users/jennifercecil/.m2/repository/org/junit/vintage/junit-vintage-engine/4.12.0/junit-vintage-engine-4.12.0.jar:/Users/jennifercecil/.m2/repository/org/junit/platform/junit-platform-engine/1.0.0/junit-platform-engine-1.0.0.jar:/Users/jennifercecil/.m2/repository/org/opentest4j/opentest4j/1.0.0/opentest4j-1.0.0.jar:/Users/jennifercecil/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.0.0/junit-jupiter-engine-5.0.0.jar:/Users/jennifercecil/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.0.0/junit-jupiter-api-5.0.0.jar:/Users/jennifercecil/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.10.0/jackson-core-2.10.0.jar:/Users/jennifercecil/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.0/jackson-annotations-2.10.0.jar:/Users/jennifercecil/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.0/jackson-databind-2.10.0.jar:/Users/jennifercecil/.m2/repository/org/testng/testng/7.9.0/testng-7.9.0.jar:/Users/jennifercecil/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/jennifercecil/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/jennifercecil/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/Users/jennifercecil/.m2/repository/org/apache/maven/surefire/surefire-testng-utils/2.19/surefire-testng-utils-2.19.jar:/Users/jennifercecil/.m2/repository/org/apache/maven/surefire/surefire-grouper/2.19/surefire-grouper-2.19.jar:, java.vm.vendor=Eclipse Adoptium, sun.arch.data.model=64, java.vendor.url=https://adoptium.net/, user.timezone=America/Chicago, os.name=Mac OS X, java.vm.specification.version=11, sun.java.launcher=SUN_STANDARD, user.country=US, sun.boot.library.path=/Library/Java/JavaVirtualMachines/temurin-11.jdk/Contents/Home/lib, sun.java.command=/Users/jennifercecil/IdeaProjects/EntJavaTeamProject/target/surefire/surefirebooter403621888730388527.jar /Users/jennifercecil/IdeaProjects/EntJavaTeamProject/target/surefire/surefire14793869674589676534tmp /Users/jennifercecil/IdeaProjects/EntJavaTeamProject/target/surefire/surefire_05920520989343420247tmp, http.nonProxyHosts=local|*.local|169.254/16|*.169.254/16, jdk.debug=release, surefire.test.class.path=/Users/jennifercecil/IdeaProjects/EntJavaTeamProject/target/test-classes:/Users/jennifercecil/IdeaProjects/EntJavaTeamProject/target/classes:/Users/jennifercecil/.m2/repository/org/glassfish/jersey/containers/jersey-container-servlet/2.29.1/jersey-container-servlet-2.29.1.jar:/Users/jennifercecil/.m2/repository/org/glassfish/jersey/containers/jersey-container-servlet-core/2.29.1/jersey-container-servlet-core-2.29.1.jar:/Users/jennifercecil/.m2/repository/org/glassfish/hk2/external/jakarta.inject/2.6.1/jakarta.inject-2.6.1.jar:/Users/jennifercecil/.m2/repository/org/glassfish/jersey/core/jersey-common/2.29.1/jersey-common-2.29.1.jar:/Users/jennifercecil/.m2/repository/jakarta/annotation/jakarta.annotation-api/1.3.5/jakarta.annotation-api-1.3.5.jar:/Users/jennifercecil/.m2/repository/org/glassfish/hk2/osgi-resource-locator/1.0.3/osgi-resource-locator-1.0.3.jar:/Users/jennifercecil/.m2/repository/com/sun/activation/jakarta.activation/1.2.1/jakarta.activation-1.2.1.jar:/Users/jennifercecil/.m2/repository/org/glassfish/jersey/core/jersey-server/2.29.1/jersey-server-2.29.1.jar:/Users/jennifercecil/.m2/repository/org/glassfish/jersey/core/jersey-client/2.29.1/jersey-client-2.29.1.jar:/Users/jennifercecil/.m2/repository/org/glassfish/jersey/media/jersey-media-jaxb/2.29.1/jersey-media-jaxb-2.29.1.jar:/Users/jennifercecil/.m2/repository/jakarta/validation/jakarta.validation-api/2.0.2/jakarta.validation-api-2.0.2.jar:/Users/jennifercecil/.m2/repository/jakarta/ws/rs/jakarta.ws.rs-api/2.1.6/jakarta.ws.rs-api-2.1.6.jar:/Users/jennifercecil/.m2/repository/org/glassfish/jersey/inject/jersey-hk2/2.29.1/jersey-hk2-2.29.1.jar:/Users/jennifercecil/.m2/repository/org/glassfish/hk2/hk2-locator/2.6.1/hk2-locator-2.6.1.jar:/Users/jennifercecil/.m2/repository/org/glassfish/hk2/external/aopalliance-repackaged/2.6.1/aopalliance-repackaged-2.6.1.jar:/Users/jennifercecil/.m2/repository/org/glassfish/hk2/hk2-api/2.6.1/hk2-api-2.6.1.jar:/Users/jennifercecil/.m2/repository/org/glassfish/hk2/hk2-utils/2.6.1/hk2-utils-2.6.1.jar:/Users/jennifercecil/.m2/repository/org/javassist/javassist/3.22.0-CR2/javassist-3.22.0-CR2.jar:/Users/jennifercecil/.m2/repository/org/hibernate/orm/hibernate-core/6.4.3.Final/hibernate-core-6.4.3.Final.jar:/Users/jennifercecil/.m2/repository/jakarta/persistence/jakarta.persistence-api/3.1.0/jakarta.persistence-api-3.1.0.jar:/Users/jennifercecil/.m2/repository/jakarta/transaction/jakarta.transaction-api/2.0.1/jakarta.transaction-api-2.0.1.jar:/Users/jennifercecil/.m2/repository/org/jboss/logging/jboss-logging/3.5.0.Final/jboss-logging-3.5.0.Final.jar:/Users/jennifercecil/.m2/repository/org/hibernate/common/hibernate-commons-annotations/6.0.6.Final/hibernate-commons-annotations-6.0.6.Final.jar:/Users/jennifercecil/.m2/repository/io/smallrye/jandex/3.1.2/jandex-3.1.2.jar:/Users/jennifercecil/.m2/repository/com/fasterxml/classmate/1.5.1/classmate-1.5.1.jar:/Users/jennifercecil/.m2/repository/net/bytebuddy/byte-buddy/1.14.7/byte-buddy-1.14.7.jar:/Users/jennifercecil/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/4.0.0/jakarta.xml.bind-api-4.0.0.jar:/Users/jennifercecil/.m2/repository/jakarta/activation/jakarta.activation-api/2.1.0/jakarta.activation-api-2.1.0.jar:/Users/jennifercecil/.m2/repository/org/glassfish/jaxb/jaxb-runtime/4.0.2/jaxb-runtime-4.0.2.jar:/Users/jennifercecil/.m2/repository/org/glassfish/jaxb/jaxb-core/4.0.2/jaxb-core-4.0.2.jar:/Users/jennifercecil/.m2/repository/org/eclipse/angus/angus-activation/2.0.0/angus-activation-2.0.0.jar:/Users/jennifercecil/.m2/repository/org/glassfish/jaxb/txw2/4.0.2/txw2-4.0.2.jar:/Users/jennifercecil/.m2/repository/com/sun/istack/istack-commons-runtime/4.1.1/istack-commons-runtime-4.1.1.jar:/Users/jennifercecil/.m2/repository/jakarta/inject/jakarta.inject-api/2.0.1/jakarta.inject-api-2.0.1.jar:/Users/jennifercecil/.m2/repository/org/antlr/antlr4-runtime/4.13.0/antlr4-runtime-4.13.0.jar:/Users/jennifercecil/.m2/repository/org/hibernate/orm/hibernate-c3p0/6.4.3.Final/hibernate-c3p0-6.4.3.Final.jar:/Users/jennifercecil/.m2/repository/com/mchange/c3p0/0.9.5.5/c3p0-0.9.5.5.jar:/Users/jennifercecil/.m2/repository/com/mchange/mchange-commons-java/0.2.19/mchange-commons-java-0.2.19.jar:/Users/jennifercecil/.m2/repository/junit/junit/4.13.2/junit-4.13.2.jar:/Users/jennifercecil/.m2/repository/org/hamcrest/hamcrest-core/1.3/hamcrest-core-1.3.jar:/Users/jennifercecil/.m2/repository/javax/javaee-web-api/7.0/javaee-web-api-7.0.jar:/Users/jennifercecil/.m2/repository/com/mysql/mysql-connector-j/8.0.33/mysql-connector-j-8.0.33.jar:/Users/jennifercecil/.m2/repository/com/google/protobuf/protobuf-java/3.21.9/protobuf-java-3.21.9.jar:/Users/jennifercecil/.m2/repository/javax/servlet/jstl/1.2/jstl-1.2.jar:/Users/jennifercecil/.m2/repository/org/apache/logging/log4j/log4j-api/2.17.1/log4j-api-2.17.1.jar:/Users/jennifercecil/.m2/repository/org/apache/logging/log4j/log4j-core/2.17.1/log4j-core-2.17.1.jar:/Users/jennifercecil/.m2/repository/org/junit/platform/junit-platform-runner/1.0.0/junit-platform-runner-1.0.0.jar:/Users/jennifercecil/.m2/repository/org/apiguardian/apiguardian-api/1.0.0/apiguardian-api-1.0.0.jar:/Users/jennifercecil/.m2/repository/org/junit/platform/junit-platform-launcher/1.0.0/junit-platform-launcher-1.0.0.jar:/Users/jennifercecil/.m2/repository/org/junit/platform/junit-platform-suite-api/1.0.0/junit-platform-suite-api-1.0.0.jar:/Users/jennifercecil/.m2/repository/org/junit/platform/junit-platform-commons/1.0.0/junit-platform-commons-1.0.0.jar:/Users/jennifercecil/.m2/repository/org/junit/vintage/junit-vintage-engine/4.12.0/junit-vintage-engine-4.12.0.jar:/Users/jennifercecil/.m2/repository/org/junit/platform/junit-platform-engine/1.0.0/junit-platform-engine-1.0.0.jar:/Users/jennifercecil/.m2/repository/org/opentest4j/opentest4j/1.0.0/opentest4j-1.0.0.jar:/Users/jennifercecil/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.0.0/junit-jupiter-engine-5.0.0.jar:/Users/jennifercecil/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.0.0/junit-jupiter-api-5.0.0.jar:/Users/jennifercecil/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.10.0/jackson-core-2.10.0.jar:/Users/jennifercecil/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.10.0/jackson-annotations-2.10.0.jar:/Users/jennifercecil/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.10.0/jackson-databind-2.10.0.jar:/Users/jennifercecil/.m2/repository/org/testng/testng/7.9.0/testng-7.9.0.jar:/Users/jennifercecil/.m2/repository/org/slf4j/slf4j-api/1.7.36/slf4j-api-1.7.36.jar:/Users/jennifercecil/.m2/repository/com/beust/jcommander/1.82/jcommander-1.82.jar:/Users/jennifercecil/.m2/repository/org/webjars/jquery/3.7.1/jquery-3.7.1.jar:/Users/jennifercecil/.m2/repository/org/apache/maven/surefire/surefire-testng-utils/2.19/surefire-testng-utils-2.19.jar:/Users/jennifercecil/.m2/repository/org/apache/maven/surefire/surefire-grouper/2.19/surefire-grouper-2.19.jar:, sun.cpu.endian=little, user.home=/Users/jennifercecil, hibernate.c3p0.max_statements=50, user.language=en, java.specification.vendor=Oracle Corporation, java.version.date=2024-01-16, java.home=/Library/Java/JavaVirtualMachines/temurin-11.jdk/Contents/Home, file.separator=/, basedir=/Users/jennifercecil/IdeaProjects/EntJavaTeamProject, java.vm.compressedOopsMode=Zero based, line.separator=
+, hibernate.c3p0.timeout=300, java.specification.name=Java Platform API Specification, java.vm.specification.vendor=Oracle Corporation, java.awt.graphicsenv=sun.awt.CGraphicsEnvironment, surefire.real.class.path=/Users/jennifercecil/IdeaProjects/EntJavaTeamProject/target/surefire/surefirebooter403621888730388527.jar, connection.password=g2TRAE8qiJ, sun.management.compiler=HotSpot 64-Bit Tiered Compilers, ftp.nonProxyHosts=local|*.local|169.254/16|*.169.254/16, hibernate.c3p0.max_size=20, java.runtime.version=11.0.22+7, user.name=jennifercecil, path.separator=:, hibernate.connection.username=****, os.version=13.0, java.runtime.name=OpenJDK Runtime Environment, hibernate.connection.url=jdbc:mysql://localhost:3306/wisconsin_festivals_local_test, file.encoding=UTF-8, java.vm.name=OpenJDK 64-Bit Server VM, java.vendor.version=Temurin-11.0.22+7, localRepository=/Users/jennifercecil/.m2/repository, hibernate.connection.driver_class=com.mysql.cj.jdbc.Driver, java.vendor.url.bug=https://github.com/adoptium/adoptium-support/issues, java.io.tmpdir=/var/folders/1p/y1b706mn70sbc9dskr98v7yr0000gn/T/, idea.version=2023.3.4, java.version=11.0.22, user.dir=/Users/jennifercecil/IdeaProjects/EntJavaTeamProject, os.arch=aarch64, connection.username=root, java.vm.specification.name=Java Virtual Machine Specification, java.awt.printerjob=sun.lwawt.macosx.CPrinterJob, hibernate.connection.password=****, sun.os.patch.level=unknown, connection.driver_class=com.mysql.cj.jdbc.Driver, hibernate.boot.CfgXmlAccessService.key=org.hibernate.boot.cfgxml.spi.LoadedConfig@374c3975, java.library.path=/Users/jennifercecil/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:., java.vendor=Eclipse Adoptium, java.vm.info=mixed mode, java.vm.version=11.0.22+7, java.specification.maintenance.version=2, sun.io.unicode.encoding=UnicodeBig, connection.url=jdbc:mysql://localhost:3306/wisconsin_festivals_local_test, socksNonProxyHosts=local|*.local|169.254/16|*.169.254/16, java.class.version=55.0}
+[DEBUG] 2024-03-31 16:23:12.181 [main] SessionFactoryImpl - Session factory constructed with filter configurations : {}
+[DEBUG] 2024-03-31 16:23:12.184 [main] SchemaManagementToolCoordinator - No schema actions specified for contributor `orm`; doing nothing
+[DEBUG] 2024-03-31 16:23:12.202 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(max)] under max; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.202 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(min)] under min; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.202 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(sum)] under sum; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.202 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(avg)] under avg; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.203 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CountFunction@58164e9a] under count; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.203 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.EveryAnyEmulation@f03ee8f] under every; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.203 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.EveryAnyEmulation@40dd552c] under any; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.203 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(floor)] under floor; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.203 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(ceiling)] under ceiling; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.203 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(mod)] under mod; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.203 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(abs)] under abs; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.203 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(sign)] under sign; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.203 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(sqrt)] under sqrt; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.203 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(ln)] under ln; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.203 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(exp)] under exp; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.203 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(power)] under power; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.203 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(round)] under round; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.203 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(sin)] under sin; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.203 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(cos)] under cos; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.203 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(tan)] under tan; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.203 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(asin)] under asin; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.203 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(acos)] under acos; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.203 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(atan)] under atan; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.203 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(atan2)] under atan2; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.204 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@474e34e4] under sinh; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.204 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@7e2c6702] under cosh; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.204 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@5fb7ab9c] under tanh; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.204 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@6734ff92] under pi; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.204 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@51eb0e84] under log; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.204 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(coalesce)] under coalesce; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.204 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(nullif)] under nullif; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.204 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(left)] under left; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.205 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(right)] under right; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.205 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(replace)] under replace; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.205 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(concat)] under concat; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.205 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(lower)] under lower; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.205 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(upper)] under upper; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.205 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(substring)] under substring; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.205 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(locate)] under locate; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.205 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(character_length)] under character_length; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.205 [main] SqmFunctionRegistry - Registering alternate key : length -> character_length
+[DEBUG] 2024-03-31 16:23:12.205 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.LocatePositionEmulation@7fc7152e] under position; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.206 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.InsertSubstringOverlayEmulation@13aed42b] under overlay; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.207 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.TrimFunction@51ed2f68] under trim; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.207 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CastFunction@4fbaa7f5] under cast; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.207 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@3b3056a6] under collate; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.207 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.ExtractFunction@72fb989b] under extract; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.207 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(least)] under least; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.207 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(greatest)] under greatest; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.207 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CoalesceIfnullEmulation@7cdb7fc] under ifnull; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.207 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(lpad)] under lpad; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.207 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(rpad)] under rpad; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.208 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.LpadRpadPadEmulation@7d8b66d9] under pad; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.208 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CastStrEmulation@647fb583] under str; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.208 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.FormatFunction@1182413a] under format; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.209 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.TimestampaddFunction@1a785fd5] under timestampadd; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.209 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.TimestampdiffFunction@5cf0673d] under timestampdiff; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.209 [main] SqmFunctionRegistry - Registering alternate key : dateadd -> timestampadd
+[DEBUG] 2024-03-31 16:23:12.209 [main] SqmFunctionRegistry - Registering alternate key : datediff -> timestampdiff
+[DEBUG] 2024-03-31 16:23:12.209 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CurrentFunction@ad0bb4e] under current_date; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.209 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CurrentFunction@7196a8f1] under current_time; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.209 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CurrentFunction@6a6da47a] under current_timestamp; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.209 [main] SqmFunctionRegistry - Registering alternate key : current date -> current_date
+[DEBUG] 2024-03-31 16:23:12.209 [main] SqmFunctionRegistry - Registering alternate key : current time -> current_time
+[DEBUG] 2024-03-31 16:23:12.209 [main] SqmFunctionRegistry - Registering alternate key : current timestamp -> current_timestamp
+[DEBUG] 2024-03-31 16:23:12.209 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CurrentFunction@8f39224] under local_date; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.209 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CurrentFunction@7f642bf] under local_time; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.209 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CurrentFunction@43e3a390] under local_datetime; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.209 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CurrentFunction@44aa91e2] under offset_datetime; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.209 [main] SqmFunctionRegistry - Registering alternate key : local date -> local_date
+[DEBUG] 2024-03-31 16:23:12.209 [main] SqmFunctionRegistry - Registering alternate key : local time -> local_time
+[DEBUG] 2024-03-31 16:23:12.209 [main] SqmFunctionRegistry - Registering alternate key : local datetime -> local_datetime
+[DEBUG] 2024-03-31 16:23:12.209 [main] SqmFunctionRegistry - Registering alternate key : offset datetime -> offset_datetime
+[DEBUG] 2024-03-31 16:23:12.209 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.CurrentFunction@50dc49e1] under instant; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.209 [main] SqmFunctionRegistry - Registering alternate key : current_instant -> instant
+[DEBUG] 2024-03-31 16:23:12.209 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.SqlFunction@19bfbe28] under sql; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.210 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(soundex)] under soundex; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.210 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(radians)] under radians; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.210 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(degrees)] under degrees; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.210 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(cot)] under cot; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.210 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(log)] under log; prior registration was org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@51eb0e84
+[DEBUG] 2024-03-31 16:23:12.210 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(log2)] under log2; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.210 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(log10)] under log10; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.210 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(ltrim)] under ltrim; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.210 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(rtrim)] under rtrim; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.210 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(octet_length)] under octet_length; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.210 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(reverse)] under reverse; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.210 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(space)] under space; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.210 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(repeat)] under repeat; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.210 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.MultipatternSqmFunctionDescriptor@75ed125a] under lpad; prior registration was NamedSqmFunctionTemplate(lpad)
+[DEBUG] 2024-03-31 16:23:12.210 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.MultipatternSqmFunctionDescriptor@653a5967] under rpad; prior registration was NamedSqmFunctionTemplate(rpad)
+[DEBUG] 2024-03-31 16:23:12.210 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(md5)] under md5; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.210 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(day)] under day; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.210 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(month)] under month; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.210 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(year)] under year; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.210 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(hour)] under hour; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.210 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(minute)] under minute; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.210 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(second)] under second; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.210 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(microsecond)] under microsecond; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.210 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(dayofweek)] under dayofweek; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.210 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(dayofmonth)] under dayofmonth; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.210 [main] SqmFunctionRegistry - Registering alternate key : day -> dayofmonth
+[DEBUG] 2024-03-31 16:23:12.210 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(dayofyear)] under dayofyear; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.210 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(week)] under week; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.210 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(quarter)] under quarter; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.210 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(monthname)] under monthname; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.210 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(dayname)] under dayname; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.210 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(last_day)] under last_day; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.210 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(date)] under date; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.211 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(timestamp)] under timestamp; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.211 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(time)] under time; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.211 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(utc_date)] under utc_date; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.211 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(utc_time)] under utc_time; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.211 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(utc_timestamp)] under utc_timestamp; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.211 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(rand)] under rand; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.211 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(crc32)] under crc32; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.211 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(sha1)] under sha1; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.211 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(sha2)] under sha2; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.211 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(sha)] under sha; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.211 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(bit_length)] under bit_length; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.211 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(octet_length)] under octet_length; prior registration was NamedSqmFunctionTemplate(octet_length)
+[DEBUG] 2024-03-31 16:23:12.211 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(ascii)] under ascii; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.211 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(instr)] under instr; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.211 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(substr)] under substr; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.211 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@5a85b4e6] under position; prior registration was org.hibernate.dialect.function.LocatePositionEmulation@7fc7152e
+[DEBUG] 2024-03-31 16:23:12.211 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(curtime)] under curtime; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.211 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(curdate)] under curdate; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.211 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(now)] under now; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.212 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.TruncFunction@117b2cc6] under trunc; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.213 [main] SqmFunctionRegistry - Registering alternate key : truncate -> trunc
+[DEBUG] 2024-03-31 16:23:12.213 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(insert)] under insert; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.213 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@6def0632] under bitand; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.213 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@49038f97] under bitor; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.213 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@36211bbc] under bitxor; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.213 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@7ef41ca2] under bitnot; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.213 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(bit_and)] under bit_and; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.213 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(bit_or)] under bit_or; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.213 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(stddev)] under stddev; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.213 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(stddev_pop)] under stddev_pop; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.213 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(stddev_samp)] under stddev_samp; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.213 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(variance)] under variance; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.213 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(var_pop)] under var_pop; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.213 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(var_samp)] under var_samp; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.213 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(datediff)] under datediff; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.213 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(adddate)] under adddate; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.213 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(subdate)] under subdate; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.213 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(addtime)] under addtime; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.213 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(subtime)] under subtime; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.213 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.FormatFunction@6b3f4bd8] under format; prior registration was org.hibernate.dialect.function.FormatFunction@1182413a
+[DEBUG] 2024-03-31 16:23:12.213 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(makedate)] under makedate; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.213 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(maketime)] under maketime; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.213 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(localtime)] under localtime; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.213 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(localtimestamp)] under localtimestamp; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.213 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(localtime)] under local_time; prior registration was org.hibernate.dialect.function.CurrentFunction@7f642bf
+[DEBUG] 2024-03-31 16:23:12.213 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(localtimestamp)] under local_datetime; prior registration was org.hibernate.dialect.function.CurrentFunction@43e3a390
+[DEBUG] 2024-03-31 16:23:12.213 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(localtime)] under localtime; prior registration was NamedSqmFunctionTemplate(localtime)
+[DEBUG] 2024-03-31 16:23:12.213 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@3e151e1f] under pi; prior registration was org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@6734ff92
+[DEBUG] 2024-03-31 16:23:12.213 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@d70e9a] under chr; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.213 [main] SqmFunctionRegistry - Registering alternate key : char -> chr
+[DEBUG] 2024-03-31 16:23:12.213 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.query.sqm.function.PatternBasedSqmFunctionDescriptor@5e98032e] under sysdate; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.213 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(row_number)] under row_number; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.213 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(lag)] under lag; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.213 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(lead)] under lead; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.213 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(first_value)] under first_value; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.213 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(last_value)] under last_value; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.213 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [NamedSqmFunctionTemplate(nth_value)] under nth_value; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.214 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.HypotheticalSetWindowEmulation@516195cf] under rank; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.214 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.HypotheticalSetWindowEmulation@4eeb14e0] under dense_rank; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.214 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.HypotheticalSetWindowEmulation@26ca12a2] under percent_rank; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.214 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.HypotheticalSetWindowEmulation@3d4ecc67] under cume_dist; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.214 [main] SqmFunctionRegistry - Registered SqmFunctionTemplate [org.hibernate.dialect.function.ListaggGroupConcatEmulation@4b4927e5] under listagg; prior registration was null
+[DEBUG] 2024-03-31 16:23:12.216 [main] HQL_FUNCTIONS - abs(NUMERIC arg)
+[DEBUG] 2024-03-31 16:23:12.216 [main] HQL_FUNCTIONS - Double acos(NUMERIC arg)
+[DEBUG] 2024-03-31 16:23:12.216 [main] HQL_FUNCTIONS - adddate(DATE datetime, INTEGER days)
+[DEBUG] 2024-03-31 16:23:12.216 [main] HQL_FUNCTIONS - addtime(TIME datetime, TIME time)
+[DEBUG] 2024-03-31 16:23:12.216 [main] HQL_FUNCTIONS - Boolean any(BOOLEAN arg)
+[DEBUG] 2024-03-31 16:23:12.216 [main] HQL_FUNCTIONS - Integer ascii(STRING arg)
+[DEBUG] 2024-03-31 16:23:12.216 [main] HQL_FUNCTIONS - Double asin(NUMERIC arg)
+[DEBUG] 2024-03-31 16:23:12.216 [main] HQL_FUNCTIONS - Double atan(NUMERIC arg)
+[DEBUG] 2024-03-31 16:23:12.216 [main] HQL_FUNCTIONS - Double atan2(NUMERIC arg0, NUMERIC arg1)
+[DEBUG] 2024-03-31 16:23:12.216 [main] HQL_FUNCTIONS - avg(arg)
+[DEBUG] 2024-03-31 16:23:12.216 [main] HQL_FUNCTIONS - bit_and(arg)
+[DEBUG] 2024-03-31 16:23:12.216 [main] HQL_FUNCTIONS - Integer bit_length(STRING_OR_CLOB arg)
+[DEBUG] 2024-03-31 16:23:12.216 [main] HQL_FUNCTIONS - bit_or(arg)
+[DEBUG] 2024-03-31 16:23:12.216 [main] HQL_FUNCTIONS - bitand(arg0, arg1)
+[DEBUG] 2024-03-31 16:23:12.216 [main] HQL_FUNCTIONS - bitnot(arg)
+[DEBUG] 2024-03-31 16:23:12.217 [main] HQL_FUNCTIONS - bitor(arg0, arg1)
+[DEBUG] 2024-03-31 16:23:12.217 [main] HQL_FUNCTIONS - bitxor(arg0, arg1)
+[DEBUG] 2024-03-31 16:23:12.217 [main] HQL_FUNCTIONS - cast(arg as Type)
+[DEBUG] 2024-03-31 16:23:12.217 [main] HQL_FUNCTIONS - ceiling(NUMERIC arg)
+[DEBUG] 2024-03-31 16:23:12.217 [main] HQL_FUNCTIONS - Character char(INTEGER arg)
+[DEBUG] 2024-03-31 16:23:12.217 [main] HQL_FUNCTIONS - Integer character_length(STRING_OR_CLOB arg)
+[DEBUG] 2024-03-31 16:23:12.217 [main] HQL_FUNCTIONS - Character chr(INTEGER arg)
+[DEBUG] 2024-03-31 16:23:12.217 [main] HQL_FUNCTIONS - coalesce(arg0[, arg1[, ...]])
+[DEBUG] 2024-03-31 16:23:12.217 [main] HQL_FUNCTIONS - String collate(STRING string as COLLATION collation)
+[DEBUG] 2024-03-31 16:23:12.217 [main] HQL_FUNCTIONS - String concat(STRING string0[, STRING string1[, ...]])
+[DEBUG] 2024-03-31 16:23:12.217 [main] HQL_FUNCTIONS - Double cos(NUMERIC arg)
+[DEBUG] 2024-03-31 16:23:12.217 [main] HQL_FUNCTIONS - Double cosh(NUMERIC arg)
+[DEBUG] 2024-03-31 16:23:12.217 [main] HQL_FUNCTIONS - Double cot(NUMERIC arg)
+[DEBUG] 2024-03-31 16:23:12.217 [main] HQL_FUNCTIONS - Long count([distinct ]{arg|*})
+[DEBUG] 2024-03-31 16:23:12.217 [main] HQL_FUNCTIONS - Integer crc32(arg)
+[DEBUG] 2024-03-31 16:23:12.217 [main] HQL_FUNCTIONS - Double cume_dist([arg0[, ...]])
+[DEBUG] 2024-03-31 16:23:12.217 [main] HQL_FUNCTIONS - Date curdate()
+[DEBUG] 2024-03-31 16:23:12.217 [main] HQL_FUNCTIONS - Date current date
+[DEBUG] 2024-03-31 16:23:12.217 [main] HQL_FUNCTIONS - Time current time
+[DEBUG] 2024-03-31 16:23:12.217 [main] HQL_FUNCTIONS - Timestamp current timestamp
+[DEBUG] 2024-03-31 16:23:12.217 [main] HQL_FUNCTIONS - Date current_date
+[DEBUG] 2024-03-31 16:23:12.217 [main] HQL_FUNCTIONS - Instant current_instant
+[DEBUG] 2024-03-31 16:23:12.217 [main] HQL_FUNCTIONS - Time current_time
+[DEBUG] 2024-03-31 16:23:12.217 [main] HQL_FUNCTIONS - Timestamp current_timestamp
+[DEBUG] 2024-03-31 16:23:12.217 [main] HQL_FUNCTIONS - Time curtime()
+[DEBUG] 2024-03-31 16:23:12.217 [main] HQL_FUNCTIONS - Date date(arg)
+[DEBUG] 2024-03-31 16:23:12.217 [main] HQL_FUNCTIONS - dateadd(TEMPORAL_UNIT field, INTEGER magnitude, TEMPORAL datetime)
+[DEBUG] 2024-03-31 16:23:12.217 [main] HQL_FUNCTIONS - Integer datediff(DATE end, DATE start)
+[DEBUG] 2024-03-31 16:23:12.217 [main] HQL_FUNCTIONS - Integer day(DATE arg)
+[DEBUG] 2024-03-31 16:23:12.217 [main] HQL_FUNCTIONS - String dayname(DATE arg)
+[DEBUG] 2024-03-31 16:23:12.217 [main] HQL_FUNCTIONS - Integer dayofmonth(DATE arg)
+[DEBUG] 2024-03-31 16:23:12.217 [main] HQL_FUNCTIONS - Integer dayofweek(DATE arg)
+[DEBUG] 2024-03-31 16:23:12.217 [main] HQL_FUNCTIONS - Integer dayofyear(DATE arg)
+[DEBUG] 2024-03-31 16:23:12.217 [main] HQL_FUNCTIONS - Double degrees(NUMERIC arg)
+[DEBUG] 2024-03-31 16:23:12.217 [main] HQL_FUNCTIONS - Long dense_rank([arg0[, ...]])
+[DEBUG] 2024-03-31 16:23:12.217 [main] HQL_FUNCTIONS - Boolean every(BOOLEAN arg)
+[DEBUG] 2024-03-31 16:23:12.217 [main] HQL_FUNCTIONS - Double exp(NUMERIC arg)
+[DEBUG] 2024-03-31 16:23:12.217 [main] HQL_FUNCTIONS - extract(TEMPORAL_UNIT field from TEMPORAL arg)
+[DEBUG] 2024-03-31 16:23:12.217 [main] HQL_FUNCTIONS - first_valueANY value
+[DEBUG] 2024-03-31 16:23:12.217 [main] HQL_FUNCTIONS - floor(NUMERIC arg)
+[DEBUG] 2024-03-31 16:23:12.217 [main] HQL_FUNCTIONS - String format(TEMPORAL datetime as STRING pattern)
+[DEBUG] 2024-03-31 16:23:12.217 [main] HQL_FUNCTIONS - greatest(COMPARABLE arg0, COMPARABLE arg1[, arg2[, ...]])
+[DEBUG] 2024-03-31 16:23:12.217 [main] HQL_FUNCTIONS - Integer hour(TIME arg)
+[DEBUG] 2024-03-31 16:23:12.217 [main] HQL_FUNCTIONS - ifnull(arg0, arg1)
+[DEBUG] 2024-03-31 16:23:12.217 [main] HQL_FUNCTIONS - String insert(STRING string, INTEGER start, INTEGER length, STRING replacement)
+[DEBUG] 2024-03-31 16:23:12.217 [main] HQL_FUNCTIONS - Instant instant
+[DEBUG] 2024-03-31 16:23:12.217 [main] HQL_FUNCTIONS - Integer instr(STRING string, STRING pattern[, INTEGER start[, INTEGER occurrence]])
+[DEBUG] 2024-03-31 16:23:12.217 [main] HQL_FUNCTIONS - lagANY value[, INTEGER offset[, ANY default]]
+[DEBUG] 2024-03-31 16:23:12.217 [main] HQL_FUNCTIONS - Date last_day(DATE arg)
+[DEBUG] 2024-03-31 16:23:12.217 [main] HQL_FUNCTIONS - last_valueANY value
+[DEBUG] 2024-03-31 16:23:12.217 [main] HQL_FUNCTIONS - leadANY value[, INTEGER offset[, ANY default]]
+[DEBUG] 2024-03-31 16:23:12.217 [main] HQL_FUNCTIONS - least(COMPARABLE arg0, COMPARABLE arg1[, arg2[, ...]])
+[DEBUG] 2024-03-31 16:23:12.217 [main] HQL_FUNCTIONS - String left(STRING string, INTEGER length)
+[DEBUG] 2024-03-31 16:23:12.217 [main] HQL_FUNCTIONS - Integer length(STRING_OR_CLOB arg)
+[DEBUG] 2024-03-31 16:23:12.217 [main] HQL_FUNCTIONS - String listagg(STRING arg0, STRING arg1)
+[DEBUG] 2024-03-31 16:23:12.217 [main] HQL_FUNCTIONS - Double ln(NUMERIC arg)
+[DEBUG] 2024-03-31 16:23:12.217 [main] HQL_FUNCTIONS - LocalDate local date
+[DEBUG] 2024-03-31 16:23:12.217 [main] HQL_FUNCTIONS - LocalDateTime local datetime
+[DEBUG] 2024-03-31 16:23:12.217 [main] HQL_FUNCTIONS - LocalTime local time
+[DEBUG] 2024-03-31 16:23:12.217 [main] HQL_FUNCTIONS - LocalDate local_date
+[DEBUG] 2024-03-31 16:23:12.217 [main] HQL_FUNCTIONS - LocalDateTime local_datetime
+[DEBUG] 2024-03-31 16:23:12.217 [main] HQL_FUNCTIONS - LocalTime local_time
+[DEBUG] 2024-03-31 16:23:12.217 [main] HQL_FUNCTIONS - Timestamp localtime
+[DEBUG] 2024-03-31 16:23:12.217 [main] HQL_FUNCTIONS - Timestamp localtimestamp
+[DEBUG] 2024-03-31 16:23:12.217 [main] HQL_FUNCTIONS - Integer locate(STRING pattern, STRING string[, INTEGER start])
+[DEBUG] 2024-03-31 16:23:12.217 [main] HQL_FUNCTIONS - Double log(NUMERIC arg0[, NUMERIC arg1])
+[DEBUG] 2024-03-31 16:23:12.217 [main] HQL_FUNCTIONS - Double log10(NUMERIC arg)
+[DEBUG] 2024-03-31 16:23:12.217 [main] HQL_FUNCTIONS - Double log2(NUMERIC arg)
+[DEBUG] 2024-03-31 16:23:12.217 [main] HQL_FUNCTIONS - String lower(STRING string)
+[DEBUG] 2024-03-31 16:23:12.217 [main] HQL_FUNCTIONS - String lpad(string, length[, padding])
+[DEBUG] 2024-03-31 16:23:12.218 [main] HQL_FUNCTIONS - String ltrim(STRING string[, STRING characters])
+[DEBUG] 2024-03-31 16:23:12.218 [main] HQL_FUNCTIONS - Date makedate(INTEGER year, INTEGER dayofyear)
+[DEBUG] 2024-03-31 16:23:12.218 [main] HQL_FUNCTIONS - Time maketime(INTEGER hour, INTEGER min, INTEGER sec)
+[DEBUG] 2024-03-31 16:23:12.218 [main] HQL_FUNCTIONS - max(COMPARABLE arg)
+[DEBUG] 2024-03-31 16:23:12.218 [main] HQL_FUNCTIONS - String md5(arg)
+[DEBUG] 2024-03-31 16:23:12.218 [main] HQL_FUNCTIONS - Integer microsecond(TIME arg)
+[DEBUG] 2024-03-31 16:23:12.218 [main] HQL_FUNCTIONS - min(COMPARABLE arg)
+[DEBUG] 2024-03-31 16:23:12.218 [main] HQL_FUNCTIONS - Integer minute(TIME arg)
+[DEBUG] 2024-03-31 16:23:12.218 [main] HQL_FUNCTIONS - Integer mod(INTEGER arg0, INTEGER arg1)
+[DEBUG] 2024-03-31 16:23:12.218 [main] HQL_FUNCTIONS - Integer month(DATE arg)
+[DEBUG] 2024-03-31 16:23:12.218 [main] HQL_FUNCTIONS - String monthname(DATE arg)
+[DEBUG] 2024-03-31 16:23:12.218 [main] HQL_FUNCTIONS - Timestamp now()
+[DEBUG] 2024-03-31 16:23:12.218 [main] HQL_FUNCTIONS - nth_valueANY value, INTEGER nth
+[DEBUG] 2024-03-31 16:23:12.218 [main] HQL_FUNCTIONS - nullif(arg0, arg1)
+[DEBUG] 2024-03-31 16:23:12.218 [main] HQL_FUNCTIONS - Integer octet_length(STRING_OR_CLOB arg)
+[DEBUG] 2024-03-31 16:23:12.218 [main] HQL_FUNCTIONS - OffsetDateTime offset datetime
+[DEBUG] 2024-03-31 16:23:12.218 [main] HQL_FUNCTIONS - OffsetDateTime offset_datetime
+[DEBUG] 2024-03-31 16:23:12.218 [main] HQL_FUNCTIONS - String overlay(STRING string placing STRING replacement from INTEGER start[ for INTEGER length])
+[DEBUG] 2024-03-31 16:23:12.218 [main] HQL_FUNCTIONS - String pad(STRING string with INTEGER length {leading|trailing}[ STRING character])
+[DEBUG] 2024-03-31 16:23:12.218 [main] HQL_FUNCTIONS - Double percent_rank([arg0[, ...]])
+[DEBUG] 2024-03-31 16:23:12.218 [main] HQL_FUNCTIONS - Double pi
+[DEBUG] 2024-03-31 16:23:12.218 [main] HQL_FUNCTIONS - Integer position(STRING pattern in STRING string)
+[DEBUG] 2024-03-31 16:23:12.218 [main] HQL_FUNCTIONS - Double power(NUMERIC arg0, NUMERIC arg1)
+[DEBUG] 2024-03-31 16:23:12.218 [main] HQL_FUNCTIONS - Integer quarter(DATE arg)
+[DEBUG] 2024-03-31 16:23:12.218 [main] HQL_FUNCTIONS - Double radians(NUMERIC arg)
+[DEBUG] 2024-03-31 16:23:12.218 [main] HQL_FUNCTIONS - Double rand([INTEGER seed])
+[DEBUG] 2024-03-31 16:23:12.218 [main] HQL_FUNCTIONS - Long rank([arg0[, ...]])
+[DEBUG] 2024-03-31 16:23:12.218 [main] HQL_FUNCTIONS - String repeat(STRING string, INTEGER times)
+[DEBUG] 2024-03-31 16:23:12.218 [main] HQL_FUNCTIONS - String replace(STRING string, STRING pattern, STRING replacement)
+[DEBUG] 2024-03-31 16:23:12.218 [main] HQL_FUNCTIONS - String reverse(STRING arg)
+[DEBUG] 2024-03-31 16:23:12.218 [main] HQL_FUNCTIONS - String right(STRING string, INTEGER length)
+[DEBUG] 2024-03-31 16:23:12.218 [main] HQL_FUNCTIONS - round(NUMERIC number[, INTEGER places])
+[DEBUG] 2024-03-31 16:23:12.218 [main] HQL_FUNCTIONS - Long row_number()
+[DEBUG] 2024-03-31 16:23:12.218 [main] HQL_FUNCTIONS - String rpad(string, length[, padding])
+[DEBUG] 2024-03-31 16:23:12.218 [main] HQL_FUNCTIONS - String rtrim(STRING string[, STRING characters])
+[DEBUG] 2024-03-31 16:23:12.218 [main] HQL_FUNCTIONS - Integer second(TIME arg)
+[DEBUG] 2024-03-31 16:23:12.218 [main] HQL_FUNCTIONS - String sha(arg)
+[DEBUG] 2024-03-31 16:23:12.218 [main] HQL_FUNCTIONS - String sha1(arg)
+[DEBUG] 2024-03-31 16:23:12.218 [main] HQL_FUNCTIONS - String sha2(arg0, arg1)
+[DEBUG] 2024-03-31 16:23:12.218 [main] HQL_FUNCTIONS - Integer sign(NUMERIC arg)
+[DEBUG] 2024-03-31 16:23:12.218 [main] HQL_FUNCTIONS - Double sin(NUMERIC arg)
+[DEBUG] 2024-03-31 16:23:12.218 [main] HQL_FUNCTIONS - Double sinh(NUMERIC arg)
+[DEBUG] 2024-03-31 16:23:12.218 [main] HQL_FUNCTIONS - String soundex(arg)
+[DEBUG] 2024-03-31 16:23:12.218 [main] HQL_FUNCTIONS - String space(INTEGER arg)
+[DEBUG] 2024-03-31 16:23:12.218 [main] HQL_FUNCTIONS - Object sql
+[DEBUG] 2024-03-31 16:23:12.218 [main] HQL_FUNCTIONS - Double sqrt(NUMERIC arg)
+[DEBUG] 2024-03-31 16:23:12.218 [main] HQL_FUNCTIONS - Double stddev(NUMERIC arg)
+[DEBUG] 2024-03-31 16:23:12.218 [main] HQL_FUNCTIONS - Double stddev_pop(NUMERIC arg)
+[DEBUG] 2024-03-31 16:23:12.218 [main] HQL_FUNCTIONS - Double stddev_samp(NUMERIC arg)
+[DEBUG] 2024-03-31 16:23:12.218 [main] HQL_FUNCTIONS - String str(arg)
+[DEBUG] 2024-03-31 16:23:12.218 [main] HQL_FUNCTIONS - subdate(DATE datetime, INTEGER days)
+[DEBUG] 2024-03-31 16:23:12.218 [main] HQL_FUNCTIONS - String substr(STRING string, INTEGER start[, INTEGER length])
+[DEBUG] 2024-03-31 16:23:12.218 [main] HQL_FUNCTIONS - String substring(STRING string{ from|,} INTEGER start[{ for|,} INTEGER length])
+[DEBUG] 2024-03-31 16:23:12.218 [main] HQL_FUNCTIONS - subtime(TIME datetime, TIME time)
+[DEBUG] 2024-03-31 16:23:12.218 [main] HQL_FUNCTIONS - sum(arg)
+[DEBUG] 2024-03-31 16:23:12.218 [main] HQL_FUNCTIONS - Timestamp sysdate()
+[DEBUG] 2024-03-31 16:23:12.218 [main] HQL_FUNCTIONS - Double tan(NUMERIC arg)
+[DEBUG] 2024-03-31 16:23:12.218 [main] HQL_FUNCTIONS - Double tanh(NUMERIC arg)
+[DEBUG] 2024-03-31 16:23:12.218 [main] HQL_FUNCTIONS - String time(arg)
+[DEBUG] 2024-03-31 16:23:12.218 [main] HQL_FUNCTIONS - Timestamp timestamp(arg0[, arg1])
+[DEBUG] 2024-03-31 16:23:12.218 [main] HQL_FUNCTIONS - timestampadd(TEMPORAL_UNIT field, INTEGER magnitude, TEMPORAL datetime)
+[DEBUG] 2024-03-31 16:23:12.218 [main] HQL_FUNCTIONS - basicType@14(java.lang.Long,-5)|basicType@17(java.lang.Double,8) timestampdiff(TEMPORAL_UNIT field, TEMPORAL start, TEMPORAL end)
+[DEBUG] 2024-03-31 16:23:12.218 [main] HQL_FUNCTIONS - String trim([[{leading|trailing|both} ][STRING arg0 ]from] STRING arg1)
+[DEBUG] 2024-03-31 16:23:12.218 [main] HQL_FUNCTIONS - trunc( ... )
+[DEBUG] 2024-03-31 16:23:12.218 [main] HQL_FUNCTIONS - truncate( ... )
+[DEBUG] 2024-03-31 16:23:12.218 [main] HQL_FUNCTIONS - String upper(STRING string)
+[DEBUG] 2024-03-31 16:23:12.218 [main] HQL_FUNCTIONS - Date utc_date
+[DEBUG] 2024-03-31 16:23:12.218 [main] HQL_FUNCTIONS - Time utc_time
+[DEBUG] 2024-03-31 16:23:12.218 [main] HQL_FUNCTIONS - Timestamp utc_timestamp
+[DEBUG] 2024-03-31 16:23:12.218 [main] HQL_FUNCTIONS - Double var_pop(NUMERIC arg)
+[DEBUG] 2024-03-31 16:23:12.218 [main] HQL_FUNCTIONS - Double var_samp(NUMERIC arg)
+[DEBUG] 2024-03-31 16:23:12.218 [main] HQL_FUNCTIONS - Double variance(NUMERIC arg)
+[DEBUG] 2024-03-31 16:23:12.218 [main] HQL_FUNCTIONS - Integer week(DATE arg)
+[DEBUG] 2024-03-31 16:23:12.218 [main] HQL_FUNCTIONS - Integer year(DATE arg)
+[DEBUG] 2024-03-31 16:23:12.220 [main] cache - Starting QueryInterpretationCache(2048)
+[DEBUG] 2024-03-31 16:23:12.273 [main] SessionFactoryServiceRegistryImpl - EventListenerRegistry access via ServiceRegistry is deprecated.  Use `sessionFactory.getEventEngine().getListenerRegistry()` instead
+[DEBUG] 2024-03-31 16:23:12.273 [main] EntityCopyObserverFactoryInitiator - Configured EntityCopyObserver strategy: disallow
+[DEBUG] 2024-03-31 16:23:12.320 [main] ClassLoaderAccessImpl - Not known whether passed class name [edu.matc.entity.Type] is safe
+[DEBUG] 2024-03-31 16:23:12.320 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : edu.matc.entity.Type
+[DEBUG] 2024-03-31 16:23:12.398 [main] BytecodeProviderImpl - HHH000513: Unable to create the ReflectionOptimizer for [edu.matc.entity.Type]: private accessor [type]
+[DEBUG] 2024-03-31 16:23:12.414 [main] interceptor - To-one property `edu.matc.entity.Festival#region` was mapped with LAZY + NO_PROXY but the class was not enhanced
+[DEBUG] 2024-03-31 16:23:12.414 [main] interceptor - To-one property `edu.matc.entity.Festival#region` was mapped with LAZY + NO_PROXY but the class was not enhanced
+[DEBUG] 2024-03-31 16:23:12.414 [main] ClassLoaderAccessImpl - Not known whether passed class name [edu.matc.entity.Festival] is safe
+[DEBUG] 2024-03-31 16:23:12.414 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : edu.matc.entity.Festival
+[DEBUG] 2024-03-31 16:23:12.422 [main] BytecodeProviderImpl - HHH000513: Unable to create the ReflectionOptimizer for [edu.matc.entity.Festival]: private accessor [festivalName]
+[DEBUG] 2024-03-31 16:23:12.422 [main] interceptor - To-one property `edu.matc.entity.Festival#region` was mapped with LAZY + NO_PROXY but the class was not enhanced
+[DEBUG] 2024-03-31 16:23:12.423 [main] ClassLoaderAccessImpl - Not known whether passed class name [edu.matc.entity.Region] is safe
+[DEBUG] 2024-03-31 16:23:12.423 [main] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : edu.matc.entity.Region
+[DEBUG] 2024-03-31 16:23:12.428 [main] BytecodeProviderImpl - HHH000513: Unable to create the ReflectionOptimizer for [edu.matc.entity.Region]: private accessor [festivals]
+[DEBUG] 2024-03-31 16:23:12.434 [main] mutation - Skipping collection (re)creation - edu.matc.entity.Region.festivals
+[DEBUG] 2024-03-31 16:23:12.435 [main] mutation - Skipping collection row deletions - edu.matc.entity.Region.festivals
+[DEBUG] 2024-03-31 16:23:12.435 [main] mutation - Skipping collection removals - edu.matc.entity.Region.festivals
+[DEBUG] 2024-03-31 16:23:12.447 [main] creation - Starting post-init callbacks
+[DEBUG] 2024-03-31 16:23:12.447 [main] creation - Starting PostInitCallbackEntry : Entity(edu.matc.entity.Type) `staticFetchableList` generator
+[DEBUG] 2024-03-31 16:23:12.447 [main] creation - Starting PostInitCallbackEntry : To-one key - NavigableRole[edu.matc.entity.Festival.region]
+[DEBUG] 2024-03-31 16:23:12.449 [main] creation - Starting PostInitCallbackEntry : Entity(edu.matc.entity.Festival) `staticFetchableList` generator
+[DEBUG] 2024-03-31 16:23:12.449 [main] creation - Starting PostInitCallbackEntry : PluralAttributeMapping( NavigableRole[edu.matc.entity.Region.festivals#{element}]) - element descriptor
+[DEBUG] 2024-03-31 16:23:12.449 [main] creation - Starting PostInitCallbackEntry : PluralAttributeMapping(edu.matc.entity.Region.festivals)#finishInitialization
+[DEBUG] 2024-03-31 16:23:12.449 [main] creation - Starting PostInitCallbackEntry : PluralAttributeMapping(edu.matc.entity.Region.festivals) - key descriptor
+[DEBUG] 2024-03-31 16:23:12.449 [main] creation - Starting PostInitCallbackEntry : Entity(edu.matc.entity.Region) `staticFetchableList` generator
+[DEBUG] 2024-03-31 16:23:12.449 [main] creation - Starting PostInitCallbackEntry : PluralAttributeMapping( NavigableRole[edu.matc.entity.Region.festivals#{element}]) - element descriptor
+[DEBUG] 2024-03-31 16:23:12.485 [main] create - Created new SQL alias : t1_0
+[DEBUG] 2024-03-31 16:23:12.486 [main] create - Registration of TableGroup [StandardTableGroup(edu.matc.entity.Type)] with identifierForTableGroup [edu.matc.entity.Type] for NavigablePath [edu.matc.entity.Type] 
+[DEBUG] 2024-03-31 16:23:12.491 [main] AST - DomainResult Graph:
+ \-EntityResultImpl [edu.matc.entity.Type]
+ |  \-BasicFetch [edu.matc.entity.Type.type]
+
+[DEBUG] 2024-03-31 16:23:12.495 [main] tree - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        StandardTableGroup (t1 : edu.matc.entity.Type) {
+          primaryTableReference : Type as t1_0
+        }
+      }
+    }
+
+[DEBUG] 2024-03-31 16:23:12.499 [main] AbstractEntityPersister - Static SQL for entity: edu.matc.entity.Type
+[DEBUG] 2024-03-31 16:23:12.499 [main] AbstractEntityPersister -  Version select: select type_id from Type where type_id=?
+[DEBUG] 2024-03-31 16:23:12.499 [main] AbstractEntityPersister -  Insert (0): insert into Type (type) values (?)
+[DEBUG] 2024-03-31 16:23:12.499 [main] AbstractEntityPersister -  Update (0): update Type set type=? where type_id=?
+[DEBUG] 2024-03-31 16:23:12.499 [main] AbstractEntityPersister -  Delete (0): delete from Type where type_id=?
+[DEBUG] 2024-03-31 16:23:12.499 [main] create - Created new SQL alias : f1_0
+[DEBUG] 2024-03-31 16:23:12.499 [main] create - Registration of TableGroup [StandardTableGroup(edu.matc.entity.Festival)] with identifierForTableGroup [edu.matc.entity.Festival] for NavigablePath [edu.matc.entity.Festival] 
+[DEBUG] 2024-03-31 16:23:12.501 [main] create - Registration of TableGroup [org.hibernate.sql.ast.tree.from.LazyTableGroup@708f7386] with identifierForTableGroup [edu.matc.entity.Festival.region] for NavigablePath [edu.matc.entity.Festival.region] 
+[DEBUG] 2024-03-31 16:23:12.501 [main] create - Created new SQL alias : r1_0
+[DEBUG] 2024-03-31 16:23:12.502 [main] AST - DomainResult Graph:
+ \-EntityResultImpl [edu.matc.entity.Festival]
+ |  +-BasicFetch [edu.matc.entity.Festival.festivalName]
+ |  +-BasicFetch [edu.matc.entity.Festival.festivalStartDate]
+ |  +-EntityFetchJoinedImpl [edu.matc.entity.Festival.region]
+ |  \-BasicFetch [edu.matc.entity.Festival.typeID]
+
+[DEBUG] 2024-03-31 16:23:12.502 [main] tree - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        StandardTableGroup (f1 : edu.matc.entity.Festival) {
+          primaryTableReference : Festival as f1_0
+          TableGroupJoins {
+            left  join LazyTableGroup (r1 : edu.matc.entity.Festival.region) {
+              primaryTableReference : Region as r1_0
+            }
+          }
+        }
+      }
+    }
+
+[DEBUG] 2024-03-31 16:23:12.503 [main] AbstractEntityPersister - Static SQL for entity: edu.matc.entity.Festival
+[DEBUG] 2024-03-31 16:23:12.503 [main] AbstractEntityPersister -  Version select: select festival_id from Festival where festival_id=?
+[DEBUG] 2024-03-31 16:23:12.503 [main] AbstractEntityPersister -  Insert (0): insert into Festival (festival_name,festival_start_date,region_id,type_id) values (?,?,?,?)
+[DEBUG] 2024-03-31 16:23:12.503 [main] AbstractEntityPersister -  Update (0): update Festival set festival_name=?,festival_start_date=?,region_id=?,type_id=? where festival_id=?
+[DEBUG] 2024-03-31 16:23:12.503 [main] AbstractEntityPersister -  Delete (0): delete from Festival where festival_id=?
+[DEBUG] 2024-03-31 16:23:12.503 [main] create - Created new SQL alias : r1_0
+[DEBUG] 2024-03-31 16:23:12.503 [main] create - Registration of TableGroup [StandardTableGroup(edu.matc.entity.Region)] with identifierForTableGroup [edu.matc.entity.Region] for NavigablePath [edu.matc.entity.Region] 
+[DEBUG] 2024-03-31 16:23:12.503 [main] AST - DomainResult Graph:
+ \-EntityResultImpl [edu.matc.entity.Region]
+ |  +-DelayedCollectionFetch [edu.matc.entity.Region.festivals]
+ |  \-BasicFetch [edu.matc.entity.Region.regionName]
+
+[DEBUG] 2024-03-31 16:23:12.503 [main] tree - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        StandardTableGroup (r1 : edu.matc.entity.Region) {
+          primaryTableReference : Region as r1_0
+        }
+      }
+    }
+
+[DEBUG] 2024-03-31 16:23:12.503 [main] AbstractEntityPersister - Static SQL for entity: edu.matc.entity.Region
+[DEBUG] 2024-03-31 16:23:12.503 [main] AbstractEntityPersister -  Version select: select region_id from Region where region_id=?
+[DEBUG] 2024-03-31 16:23:12.503 [main] AbstractEntityPersister -  Insert (0): insert into Region (region_name) values (?)
+[DEBUG] 2024-03-31 16:23:12.503 [main] AbstractEntityPersister -  Update (0): update Region set region_name=? where region_id=?
+[DEBUG] 2024-03-31 16:23:12.503 [main] AbstractEntityPersister -  Delete (0): delete from Region where region_id=?
+[DEBUG] 2024-03-31 16:23:12.504 [main] create - Created new SQL alias : f1_0
+[DEBUG] 2024-03-31 16:23:12.504 [main] create - Registration of TableGroup [org.hibernate.sql.ast.tree.from.OneToManyTableGroup@2fea9a7b] with identifierForTableGroup [edu.matc.entity.Region.festivals] for NavigablePath [edu.matc.entity.Region.festivals] 
+[DEBUG] 2024-03-31 16:23:12.504 [main] create - Registration of TableGroup [StandardTableGroup(edu.matc.entity.Region.festivals.{element})] with identifierForTableGroup [edu.matc.entity.Region.festivals.{element}] for NavigablePath [edu.matc.entity.Region.festivals.{element}] 
+[DEBUG] 2024-03-31 16:23:12.507 [main] create - Registration of TableGroup [org.hibernate.sql.ast.tree.from.LazyTableGroup@43294e9b] with identifierForTableGroup [edu.matc.entity.Region.festivals.{element}.region] for NavigablePath [edu.matc.entity.Region.festivals.{element}.region] 
+[DEBUG] 2024-03-31 16:23:12.508 [main] AST - DomainResult Graph:
+ \-CollectionDomainResult [edu.matc.entity.Region.festivals]
+
+[DEBUG] 2024-03-31 16:23:12.508 [main] tree - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        OneToManyTableGroup (f1 : edu.matc.entity.Region.festivals) {
+          primaryTableReference : Festival as f1_0
+          TableGroupJoins {
+            left  join LazyTableGroup (r1 : edu.matc.entity.Region.festivals.{element}.region) {
+            }
+          }
+        }
+      }
+    }
+
+[DEBUG] 2024-03-31 16:23:12.508 [main] mutation - Static SQL for collection: edu.matc.entity.Region.festivals
+[DEBUG] 2024-03-31 16:23:12.520 [main] JtaPlatformInitiator - No JtaPlatform was specified, checking resolver
+[DEBUG] 2024-03-31 16:23:12.520 [main] JtaPlatformResolverInitiator - No JtaPlatformResolver was specified, using default [org.hibernate.engine.transaction.jta.platform.internal.StandardJtaPlatformResolver]
+[DEBUG] 2024-03-31 16:23:12.522 [main] StandardJtaPlatformResolver - Could not resolve JtaPlatform, using default [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[INFO ] 2024-03-31 16:23:12.522 [main] JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[DEBUG] 2024-03-31 16:23:12.522 [main] TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@e280403] to SessionFactoryImplementor [org.hibernate.internal.SessionFactoryImpl@3a988299]
+[DEBUG] 2024-03-31 16:23:12.522 [main] NamedObjectRepository - Checking 0 named HQL queries
+[DEBUG] 2024-03-31 16:23:12.522 [main] NamedObjectRepository - Checking 0 named SQL queries
+[DEBUG] 2024-03-31 16:23:12.523 [main] SchemaManagementToolCoordinator - No schema actions specified for contributor `orm`; doing nothing
+[DEBUG] 2024-03-31 16:23:12.523 [main] SchemaManagementToolCoordinator - No actions found; doing nothing
+[DEBUG] 2024-03-31 16:23:12.523 [main] SessionFactoryRegistry - Initializing SessionFactoryRegistry : org.hibernate.internal.SessionFactoryRegistry@6807989e
+[DEBUG] 2024-03-31 16:23:12.523 [main] SessionFactoryRegistry - Registering SessionFactory: cacee890-29cd-468a-9f18-fc5144d4a75b (<unnamed>)
+[DEBUG] 2024-03-31 16:23:12.524 [main] SessionFactoryRegistry - Not binding SessionFactory to JNDI, no JNDI name configured
+[DEBUG] 2024-03-31 16:23:12.524 [main] SessionFactoryImpl - Instantiated SessionFactory
+[DEBUG] 2024-03-31 16:23:12.541 [main] StatisticsInitiator - Statistics initialized [enabled=false]
+[DEBUG] 2024-03-31 16:23:12.556 [main] exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+[DEBUG] 2024-03-31 16:23:12.563 [main] results - Initializer list:
+	  edu.matc.entity.Festival -> EntityResultInitializer(edu.matc.entity.Festival)@636571283 (SingleTableEntityPersister(edu.matc.entity.Festival))
+	  edu.matc.entity.Festival.region.festivals -> DelayedCollectionInitializer(edu.matc.entity.Festival.region.festivals)@608392736 (PluralAttribute(edu.matc.entity.Region.festivals))
+	  edu.matc.entity.Festival.region -> EntityJoinedFetchInitializer(edu.matc.entity.Festival.region)@1248832688 (ToOneAttributeMapping(NavigableRole[edu.matc.entity.Festival.region])@1341047172)
+
+[DEBUG] 2024-03-31 16:23:12.565 [main] SQL - select f1_0.festival_id,f1_0.festival_name,f1_0.festival_start_date,r1_0.region_id,r1_0.region_name,f1_0.type_id from Festival f1_0 left join Region r1_0 on r1_0.region_id=f1_0.region_id where f1_0.festival_id=?
+[DEBUG] 2024-03-31 16:23:12.576 [main] results - Extracted JDBC value [3] - [4]
+[DEBUG] 2024-03-31 16:23:12.576 [main] entity - (EntityJoinedFetchInitializer) Hydrated EntityKey (edu.matc.entity.Festival.region): 4
+[DEBUG] 2024-03-31 16:23:12.576 [main] entity - (EntityResultInitializer) Hydrated EntityKey (edu.matc.entity.Festival): 2
+[DEBUG] 2024-03-31 16:23:12.576 [main] results - Extracted JDBC value [3] - [4]
+[DEBUG] 2024-03-31 16:23:12.576 [main] collection - (DelayedCollectionInitializer) Current row collection key : edu.matc.entity.Festival.region.festivals#4
+[DEBUG] 2024-03-31 16:23:12.577 [main] entity - (EntityJoinedFetchInitializer) Created new entity instance [edu.matc.entity.Festival.region#4] : 2003729915
+[DEBUG] 2024-03-31 16:23:12.577 [main] entity - (EntityResultInitializer) Created new entity instance [edu.matc.entity.Festival#2] : 1775247809
+[DEBUG] 2024-03-31 16:23:12.580 [main] results - Extracted JDBC value [4] - [Northeastern]
+[DEBUG] 2024-03-31 16:23:12.582 [main] entity - (EntityJoinedFetchInitializer) Done materializing entityInstance : edu.matc.entity.Festival.region#4
+[DEBUG] 2024-03-31 16:23:12.582 [main] results - Extracted JDBC value [1] - [The 2nd Festival]
+[DEBUG] 2024-03-31 16:23:12.583 [main] results - Extracted JDBC value [2] - [2024-02-02]
+[DEBUG] 2024-03-31 16:23:12.583 [main] results - Extracted JDBC value [5] - [6]
+[DEBUG] 2024-03-31 16:23:12.583 [main] entity - (EntityResultInitializer) Done materializing entityInstance : edu.matc.entity.Festival#2
+[DEBUG] 2024-03-31 16:23:12.583 [main] loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@d229912
+[DEBUG] 2024-03-31 16:23:12.583 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2024-03-31 16:23:12.585 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2024-03-31 16:23:12.585 [main] TransactionImpl - begin
+[DEBUG] 2024-03-31 16:23:12.593 [main] TransactionImpl - committing
+[DEBUG] 2024-03-31 16:23:12.593 [main] AbstractFlushingEventListener - Processing flush-time cascades
+[DEBUG] 2024-03-31 16:23:12.593 [main] AbstractFlushingEventListener - Dirty checking collections
+[DEBUG] 2024-03-31 16:23:12.595 [main] AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 1 deletions to 1 objects
+[DEBUG] 2024-03-31 16:23:12.595 [main] AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+[DEBUG] 2024-03-31 16:23:12.595 [main] EntityPrinter - Listing entities:
+[DEBUG] 2024-03-31 16:23:12.595 [main] EntityPrinter - edu.matc.entity.Festival{festivalID=2, festivalStartDate=2024-02-02, festivalName=The 2nd Festival, typeID=6, region=edu.matc.entity.Region#4}
+[DEBUG] 2024-03-31 16:23:12.598 [main] SQL - delete from Festival where festival_id=?
+[DEBUG] 2024-03-31 16:23:12.601 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2024-03-31 16:23:12.601 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2024-03-31 16:23:12.601 [main] exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+[DEBUG] 2024-03-31 16:23:12.601 [main] results - Initializer list:
+	  edu.matc.entity.Festival -> EntityResultInitializer(edu.matc.entity.Festival)@859410514 (SingleTableEntityPersister(edu.matc.entity.Festival))
+	  edu.matc.entity.Festival.region.festivals -> DelayedCollectionInitializer(edu.matc.entity.Festival.region.festivals)@297949254 (PluralAttribute(edu.matc.entity.Region.festivals))
+	  edu.matc.entity.Festival.region -> EntityJoinedFetchInitializer(edu.matc.entity.Festival.region)@1175156694 (ToOneAttributeMapping(NavigableRole[edu.matc.entity.Festival.region])@1341047172)
+
+[DEBUG] 2024-03-31 16:23:12.601 [main] SQL - select f1_0.festival_id,f1_0.festival_name,f1_0.festival_start_date,r1_0.region_id,r1_0.region_name,f1_0.type_id from Festival f1_0 left join Region r1_0 on r1_0.region_id=f1_0.region_id where f1_0.festival_id=?
+[DEBUG] 2024-03-31 16:23:12.602 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2024-03-31 16:23:12.691 [main] create - Created new SQL alias : f1_0
+[DEBUG] 2024-03-31 16:23:12.692 [main] create - Registration of TableGroup [StandardTableGroup(edu.matc.entity.Festival(274382253025541))] with identifierForTableGroup [edu.matc.entity.Festival] for NavigablePath [edu.matc.entity.Festival] 
+[DEBUG] 2024-03-31 16:23:12.695 [main] create - Registration of TableGroup [org.hibernate.sql.ast.tree.from.LazyTableGroup@204c5ddf] with identifierForTableGroup [edu.matc.entity.Festival.region] for NavigablePath [edu.matc.entity.Festival.region] 
+[DEBUG] 2024-03-31 16:23:12.696 [main] AST - DomainResult Graph:
+ \-EntityResultImpl [edu.matc.entity.Festival(274382253025541)]
+ |  +-BasicFetch [edu.matc.entity.Festival(274382253025541).festivalName]
+ |  +-BasicFetch [edu.matc.entity.Festival(274382253025541).festivalStartDate]
+ |  +-CircularFetchImpl [edu.matc.entity.Festival(274382253025541).region]
+ |  \-BasicFetch [edu.matc.entity.Festival(274382253025541).typeID]
+
+[DEBUG] 2024-03-31 16:23:12.696 [main] tree - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        StandardTableGroup (f1 : edu.matc.entity.Festival(274382253025541)) {
+          primaryTableReference : Festival as f1_0
+          TableGroupJoins {
+            left  join LazyTableGroup (r1 : edu.matc.entity.Festival(274382253025541).region) {
+            }
+          }
+        }
+      }
+    }
+
+[DEBUG] 2024-03-31 16:23:12.697 [main] exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
+[DEBUG] 2024-03-31 16:23:12.698 [main] results - Initializer list:
+	  edu.matc.entity.Festival(274382253025541) -> EntityResultInitializer(edu.matc.entity.Festival(274382253025541))@1852224664 (SingleTableEntityPersister(edu.matc.entity.Festival))
+	  edu.matc.entity.Festival(274382253025541).region -> EntitySelectFetchInitializer(edu.matc.entity.Festival(274382253025541).region)@1423138517 (ToOneAttributeMapping(NavigableRole[edu.matc.entity.Festival.region])@1341047172)
+
+[DEBUG] 2024-03-31 16:23:12.698 [main] SQL - select f1_0.festival_id,f1_0.festival_name,f1_0.festival_start_date,f1_0.region_id,f1_0.type_id from Festival f1_0
+[DEBUG] 2024-03-31 16:23:12.700 [main] results - Extracted JDBC value [0] - [1]
+[DEBUG] 2024-03-31 16:23:12.700 [main] entity - (EntityResultInitializer) Hydrated EntityKey (edu.matc.entity.Festival(274382253025541)): 1
+[DEBUG] 2024-03-31 16:23:12.700 [main] entity - (EntityResultInitializer) Created new entity instance [edu.matc.entity.Festival(274382253025541)#1] : 702218380
+[DEBUG] 2024-03-31 16:23:12.700 [main] results - Extracted JDBC value [3] - [1]
+[DEBUG] 2024-03-31 16:23:12.700 [main] entity - (EntitySelectFetchInitializer) Invoking session#internalLoad for entity (edu.matc.entity.Festival(274382253025541).region#1) : 1
+[DEBUG] 2024-03-31 16:23:12.700 [main] exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+[DEBUG] 2024-03-31 16:23:12.700 [main] results - Initializer list:
+	  edu.matc.entity.Region.festivals -> DelayedCollectionInitializer(edu.matc.entity.Region.festivals)@486575713 (PluralAttribute(edu.matc.entity.Region.festivals))
+	  edu.matc.entity.Region -> EntityResultInitializer(edu.matc.entity.Region)@421217482 (SingleTableEntityPersister(edu.matc.entity.Region))
+
+[DEBUG] 2024-03-31 16:23:12.700 [main] SQL - select r1_0.region_id,r1_0.region_name from Region r1_0 where r1_0.region_id=?
+[DEBUG] 2024-03-31 16:23:12.701 [main] entity - (EntityResultInitializer) Hydrated EntityKey (edu.matc.entity.Region): 1
+[DEBUG] 2024-03-31 16:23:12.701 [main] results - Extracted JDBC value [0] - [1]
+[DEBUG] 2024-03-31 16:23:12.701 [main] collection - (DelayedCollectionInitializer) Current row collection key : edu.matc.entity.Region.festivals#1
+[DEBUG] 2024-03-31 16:23:12.701 [main] entity - (EntityResultInitializer) Created new entity instance [edu.matc.entity.Region#1] : 1080517451
+[DEBUG] 2024-03-31 16:23:12.701 [main] results - Extracted JDBC value [1] - [North Central]
+[DEBUG] 2024-03-31 16:23:12.701 [main] entity - (EntityResultInitializer) Done materializing entityInstance : edu.matc.entity.Region#1
+[DEBUG] 2024-03-31 16:23:12.701 [main] loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@490d9c41
+[DEBUG] 2024-03-31 16:23:12.701 [main] entity - (EntitySelectFetchInitializer) Entity [edu.matc.entity.Festival(274382253025541).region#1] : 1 has being loaded by session.internalLoad.
+[DEBUG] 2024-03-31 16:23:12.701 [main] results - Extracted JDBC value [1] - [A Festival]
+[DEBUG] 2024-03-31 16:23:12.702 [main] results - Extracted JDBC value [2] - [2025-12-04]
+[DEBUG] 2024-03-31 16:23:12.702 [main] results - Extracted JDBC value [4] - [3]
+[DEBUG] 2024-03-31 16:23:12.702 [main] entity - (EntityResultInitializer) Done materializing entityInstance : edu.matc.entity.Festival(274382253025541)#1
+[DEBUG] 2024-03-31 16:23:12.702 [main] loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@47d81427
+[DEBUG] 2024-03-31 16:23:12.702 [main] results - Extracted JDBC value [0] - [2]
+[DEBUG] 2024-03-31 16:23:12.702 [main] entity - (EntityResultInitializer) Hydrated EntityKey (edu.matc.entity.Festival(274382253025541)): 2
+[DEBUG] 2024-03-31 16:23:12.702 [main] entity - (EntityResultInitializer) Created new entity instance [edu.matc.entity.Festival(274382253025541)#2] : 1012812460
+[DEBUG] 2024-03-31 16:23:12.702 [main] results - Extracted JDBC value [3] - [4]
+[DEBUG] 2024-03-31 16:23:12.702 [main] entity - (EntitySelectFetchInitializer) Invoking session#internalLoad for entity (edu.matc.entity.Festival(274382253025541).region#4) : 4
+[DEBUG] 2024-03-31 16:23:12.702 [main] exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+[DEBUG] 2024-03-31 16:23:12.702 [main] results - Initializer list:
+	  edu.matc.entity.Region.festivals -> DelayedCollectionInitializer(edu.matc.entity.Region.festivals)@548395375 (PluralAttribute(edu.matc.entity.Region.festivals))
+	  edu.matc.entity.Region -> EntityResultInitializer(edu.matc.entity.Region)@90547887 (SingleTableEntityPersister(edu.matc.entity.Region))
+
+[DEBUG] 2024-03-31 16:23:12.702 [main] SQL - select r1_0.region_id,r1_0.region_name from Region r1_0 where r1_0.region_id=?
+[DEBUG] 2024-03-31 16:23:12.702 [main] entity - (EntityResultInitializer) Hydrated EntityKey (edu.matc.entity.Region): 4
+[DEBUG] 2024-03-31 16:23:12.702 [main] results - Extracted JDBC value [0] - [4]
+[DEBUG] 2024-03-31 16:23:12.702 [main] collection - (DelayedCollectionInitializer) Current row collection key : edu.matc.entity.Region.festivals#4
+[DEBUG] 2024-03-31 16:23:12.702 [main] entity - (EntityResultInitializer) Created new entity instance [edu.matc.entity.Region#4] : 1571834834
+[DEBUG] 2024-03-31 16:23:12.702 [main] results - Extracted JDBC value [1] - [Northeastern]
+[DEBUG] 2024-03-31 16:23:12.702 [main] entity - (EntityResultInitializer) Done materializing entityInstance : edu.matc.entity.Region#4
+[DEBUG] 2024-03-31 16:23:12.702 [main] loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@31c5304f
+[DEBUG] 2024-03-31 16:23:12.702 [main] entity - (EntitySelectFetchInitializer) Entity [edu.matc.entity.Festival(274382253025541).region#4] : 4 has being loaded by session.internalLoad.
+[DEBUG] 2024-03-31 16:23:12.702 [main] results - Extracted JDBC value [1] - [The 2nd Festival]
+[DEBUG] 2024-03-31 16:23:12.702 [main] results - Extracted JDBC value [2] - [2024-02-02]
+[DEBUG] 2024-03-31 16:23:12.702 [main] results - Extracted JDBC value [4] - [6]
+[DEBUG] 2024-03-31 16:23:12.702 [main] entity - (EntityResultInitializer) Done materializing entityInstance : edu.matc.entity.Festival(274382253025541)#2
+[DEBUG] 2024-03-31 16:23:12.702 [main] loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@47d81427
+[DEBUG] 2024-03-31 16:23:12.703 [main] results - Extracted JDBC value [0] - [3]
+[DEBUG] 2024-03-31 16:23:12.703 [main] entity - (EntityResultInitializer) Hydrated EntityKey (edu.matc.entity.Festival(274382253025541)): 3
+[DEBUG] 2024-03-31 16:23:12.703 [main] entity - (EntityResultInitializer) Created new entity instance [edu.matc.entity.Festival(274382253025541)#3] : 1138692983
+[DEBUG] 2024-03-31 16:23:12.703 [main] results - Extracted JDBC value [3] - [2]
+[DEBUG] 2024-03-31 16:23:12.703 [main] entity - (EntitySelectFetchInitializer) Invoking session#internalLoad for entity (edu.matc.entity.Festival(274382253025541).region#2) : 2
+[DEBUG] 2024-03-31 16:23:12.703 [main] exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+[DEBUG] 2024-03-31 16:23:12.703 [main] results - Initializer list:
+	  edu.matc.entity.Region.festivals -> DelayedCollectionInitializer(edu.matc.entity.Region.festivals)@485375493 (PluralAttribute(edu.matc.entity.Region.festivals))
+	  edu.matc.entity.Region -> EntityResultInitializer(edu.matc.entity.Region)@1676857380 (SingleTableEntityPersister(edu.matc.entity.Region))
+
+[DEBUG] 2024-03-31 16:23:12.703 [main] SQL - select r1_0.region_id,r1_0.region_name from Region r1_0 where r1_0.region_id=?
+[DEBUG] 2024-03-31 16:23:12.703 [main] entity - (EntityResultInitializer) Hydrated EntityKey (edu.matc.entity.Region): 2
+[DEBUG] 2024-03-31 16:23:12.703 [main] results - Extracted JDBC value [0] - [2]
+[DEBUG] 2024-03-31 16:23:12.703 [main] collection - (DelayedCollectionInitializer) Current row collection key : edu.matc.entity.Region.festivals#2
+[DEBUG] 2024-03-31 16:23:12.703 [main] entity - (EntityResultInitializer) Created new entity instance [edu.matc.entity.Region#2] : 479819176
+[DEBUG] 2024-03-31 16:23:12.703 [main] results - Extracted JDBC value [1] - [Northwestern]
+[DEBUG] 2024-03-31 16:23:12.703 [main] entity - (EntityResultInitializer) Done materializing entityInstance : edu.matc.entity.Region#2
+[DEBUG] 2024-03-31 16:23:12.703 [main] loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@5d6d424d
+[DEBUG] 2024-03-31 16:23:12.703 [main] entity - (EntitySelectFetchInitializer) Entity [edu.matc.entity.Festival(274382253025541).region#2] : 2 has being loaded by session.internalLoad.
+[DEBUG] 2024-03-31 16:23:12.703 [main] results - Extracted JDBC value [1] - [Free Festival]
+[DEBUG] 2024-03-31 16:23:12.703 [main] results - Extracted JDBC value [2] - [2024-07-08]
+[DEBUG] 2024-03-31 16:23:12.703 [main] results - Extracted JDBC value [4] - [4]
+[DEBUG] 2024-03-31 16:23:12.703 [main] entity - (EntityResultInitializer) Done materializing entityInstance : edu.matc.entity.Festival(274382253025541)#3
+[DEBUG] 2024-03-31 16:23:12.703 [main] loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@47d81427
+[DEBUG] 2024-03-31 16:23:12.703 [main] results - Extracted JDBC value [0] - [4]
+[DEBUG] 2024-03-31 16:23:12.703 [main] entity - (EntityResultInitializer) Hydrated EntityKey (edu.matc.entity.Festival(274382253025541)): 4
+[DEBUG] 2024-03-31 16:23:12.703 [main] entity - (EntityResultInitializer) Created new entity instance [edu.matc.entity.Festival(274382253025541)#4] : 958071237
+[DEBUG] 2024-03-31 16:23:12.703 [main] results - Extracted JDBC value [3] - [3]
+[DEBUG] 2024-03-31 16:23:12.703 [main] entity - (EntitySelectFetchInitializer) Invoking session#internalLoad for entity (edu.matc.entity.Festival(274382253025541).region#3) : 3
+[DEBUG] 2024-03-31 16:23:12.703 [main] exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+[DEBUG] 2024-03-31 16:23:12.703 [main] results - Initializer list:
+	  edu.matc.entity.Region.festivals -> DelayedCollectionInitializer(edu.matc.entity.Region.festivals)@1853364091 (PluralAttribute(edu.matc.entity.Region.festivals))
+	  edu.matc.entity.Region -> EntityResultInitializer(edu.matc.entity.Region)@1321433666 (SingleTableEntityPersister(edu.matc.entity.Region))
+
+[DEBUG] 2024-03-31 16:23:12.703 [main] SQL - select r1_0.region_id,r1_0.region_name from Region r1_0 where r1_0.region_id=?
+[DEBUG] 2024-03-31 16:23:12.704 [main] entity - (EntityResultInitializer) Hydrated EntityKey (edu.matc.entity.Region): 3
+[DEBUG] 2024-03-31 16:23:12.704 [main] results - Extracted JDBC value [0] - [3]
+[DEBUG] 2024-03-31 16:23:12.704 [main] collection - (DelayedCollectionInitializer) Current row collection key : edu.matc.entity.Region.festivals#3
+[DEBUG] 2024-03-31 16:23:12.704 [main] entity - (EntityResultInitializer) Created new entity instance [edu.matc.entity.Region#3] : 595382884
+[DEBUG] 2024-03-31 16:23:12.704 [main] results - Extracted JDBC value [1] - [Fox Valley]
+[DEBUG] 2024-03-31 16:23:12.704 [main] entity - (EntityResultInitializer) Done materializing entityInstance : edu.matc.entity.Region#3
+[DEBUG] 2024-03-31 16:23:12.704 [main] loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@5521407f
+[DEBUG] 2024-03-31 16:23:12.704 [main] entity - (EntitySelectFetchInitializer) Entity [edu.matc.entity.Festival(274382253025541).region#3] : 3 has being loaded by session.internalLoad.
+[DEBUG] 2024-03-31 16:23:12.704 [main] results - Extracted JDBC value [1] - [Freshly Foods Festival]
+[DEBUG] 2024-03-31 16:23:12.704 [main] results - Extracted JDBC value [2] - [2025-01-15]
+[DEBUG] 2024-03-31 16:23:12.704 [main] results - Extracted JDBC value [4] - [2]
+[DEBUG] 2024-03-31 16:23:12.704 [main] entity - (EntityResultInitializer) Done materializing entityInstance : edu.matc.entity.Festival(274382253025541)#4
+[DEBUG] 2024-03-31 16:23:12.704 [main] loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@47d81427
+[DEBUG] 2024-03-31 16:23:12.704 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2024-03-31 16:23:12.705 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2024-03-31 16:23:12.741 [main] exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+[DEBUG] 2024-03-31 16:23:12.741 [main] results - Initializer list:
+	  edu.matc.entity.Region.festivals -> DelayedCollectionInitializer(edu.matc.entity.Region.festivals)@501668992 (PluralAttribute(edu.matc.entity.Region.festivals))
+	  edu.matc.entity.Region -> EntityResultInitializer(edu.matc.entity.Region)@1099766787 (SingleTableEntityPersister(edu.matc.entity.Region))
+
+[DEBUG] 2024-03-31 16:23:12.741 [main] SQL - select r1_0.region_id,r1_0.region_name from Region r1_0 where r1_0.region_id=?
+[DEBUG] 2024-03-31 16:23:12.742 [main] entity - (EntityResultInitializer) Hydrated EntityKey (edu.matc.entity.Region): 6
+[DEBUG] 2024-03-31 16:23:12.742 [main] results - Extracted JDBC value [0] - [6]
+[DEBUG] 2024-03-31 16:23:12.742 [main] collection - (DelayedCollectionInitializer) Current row collection key : edu.matc.entity.Region.festivals#6
+[DEBUG] 2024-03-31 16:23:12.742 [main] entity - (EntityResultInitializer) Created new entity instance [edu.matc.entity.Region#6] : 570408974
+[DEBUG] 2024-03-31 16:23:12.742 [main] results - Extracted JDBC value [1] - [South Eastern]
+[DEBUG] 2024-03-31 16:23:12.742 [main] entity - (EntityResultInitializer) Done materializing entityInstance : edu.matc.entity.Region#6
+[DEBUG] 2024-03-31 16:23:12.742 [main] loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@45b08b17
+[DEBUG] 2024-03-31 16:23:12.742 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2024-03-31 16:23:12.744 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2024-03-31 16:23:12.744 [main] TransactionImpl - begin
+[DEBUG] 2024-03-31 16:23:12.745 [main] ActionQueue - Executing identity-insert immediately
+[DEBUG] 2024-03-31 16:23:12.746 [main] SQL - insert into Festival (festival_name,festival_start_date,region_id,type_id) values (?,?,?,?)
+[DEBUG] 2024-03-31 16:23:12.751 [main] IdentifierGeneratorHelper - Natively generated identity (edu.matc.entity.Festival) : 5
+[DEBUG] 2024-03-31 16:23:12.751 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2024-03-31 16:23:12.754 [main] ResourceRegistryStandardImpl - Exception clearing maxRows/queryTimeout [You can't operate on a closed Statement!!!]
+[DEBUG] 2024-03-31 16:23:12.755 [main] TransactionImpl - committing
+[DEBUG] 2024-03-31 16:23:12.755 [main] AbstractFlushingEventListener - Processing flush-time cascades
+[DEBUG] 2024-03-31 16:23:12.755 [main] AbstractFlushingEventListener - Dirty checking collections
+[DEBUG] 2024-03-31 16:23:12.755 [main] AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+[DEBUG] 2024-03-31 16:23:12.755 [main] AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 0 collections
+[DEBUG] 2024-03-31 16:23:12.755 [main] EntityPrinter - Listing entities:
+[DEBUG] 2024-03-31 16:23:12.755 [main] EntityPrinter - edu.matc.entity.Festival{festivalID=5, festivalStartDate=2024-11-12, festivalName=Great Festival, typeID=4, region=edu.matc.entity.Region#6}
+[DEBUG] 2024-03-31 16:23:12.755 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2024-03-31 16:23:12.755 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2024-03-31 16:23:12.756 [main] exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+[DEBUG] 2024-03-31 16:23:12.756 [main] results - Initializer list:
+	  edu.matc.entity.Festival -> EntityResultInitializer(edu.matc.entity.Festival)@1321604822 (SingleTableEntityPersister(edu.matc.entity.Festival))
+	  edu.matc.entity.Festival.region.festivals -> DelayedCollectionInitializer(edu.matc.entity.Festival.region.festivals)@1437884065 (PluralAttribute(edu.matc.entity.Region.festivals))
+	  edu.matc.entity.Festival.region -> EntityJoinedFetchInitializer(edu.matc.entity.Festival.region)@224031437 (ToOneAttributeMapping(NavigableRole[edu.matc.entity.Festival.region])@1341047172)
+
+[DEBUG] 2024-03-31 16:23:12.756 [main] SQL - select f1_0.festival_id,f1_0.festival_name,f1_0.festival_start_date,r1_0.region_id,r1_0.region_name,f1_0.type_id from Festival f1_0 left join Region r1_0 on r1_0.region_id=f1_0.region_id where f1_0.festival_id=?
+[DEBUG] 2024-03-31 16:23:12.757 [main] results - Extracted JDBC value [3] - [6]
+[DEBUG] 2024-03-31 16:23:12.757 [main] entity - (EntityJoinedFetchInitializer) Hydrated EntityKey (edu.matc.entity.Festival.region): 6
+[DEBUG] 2024-03-31 16:23:12.757 [main] entity - (EntityResultInitializer) Hydrated EntityKey (edu.matc.entity.Festival): 5
+[DEBUG] 2024-03-31 16:23:12.757 [main] results - Extracted JDBC value [3] - [6]
+[DEBUG] 2024-03-31 16:23:12.757 [main] collection - (DelayedCollectionInitializer) Current row collection key : edu.matc.entity.Festival.region.festivals#6
+[DEBUG] 2024-03-31 16:23:12.757 [main] entity - (EntityJoinedFetchInitializer) Created new entity instance [edu.matc.entity.Festival.region#6] : 1518753442
+[DEBUG] 2024-03-31 16:23:12.757 [main] entity - (EntityResultInitializer) Created new entity instance [edu.matc.entity.Festival#5] : 1375949608
+[DEBUG] 2024-03-31 16:23:12.757 [main] results - Extracted JDBC value [4] - [South Eastern]
+[DEBUG] 2024-03-31 16:23:12.757 [main] entity - (EntityJoinedFetchInitializer) Done materializing entityInstance : edu.matc.entity.Festival.region#6
+[DEBUG] 2024-03-31 16:23:12.757 [main] results - Extracted JDBC value [1] - [Great Festival]
+[DEBUG] 2024-03-31 16:23:12.757 [main] results - Extracted JDBC value [2] - [2024-11-12]
+[DEBUG] 2024-03-31 16:23:12.757 [main] results - Extracted JDBC value [5] - [4]
+[DEBUG] 2024-03-31 16:23:12.757 [main] entity - (EntityResultInitializer) Done materializing entityInstance : edu.matc.entity.Festival#5
+[DEBUG] 2024-03-31 16:23:12.757 [main] loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@54970127
+[DEBUG] 2024-03-31 16:23:12.757 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2024-03-31 16:23:12.786 [main] exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+[DEBUG] 2024-03-31 16:23:12.786 [main] results - Initializer list:
+	  edu.matc.entity.Festival -> EntityResultInitializer(edu.matc.entity.Festival)@1811655452 (SingleTableEntityPersister(edu.matc.entity.Festival))
+	  edu.matc.entity.Festival.region.festivals -> DelayedCollectionInitializer(edu.matc.entity.Festival.region.festivals)@882568900 (PluralAttribute(edu.matc.entity.Region.festivals))
+	  edu.matc.entity.Festival.region -> EntityJoinedFetchInitializer(edu.matc.entity.Festival.region)@922786124 (ToOneAttributeMapping(NavigableRole[edu.matc.entity.Festival.region])@1341047172)
+
+[DEBUG] 2024-03-31 16:23:12.786 [main] SQL - select f1_0.festival_id,f1_0.festival_name,f1_0.festival_start_date,r1_0.region_id,r1_0.region_name,f1_0.type_id from Festival f1_0 left join Region r1_0 on r1_0.region_id=f1_0.region_id where f1_0.festival_id=?
+[DEBUG] 2024-03-31 16:23:12.787 [main] results - Extracted JDBC value [3] - [1]
+[DEBUG] 2024-03-31 16:23:12.787 [main] entity - (EntityJoinedFetchInitializer) Hydrated EntityKey (edu.matc.entity.Festival.region): 1
+[DEBUG] 2024-03-31 16:23:12.787 [main] entity - (EntityResultInitializer) Hydrated EntityKey (edu.matc.entity.Festival): 1
+[DEBUG] 2024-03-31 16:23:12.787 [main] results - Extracted JDBC value [3] - [1]
+[DEBUG] 2024-03-31 16:23:12.787 [main] collection - (DelayedCollectionInitializer) Current row collection key : edu.matc.entity.Festival.region.festivals#1
+[DEBUG] 2024-03-31 16:23:12.787 [main] entity - (EntityJoinedFetchInitializer) Created new entity instance [edu.matc.entity.Festival.region#1] : 2012555686
+[DEBUG] 2024-03-31 16:23:12.787 [main] entity - (EntityResultInitializer) Created new entity instance [edu.matc.entity.Festival#1] : 2101850145
+[DEBUG] 2024-03-31 16:23:12.787 [main] results - Extracted JDBC value [4] - [North Central]
+[DEBUG] 2024-03-31 16:23:12.787 [main] entity - (EntityJoinedFetchInitializer) Done materializing entityInstance : edu.matc.entity.Festival.region#1
+[DEBUG] 2024-03-31 16:23:12.787 [main] results - Extracted JDBC value [1] - [A Festival]
+[DEBUG] 2024-03-31 16:23:12.787 [main] results - Extracted JDBC value [2] - [2025-12-04]
+[DEBUG] 2024-03-31 16:23:12.787 [main] results - Extracted JDBC value [5] - [3]
+[DEBUG] 2024-03-31 16:23:12.787 [main] entity - (EntityResultInitializer) Done materializing entityInstance : edu.matc.entity.Festival#1
+[DEBUG] 2024-03-31 16:23:12.787 [main] loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@40cb95c1
+[DEBUG] 2024-03-31 16:23:12.788 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2024-03-31 16:23:12.788 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2024-03-31 16:23:12.788 [main] TransactionImpl - begin
+[DEBUG] 2024-03-31 16:23:12.790 [main] create - Created new SQL alias : f1_0
+[DEBUG] 2024-03-31 16:23:12.790 [main] create - Registration of TableGroup [StandardTableGroup(edu.matc.entity.Festival)] with identifierForTableGroup [edu.matc.entity.Festival] for NavigablePath [edu.matc.entity.Festival] 
+[DEBUG] 2024-03-31 16:23:12.790 [main] create - Registration of TableGroup [org.hibernate.sql.ast.tree.from.LazyTableGroup@113c4ad6] with identifierForTableGroup [edu.matc.entity.Festival.region] for NavigablePath [edu.matc.entity.Festival.region] 
+[DEBUG] 2024-03-31 16:23:12.790 [main] create - Created new SQL alias : r1_0
+[DEBUG] 2024-03-31 16:23:12.790 [main] AST - DomainResult Graph:
+ \-EntityResultImpl [edu.matc.entity.Festival]
+ |  +-BasicFetch [edu.matc.entity.Festival.festivalName]
+ |  +-BasicFetch [edu.matc.entity.Festival.festivalStartDate]
+ |  +-EntityFetchJoinedImpl [edu.matc.entity.Festival.region]
+ |  \-BasicFetch [edu.matc.entity.Festival.typeID]
+
+[DEBUG] 2024-03-31 16:23:12.790 [main] tree - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        StandardTableGroup (f1 : edu.matc.entity.Festival) {
+          primaryTableReference : Festival as f1_0
+          TableGroupJoins {
+            left  join LazyTableGroup (r1 : edu.matc.entity.Festival.region) {
+              primaryTableReference : Region as r1_0
+            }
+          }
+        }
+      }
+    }
+
+[DEBUG] 2024-03-31 16:23:12.790 [main] exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+[DEBUG] 2024-03-31 16:23:12.790 [main] results - Initializer list:
+	  edu.matc.entity.Festival -> EntityResultInitializer(edu.matc.entity.Festival)@1090300647 (SingleTableEntityPersister(edu.matc.entity.Festival))
+	  edu.matc.entity.Festival.region.festivals -> DelayedCollectionInitializer(edu.matc.entity.Festival.region.festivals)@2141739605 (PluralAttribute(edu.matc.entity.Region.festivals))
+	  edu.matc.entity.Festival.region -> EntityJoinedFetchInitializer(edu.matc.entity.Festival.region)@212977036 (ToOneAttributeMapping(NavigableRole[edu.matc.entity.Festival.region])@1341047172)
+
+[DEBUG] 2024-03-31 16:23:12.790 [main] SQL - select f1_0.festival_id,f1_0.festival_name,f1_0.festival_start_date,r1_0.region_id,r1_0.region_name,f1_0.type_id from Festival f1_0 left join Region r1_0 on r1_0.region_id=f1_0.region_id where f1_0.festival_id=?
+[DEBUG] 2024-03-31 16:23:12.791 [main] results - Extracted JDBC value [3] - [1]
+[DEBUG] 2024-03-31 16:23:12.791 [main] entity - (EntityJoinedFetchInitializer) Hydrated EntityKey (edu.matc.entity.Festival.region): 1
+[DEBUG] 2024-03-31 16:23:12.791 [main] entity - (EntityResultInitializer) Hydrated EntityKey (edu.matc.entity.Festival): 1
+[DEBUG] 2024-03-31 16:23:12.791 [main] results - Extracted JDBC value [3] - [1]
+[DEBUG] 2024-03-31 16:23:12.791 [main] collection - (DelayedCollectionInitializer) Current row collection key : edu.matc.entity.Festival.region.festivals#1
+[DEBUG] 2024-03-31 16:23:12.791 [main] entity - (EntityJoinedFetchInitializer) Created new entity instance [edu.matc.entity.Festival.region#1] : 2069664786
+[DEBUG] 2024-03-31 16:23:12.791 [main] entity - (EntityResultInitializer) Created new entity instance [edu.matc.entity.Festival#1] : 1775829753
+[DEBUG] 2024-03-31 16:23:12.791 [main] results - Extracted JDBC value [4] - [North Central]
+[DEBUG] 2024-03-31 16:23:12.791 [main] entity - (EntityJoinedFetchInitializer) Done materializing entityInstance : edu.matc.entity.Festival.region#1
+[DEBUG] 2024-03-31 16:23:12.791 [main] results - Extracted JDBC value [1] - [A Festival]
+[DEBUG] 2024-03-31 16:23:12.791 [main] results - Extracted JDBC value [2] - [2025-12-04]
+[DEBUG] 2024-03-31 16:23:12.791 [main] results - Extracted JDBC value [5] - [3]
+[DEBUG] 2024-03-31 16:23:12.791 [main] entity - (EntityResultInitializer) Done materializing entityInstance : edu.matc.entity.Festival#1
+[DEBUG] 2024-03-31 16:23:12.791 [main] loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@3ca3eba2
+[DEBUG] 2024-03-31 16:23:12.791 [main] TransactionImpl - committing
+[DEBUG] 2024-03-31 16:23:12.792 [main] AbstractFlushingEventListener - Processing flush-time cascades
+[DEBUG] 2024-03-31 16:23:12.792 [main] AbstractFlushingEventListener - Dirty checking collections
+[DEBUG] 2024-03-31 16:23:12.793 [main] Collections - Collection found: [edu.matc.entity.Region.festivals#1], was: [edu.matc.entity.Region.festivals#1] (uninitialized)
+[DEBUG] 2024-03-31 16:23:12.793 [main] AbstractFlushingEventListener - Flushed: 0 insertions, 1 updates, 0 deletions to 2 objects
+[DEBUG] 2024-03-31 16:23:12.793 [main] AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 1 collections
+[DEBUG] 2024-03-31 16:23:12.793 [main] EntityPrinter - Listing entities:
+[DEBUG] 2024-03-31 16:23:12.793 [main] EntityPrinter - edu.matc.entity.Festival{festivalID=1, festivalStartDate=2025-12-04, festivalName=A Festival, typeID=4, region=edu.matc.entity.Region#1}
+[DEBUG] 2024-03-31 16:23:12.794 [main] EntityPrinter - edu.matc.entity.Region{festivals=<uninitialized>, regionID=1, regionName=North Central}
+[DEBUG] 2024-03-31 16:23:12.795 [main] SQL - update Festival set festival_name=?,festival_start_date=?,region_id=?,type_id=? where festival_id=?
+[DEBUG] 2024-03-31 16:23:12.796 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2024-03-31 16:23:12.796 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2024-03-31 16:23:12.796 [main] exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+[DEBUG] 2024-03-31 16:23:12.796 [main] results - Initializer list:
+	  edu.matc.entity.Festival -> EntityResultInitializer(edu.matc.entity.Festival)@2058066102 (SingleTableEntityPersister(edu.matc.entity.Festival))
+	  edu.matc.entity.Festival.region.festivals -> DelayedCollectionInitializer(edu.matc.entity.Festival.region.festivals)@1580467617 (PluralAttribute(edu.matc.entity.Region.festivals))
+	  edu.matc.entity.Festival.region -> EntityJoinedFetchInitializer(edu.matc.entity.Festival.region)@36437323 (ToOneAttributeMapping(NavigableRole[edu.matc.entity.Festival.region])@1341047172)
+
+[DEBUG] 2024-03-31 16:23:12.796 [main] SQL - select f1_0.festival_id,f1_0.festival_name,f1_0.festival_start_date,r1_0.region_id,r1_0.region_name,f1_0.type_id from Festival f1_0 left join Region r1_0 on r1_0.region_id=f1_0.region_id where f1_0.festival_id=?
+[DEBUG] 2024-03-31 16:23:12.797 [main] results - Extracted JDBC value [3] - [1]
+[DEBUG] 2024-03-31 16:23:12.797 [main] entity - (EntityJoinedFetchInitializer) Hydrated EntityKey (edu.matc.entity.Festival.region): 1
+[DEBUG] 2024-03-31 16:23:12.797 [main] entity - (EntityResultInitializer) Hydrated EntityKey (edu.matc.entity.Festival): 1
+[DEBUG] 2024-03-31 16:23:12.797 [main] results - Extracted JDBC value [3] - [1]
+[DEBUG] 2024-03-31 16:23:12.797 [main] collection - (DelayedCollectionInitializer) Current row collection key : edu.matc.entity.Festival.region.festivals#1
+[DEBUG] 2024-03-31 16:23:12.797 [main] entity - (EntityJoinedFetchInitializer) Created new entity instance [edu.matc.entity.Festival.region#1] : 1223960142
+[DEBUG] 2024-03-31 16:23:12.797 [main] entity - (EntityResultInitializer) Created new entity instance [edu.matc.entity.Festival#1] : 647479638
+[DEBUG] 2024-03-31 16:23:12.797 [main] results - Extracted JDBC value [4] - [North Central]
+[DEBUG] 2024-03-31 16:23:12.797 [main] entity - (EntityJoinedFetchInitializer) Done materializing entityInstance : edu.matc.entity.Festival.region#1
+[DEBUG] 2024-03-31 16:23:12.797 [main] results - Extracted JDBC value [1] - [A Festival]
+[DEBUG] 2024-03-31 16:23:12.797 [main] results - Extracted JDBC value [2] - [2025-12-04]
+[DEBUG] 2024-03-31 16:23:12.797 [main] results - Extracted JDBC value [5] - [4]
+[DEBUG] 2024-03-31 16:23:12.797 [main] entity - (EntityResultInitializer) Done materializing entityInstance : edu.matc.entity.Festival#1
+[DEBUG] 2024-03-31 16:23:12.797 [main] loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@53c40ed6
+[DEBUG] 2024-03-31 16:23:12.797 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2024-03-31 16:23:12.864 [main] exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+[DEBUG] 2024-03-31 16:23:12.864 [main] results - Initializer list:
+	  edu.matc.entity.Festival -> EntityResultInitializer(edu.matc.entity.Festival)@266418454 (SingleTableEntityPersister(edu.matc.entity.Festival))
+	  edu.matc.entity.Festival.region.festivals -> DelayedCollectionInitializer(edu.matc.entity.Festival.region.festivals)@1587586985 (PluralAttribute(edu.matc.entity.Region.festivals))
+	  edu.matc.entity.Festival.region -> EntityJoinedFetchInitializer(edu.matc.entity.Festival.region)@41470360 (ToOneAttributeMapping(NavigableRole[edu.matc.entity.Festival.region])@1341047172)
+
+[DEBUG] 2024-03-31 16:23:12.864 [main] SQL - select f1_0.festival_id,f1_0.festival_name,f1_0.festival_start_date,r1_0.region_id,r1_0.region_name,f1_0.type_id from Festival f1_0 left join Region r1_0 on r1_0.region_id=f1_0.region_id where f1_0.festival_id=?
+[DEBUG] 2024-03-31 16:23:12.865 [main] results - Extracted JDBC value [3] - [2]
+[DEBUG] 2024-03-31 16:23:12.865 [main] entity - (EntityJoinedFetchInitializer) Hydrated EntityKey (edu.matc.entity.Festival.region): 2
+[DEBUG] 2024-03-31 16:23:12.865 [main] entity - (EntityResultInitializer) Hydrated EntityKey (edu.matc.entity.Festival): 3
+[DEBUG] 2024-03-31 16:23:12.865 [main] results - Extracted JDBC value [3] - [2]
+[DEBUG] 2024-03-31 16:23:12.865 [main] collection - (DelayedCollectionInitializer) Current row collection key : edu.matc.entity.Festival.region.festivals#2
+[DEBUG] 2024-03-31 16:23:12.865 [main] entity - (EntityJoinedFetchInitializer) Created new entity instance [edu.matc.entity.Festival.region#2] : 1797753623
+[DEBUG] 2024-03-31 16:23:12.865 [main] entity - (EntityResultInitializer) Created new entity instance [edu.matc.entity.Festival#3] : 44979584
+[DEBUG] 2024-03-31 16:23:12.865 [main] results - Extracted JDBC value [4] - [Northwestern]
+[DEBUG] 2024-03-31 16:23:12.865 [main] entity - (EntityJoinedFetchInitializer) Done materializing entityInstance : edu.matc.entity.Festival.region#2
+[DEBUG] 2024-03-31 16:23:12.865 [main] results - Extracted JDBC value [1] - [Free Festival]
+[DEBUG] 2024-03-31 16:23:12.865 [main] results - Extracted JDBC value [2] - [2024-07-08]
+[DEBUG] 2024-03-31 16:23:12.865 [main] results - Extracted JDBC value [5] - [4]
+[DEBUG] 2024-03-31 16:23:12.865 [main] entity - (EntityResultInitializer) Done materializing entityInstance : edu.matc.entity.Festival#3
+[DEBUG] 2024-03-31 16:23:12.865 [main] loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@7d82ca56
+[DEBUG] 2024-03-31 16:23:12.865 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2024-03-31 16:23:12.906 [main] create - Created new SQL alias : f1_0
+[DEBUG] 2024-03-31 16:23:12.906 [main] create - Registration of TableGroup [StandardTableGroup(edu.matc.entity.Festival(274382484868875))] with identifierForTableGroup [edu.matc.entity.Festival] for NavigablePath [edu.matc.entity.Festival] 
+[DEBUG] 2024-03-31 16:23:12.906 [main] create - Registration of TableGroup [org.hibernate.sql.ast.tree.from.LazyTableGroup@6cd7dc74] with identifierForTableGroup [edu.matc.entity.Festival.region] for NavigablePath [edu.matc.entity.Festival.region] 
+[DEBUG] 2024-03-31 16:23:12.908 [main] BaseSqmToSqlAstConverter - Determining mapping-model type for SqmParameter : org.hibernate.query.sqm.tree.expression.SqmJpaCriteriaParameterWrapper@72646d16
+[DEBUG] 2024-03-31 16:23:12.908 [main] BaseSqmToSqlAstConverter - Determining mapping-model type for SqmPath : SqmBasicValuedSimplePath(edu.matc.entity.Festival(274382484868875).festivalName) 
+[DEBUG] 2024-03-31 16:23:12.910 [main] AST - DomainResult Graph:
+ \-EntityResultImpl [edu.matc.entity.Festival(274382484868875)]
+ |  +-BasicFetch [edu.matc.entity.Festival(274382484868875).festivalName]
+ |  +-BasicFetch [edu.matc.entity.Festival(274382484868875).festivalStartDate]
+ |  +-CircularFetchImpl [edu.matc.entity.Festival(274382484868875).region]
+ |  \-BasicFetch [edu.matc.entity.Festival(274382484868875).typeID]
+
+[DEBUG] 2024-03-31 16:23:12.910 [main] tree - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        StandardTableGroup (f1 : edu.matc.entity.Festival(274382484868875)) {
+          primaryTableReference : Festival as f1_0
+          TableGroupJoins {
+            left  join LazyTableGroup (r1 : edu.matc.entity.Festival(274382484868875).region) {
+            }
+          }
+        }
+      }
+    }
+
+[DEBUG] 2024-03-31 16:23:12.910 [main] exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
+[DEBUG] 2024-03-31 16:23:12.910 [main] results - Initializer list:
+	  edu.matc.entity.Festival(274382484868875) -> EntityResultInitializer(edu.matc.entity.Festival(274382484868875))@1260651126 (SingleTableEntityPersister(edu.matc.entity.Festival))
+	  edu.matc.entity.Festival(274382484868875).region -> EntitySelectFetchInitializer(edu.matc.entity.Festival(274382484868875).region)@710867897 (ToOneAttributeMapping(NavigableRole[edu.matc.entity.Festival.region])@1341047172)
+
+[DEBUG] 2024-03-31 16:23:12.910 [main] SQL - select f1_0.festival_id,f1_0.festival_name,f1_0.festival_start_date,f1_0.region_id,f1_0.type_id from Festival f1_0 where f1_0.festival_name=?
+[DEBUG] 2024-03-31 16:23:12.911 [main] results - Extracted JDBC value [0] - [3]
+[DEBUG] 2024-03-31 16:23:12.911 [main] entity - (EntityResultInitializer) Hydrated EntityKey (edu.matc.entity.Festival(274382484868875)): 3
+[DEBUG] 2024-03-31 16:23:12.912 [main] entity - (EntityResultInitializer) Created new entity instance [edu.matc.entity.Festival(274382484868875)#3] : 1529639302
+[DEBUG] 2024-03-31 16:23:12.912 [main] results - Extracted JDBC value [3] - [2]
+[DEBUG] 2024-03-31 16:23:12.912 [main] entity - (EntitySelectFetchInitializer) Invoking session#internalLoad for entity (edu.matc.entity.Festival(274382484868875).region#2) : 2
+[DEBUG] 2024-03-31 16:23:12.912 [main] exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+[DEBUG] 2024-03-31 16:23:12.912 [main] results - Initializer list:
+	  edu.matc.entity.Region.festivals -> DelayedCollectionInitializer(edu.matc.entity.Region.festivals)@463237487 (PluralAttribute(edu.matc.entity.Region.festivals))
+	  edu.matc.entity.Region -> EntityResultInitializer(edu.matc.entity.Region)@258721628 (SingleTableEntityPersister(edu.matc.entity.Region))
+
+[DEBUG] 2024-03-31 16:23:12.912 [main] SQL - select r1_0.region_id,r1_0.region_name from Region r1_0 where r1_0.region_id=?
+[DEBUG] 2024-03-31 16:23:12.912 [main] entity - (EntityResultInitializer) Hydrated EntityKey (edu.matc.entity.Region): 2
+[DEBUG] 2024-03-31 16:23:12.912 [main] results - Extracted JDBC value [0] - [2]
+[DEBUG] 2024-03-31 16:23:12.912 [main] collection - (DelayedCollectionInitializer) Current row collection key : edu.matc.entity.Region.festivals#2
+[DEBUG] 2024-03-31 16:23:12.912 [main] entity - (EntityResultInitializer) Created new entity instance [edu.matc.entity.Region#2] : 1574916376
+[DEBUG] 2024-03-31 16:23:12.912 [main] results - Extracted JDBC value [1] - [Northwestern]
+[DEBUG] 2024-03-31 16:23:12.912 [main] entity - (EntityResultInitializer) Done materializing entityInstance : edu.matc.entity.Region#2
+[DEBUG] 2024-03-31 16:23:12.912 [main] loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@fcd3a6f
+[DEBUG] 2024-03-31 16:23:12.912 [main] entity - (EntitySelectFetchInitializer) Entity [edu.matc.entity.Festival(274382484868875).region#2] : 2 has being loaded by session.internalLoad.
+[DEBUG] 2024-03-31 16:23:12.912 [main] results - Extracted JDBC value [1] - [Free Festival]
+[DEBUG] 2024-03-31 16:23:12.913 [main] results - Extracted JDBC value [2] - [2024-07-08]
+[DEBUG] 2024-03-31 16:23:12.913 [main] results - Extracted JDBC value [4] - [4]
+[DEBUG] 2024-03-31 16:23:12.913 [main] entity - (EntityResultInitializer) Done materializing entityInstance : edu.matc.entity.Festival(274382484868875)#3
+[DEBUG] 2024-03-31 16:23:12.913 [main] loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@7845ee8a
+[DEBUG] 2024-03-31 16:23:12.913 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2024-03-31 16:23:12.913 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2024-03-31 16:23:12.944 [main] create - Created new SQL alias : r1_0
+[DEBUG] 2024-03-31 16:23:12.944 [main] create - Registration of TableGroup [StandardTableGroup(edu.matc.entity.Region(274382532601833))] with identifierForTableGroup [edu.matc.entity.Region] for NavigablePath [edu.matc.entity.Region] 
+[DEBUG] 2024-03-31 16:23:12.945 [main] AST - DomainResult Graph:
+ \-EntityResultImpl [edu.matc.entity.Region(274382532601833)]
+ |  +-DelayedCollectionFetch [edu.matc.entity.Region(274382532601833).festivals]
+ |  \-BasicFetch [edu.matc.entity.Region(274382532601833).regionName]
+
+[DEBUG] 2024-03-31 16:23:12.945 [main] tree - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        StandardTableGroup (r1 : edu.matc.entity.Region(274382532601833)) {
+          primaryTableReference : Region as r1_0
+        }
+      }
+    }
+
+[DEBUG] 2024-03-31 16:23:12.945 [main] exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
+[DEBUG] 2024-03-31 16:23:12.945 [main] results - Initializer list:
+	  edu.matc.entity.Region(274382532601833) -> EntityResultInitializer(edu.matc.entity.Region(274382532601833))@1808986169 (SingleTableEntityPersister(edu.matc.entity.Region))
+	  edu.matc.entity.Region(274382532601833).festivals -> DelayedCollectionInitializer(edu.matc.entity.Region(274382532601833).festivals)@1821038295 (PluralAttribute(edu.matc.entity.Region.festivals))
+
+[DEBUG] 2024-03-31 16:23:12.945 [main] SQL - select r1_0.region_id,r1_0.region_name from Region r1_0
+[DEBUG] 2024-03-31 16:23:12.946 [main] results - Extracted JDBC value [0] - [3]
+[DEBUG] 2024-03-31 16:23:12.946 [main] entity - (EntityResultInitializer) Hydrated EntityKey (edu.matc.entity.Region(274382532601833)): 3
+[DEBUG] 2024-03-31 16:23:12.946 [main] results - Extracted JDBC value [0] - [3]
+[DEBUG] 2024-03-31 16:23:12.946 [main] collection - (DelayedCollectionInitializer) Current row collection key : edu.matc.entity.Region(274382532601833).festivals#3
+[DEBUG] 2024-03-31 16:23:12.946 [main] entity - (EntityResultInitializer) Created new entity instance [edu.matc.entity.Region(274382532601833)#3] : 1267821762
+[DEBUG] 2024-03-31 16:23:12.946 [main] results - Extracted JDBC value [1] - [Fox Valley]
+[DEBUG] 2024-03-31 16:23:12.946 [main] entity - (EntityResultInitializer) Done materializing entityInstance : edu.matc.entity.Region(274382532601833)#3
+[DEBUG] 2024-03-31 16:23:12.946 [main] loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@323eecf8
+[DEBUG] 2024-03-31 16:23:12.946 [main] results - Extracted JDBC value [0] - [7]
+[DEBUG] 2024-03-31 16:23:12.946 [main] entity - (EntityResultInitializer) Hydrated EntityKey (edu.matc.entity.Region(274382532601833)): 7
+[DEBUG] 2024-03-31 16:23:12.946 [main] results - Extracted JDBC value [0] - [7]
+[DEBUG] 2024-03-31 16:23:12.946 [main] collection - (DelayedCollectionInitializer) Current row collection key : edu.matc.entity.Region(274382532601833).festivals#7
+[DEBUG] 2024-03-31 16:23:12.946 [main] entity - (EntityResultInitializer) Created new entity instance [edu.matc.entity.Region(274382532601833)#7] : 771935287
+[DEBUG] 2024-03-31 16:23:12.946 [main] results - Extracted JDBC value [1] - [Greater Milwaukee]
+[DEBUG] 2024-03-31 16:23:12.946 [main] entity - (EntityResultInitializer) Done materializing entityInstance : edu.matc.entity.Region(274382532601833)#7
+[DEBUG] 2024-03-31 16:23:12.946 [main] loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@323eecf8
+[DEBUG] 2024-03-31 16:23:12.946 [main] results - Extracted JDBC value [0] - [1]
+[DEBUG] 2024-03-31 16:23:12.946 [main] entity - (EntityResultInitializer) Hydrated EntityKey (edu.matc.entity.Region(274382532601833)): 1
+[DEBUG] 2024-03-31 16:23:12.946 [main] results - Extracted JDBC value [0] - [1]
+[DEBUG] 2024-03-31 16:23:12.946 [main] collection - (DelayedCollectionInitializer) Current row collection key : edu.matc.entity.Region(274382532601833).festivals#1
+[DEBUG] 2024-03-31 16:23:12.946 [main] entity - (EntityResultInitializer) Created new entity instance [edu.matc.entity.Region(274382532601833)#1] : 409821235
+[DEBUG] 2024-03-31 16:23:12.946 [main] results - Extracted JDBC value [1] - [North Central]
+[DEBUG] 2024-03-31 16:23:12.946 [main] entity - (EntityResultInitializer) Done materializing entityInstance : edu.matc.entity.Region(274382532601833)#1
+[DEBUG] 2024-03-31 16:23:12.946 [main] loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@323eecf8
+[DEBUG] 2024-03-31 16:23:12.946 [main] results - Extracted JDBC value [0] - [4]
+[DEBUG] 2024-03-31 16:23:12.946 [main] entity - (EntityResultInitializer) Hydrated EntityKey (edu.matc.entity.Region(274382532601833)): 4
+[DEBUG] 2024-03-31 16:23:12.946 [main] results - Extracted JDBC value [0] - [4]
+[DEBUG] 2024-03-31 16:23:12.946 [main] collection - (DelayedCollectionInitializer) Current row collection key : edu.matc.entity.Region(274382532601833).festivals#4
+[DEBUG] 2024-03-31 16:23:12.946 [main] entity - (EntityResultInitializer) Created new entity instance [edu.matc.entity.Region(274382532601833)#4] : 1765907801
+[DEBUG] 2024-03-31 16:23:12.946 [main] results - Extracted JDBC value [1] - [Northeastern]
+[DEBUG] 2024-03-31 16:23:12.946 [main] entity - (EntityResultInitializer) Done materializing entityInstance : edu.matc.entity.Region(274382532601833)#4
+[DEBUG] 2024-03-31 16:23:12.946 [main] loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@323eecf8
+[DEBUG] 2024-03-31 16:23:12.946 [main] results - Extracted JDBC value [0] - [2]
+[DEBUG] 2024-03-31 16:23:12.946 [main] entity - (EntityResultInitializer) Hydrated EntityKey (edu.matc.entity.Region(274382532601833)): 2
+[DEBUG] 2024-03-31 16:23:12.946 [main] results - Extracted JDBC value [0] - [2]
+[DEBUG] 2024-03-31 16:23:12.946 [main] collection - (DelayedCollectionInitializer) Current row collection key : edu.matc.entity.Region(274382532601833).festivals#2
+[DEBUG] 2024-03-31 16:23:12.946 [main] entity - (EntityResultInitializer) Created new entity instance [edu.matc.entity.Region(274382532601833)#2] : 157316544
+[DEBUG] 2024-03-31 16:23:12.946 [main] results - Extracted JDBC value [1] - [Northwestern]
+[DEBUG] 2024-03-31 16:23:12.946 [main] entity - (EntityResultInitializer) Done materializing entityInstance : edu.matc.entity.Region(274382532601833)#2
+[DEBUG] 2024-03-31 16:23:12.946 [main] loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@323eecf8
+[DEBUG] 2024-03-31 16:23:12.946 [main] results - Extracted JDBC value [0] - [5]
+[DEBUG] 2024-03-31 16:23:12.946 [main] entity - (EntityResultInitializer) Hydrated EntityKey (edu.matc.entity.Region(274382532601833)): 5
+[DEBUG] 2024-03-31 16:23:12.946 [main] results - Extracted JDBC value [0] - [5]
+[DEBUG] 2024-03-31 16:23:12.946 [main] collection - (DelayedCollectionInitializer) Current row collection key : edu.matc.entity.Region(274382532601833).festivals#5
+[DEBUG] 2024-03-31 16:23:12.947 [main] entity - (EntityResultInitializer) Created new entity instance [edu.matc.entity.Region(274382532601833)#5] : 1182356813
+[DEBUG] 2024-03-31 16:23:12.947 [main] results - Extracted JDBC value [1] - [South Central]
+[DEBUG] 2024-03-31 16:23:12.947 [main] entity - (EntityResultInitializer) Done materializing entityInstance : edu.matc.entity.Region(274382532601833)#5
+[DEBUG] 2024-03-31 16:23:12.947 [main] loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@323eecf8
+[DEBUG] 2024-03-31 16:23:12.947 [main] results - Extracted JDBC value [0] - [6]
+[DEBUG] 2024-03-31 16:23:12.947 [main] entity - (EntityResultInitializer) Hydrated EntityKey (edu.matc.entity.Region(274382532601833)): 6
+[DEBUG] 2024-03-31 16:23:12.947 [main] results - Extracted JDBC value [0] - [6]
+[DEBUG] 2024-03-31 16:23:12.947 [main] collection - (DelayedCollectionInitializer) Current row collection key : edu.matc.entity.Region(274382532601833).festivals#6
+[DEBUG] 2024-03-31 16:23:12.947 [main] entity - (EntityResultInitializer) Created new entity instance [edu.matc.entity.Region(274382532601833)#6] : 1228225859
+[DEBUG] 2024-03-31 16:23:12.947 [main] results - Extracted JDBC value [1] - [South Eastern]
+[DEBUG] 2024-03-31 16:23:12.947 [main] entity - (EntityResultInitializer) Done materializing entityInstance : edu.matc.entity.Region(274382532601833)#6
+[DEBUG] 2024-03-31 16:23:12.947 [main] loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@323eecf8
+[DEBUG] 2024-03-31 16:23:12.947 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2024-03-31 16:23:12.947 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2024-03-31 16:23:12.975 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2024-03-31 16:23:12.975 [main] TransactionImpl - begin
+[DEBUG] 2024-03-31 16:23:12.975 [main] ActionQueue - Executing identity-insert immediately
+[DEBUG] 2024-03-31 16:23:12.975 [main] SQL - insert into Region (region_name) values (?)
+[DEBUG] 2024-03-31 16:23:12.976 [main] IdentifierGeneratorHelper - Natively generated identity (edu.matc.entity.Region) : 8
+[DEBUG] 2024-03-31 16:23:12.976 [main] ResourceRegistryStandardImpl - HHH000387: ResultSet's statement was not registered
+[DEBUG] 2024-03-31 16:23:12.977 [main] ResourceRegistryStandardImpl - Exception clearing maxRows/queryTimeout [You can't operate on a closed Statement!!!]
+[DEBUG] 2024-03-31 16:23:12.977 [main] TransactionImpl - committing
+[DEBUG] 2024-03-31 16:23:12.977 [main] AbstractFlushingEventListener - Processing flush-time cascades
+[DEBUG] 2024-03-31 16:23:12.977 [main] AbstractFlushingEventListener - Dirty checking collections
+[DEBUG] 2024-03-31 16:23:12.977 [main] Collections - Collection found: [edu.matc.entity.Region.festivals#8], was: [<unreferenced>] (initialized)
+[DEBUG] 2024-03-31 16:23:12.977 [main] AbstractFlushingEventListener - Flushed: 0 insertions, 0 updates, 0 deletions to 1 objects
+[DEBUG] 2024-03-31 16:23:12.977 [main] AbstractFlushingEventListener - Flushed: 1 (re)creations, 0 updates, 0 removals to 1 collections
+[DEBUG] 2024-03-31 16:23:12.977 [main] EntityPrinter - Listing entities:
+[DEBUG] 2024-03-31 16:23:12.977 [main] EntityPrinter - edu.matc.entity.Region{festivals=[], regionID=8, regionName=Great Region}
+[DEBUG] 2024-03-31 16:23:12.979 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2024-03-31 16:23:12.979 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2024-03-31 16:23:12.979 [main] exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+[DEBUG] 2024-03-31 16:23:12.979 [main] results - Initializer list:
+	  edu.matc.entity.Region.festivals -> DelayedCollectionInitializer(edu.matc.entity.Region.festivals)@1257637609 (PluralAttribute(edu.matc.entity.Region.festivals))
+	  edu.matc.entity.Region -> EntityResultInitializer(edu.matc.entity.Region)@400280074 (SingleTableEntityPersister(edu.matc.entity.Region))
+
+[DEBUG] 2024-03-31 16:23:12.979 [main] SQL - select r1_0.region_id,r1_0.region_name from Region r1_0 where r1_0.region_id=?
+[DEBUG] 2024-03-31 16:23:12.979 [main] entity - (EntityResultInitializer) Hydrated EntityKey (edu.matc.entity.Region): 8
+[DEBUG] 2024-03-31 16:23:12.979 [main] results - Extracted JDBC value [0] - [8]
+[DEBUG] 2024-03-31 16:23:12.979 [main] collection - (DelayedCollectionInitializer) Current row collection key : edu.matc.entity.Region.festivals#8
+[DEBUG] 2024-03-31 16:23:12.979 [main] entity - (EntityResultInitializer) Created new entity instance [edu.matc.entity.Region#8] : 2073021938
+[DEBUG] 2024-03-31 16:23:12.979 [main] results - Extracted JDBC value [1] - [Great Region]
+[DEBUG] 2024-03-31 16:23:12.980 [main] entity - (EntityResultInitializer) Done materializing entityInstance : edu.matc.entity.Region#8
+[DEBUG] 2024-03-31 16:23:12.980 [main] loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@c29b0dc
+[DEBUG] 2024-03-31 16:23:12.980 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2024-03-31 16:23:13.008 [main] exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+[DEBUG] 2024-03-31 16:23:13.008 [main] results - Initializer list:
+	  edu.matc.entity.Region.festivals -> DelayedCollectionInitializer(edu.matc.entity.Region.festivals)@1156725031 (PluralAttribute(edu.matc.entity.Region.festivals))
+	  edu.matc.entity.Region -> EntityResultInitializer(edu.matc.entity.Region)@94166581 (SingleTableEntityPersister(edu.matc.entity.Region))
+
+[DEBUG] 2024-03-31 16:23:13.008 [main] SQL - select r1_0.region_id,r1_0.region_name from Region r1_0 where r1_0.region_id=?
+[DEBUG] 2024-03-31 16:23:13.009 [main] entity - (EntityResultInitializer) Hydrated EntityKey (edu.matc.entity.Region): 1
+[DEBUG] 2024-03-31 16:23:13.009 [main] results - Extracted JDBC value [0] - [1]
+[DEBUG] 2024-03-31 16:23:13.009 [main] collection - (DelayedCollectionInitializer) Current row collection key : edu.matc.entity.Region.festivals#1
+[DEBUG] 2024-03-31 16:23:13.009 [main] entity - (EntityResultInitializer) Created new entity instance [edu.matc.entity.Region#1] : 142590204
+[DEBUG] 2024-03-31 16:23:13.009 [main] results - Extracted JDBC value [1] - [North Central]
+[DEBUG] 2024-03-31 16:23:13.009 [main] entity - (EntityResultInitializer) Done materializing entityInstance : edu.matc.entity.Region#1
+[DEBUG] 2024-03-31 16:23:13.009 [main] loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@c335b9
+[DEBUG] 2024-03-31 16:23:13.009 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2024-03-31 16:23:13.009 [main] TransactionImpl - On TransactionImpl creation, JpaCompliance#isJpaTransactionComplianceEnabled == false
+[DEBUG] 2024-03-31 16:23:13.009 [main] TransactionImpl - begin
+[DEBUG] 2024-03-31 16:23:13.009 [main] create - Created new SQL alias : r1_0
+[DEBUG] 2024-03-31 16:23:13.009 [main] create - Registration of TableGroup [StandardTableGroup(edu.matc.entity.Region)] with identifierForTableGroup [edu.matc.entity.Region] for NavigablePath [edu.matc.entity.Region] 
+[DEBUG] 2024-03-31 16:23:13.009 [main] AST - DomainResult Graph:
+ \-EntityResultImpl [edu.matc.entity.Region]
+ |  +-DelayedCollectionFetch [edu.matc.entity.Region.festivals]
+ |  \-BasicFetch [edu.matc.entity.Region.regionName]
+
+[DEBUG] 2024-03-31 16:23:13.009 [main] tree - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        StandardTableGroup (r1 : edu.matc.entity.Region) {
+          primaryTableReference : Region as r1_0
+        }
+      }
+    }
+
+[DEBUG] 2024-03-31 16:23:13.010 [main] exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+[DEBUG] 2024-03-31 16:23:13.010 [main] results - Initializer list:
+	  edu.matc.entity.Region.festivals -> DelayedCollectionInitializer(edu.matc.entity.Region.festivals)@510050093 (PluralAttribute(edu.matc.entity.Region.festivals))
+	  edu.matc.entity.Region -> EntityResultInitializer(edu.matc.entity.Region)@118566821 (SingleTableEntityPersister(edu.matc.entity.Region))
+
+[DEBUG] 2024-03-31 16:23:13.010 [main] SQL - select r1_0.region_id,r1_0.region_name from Region r1_0 where r1_0.region_id=?
+[DEBUG] 2024-03-31 16:23:13.010 [main] entity - (EntityResultInitializer) Hydrated EntityKey (edu.matc.entity.Region): 4
+[DEBUG] 2024-03-31 16:23:13.010 [main] results - Extracted JDBC value [0] - [4]
+[DEBUG] 2024-03-31 16:23:13.010 [main] collection - (DelayedCollectionInitializer) Current row collection key : edu.matc.entity.Region.festivals#4
+[DEBUG] 2024-03-31 16:23:13.010 [main] entity - (EntityResultInitializer) Created new entity instance [edu.matc.entity.Region#4] : 942798018
+[DEBUG] 2024-03-31 16:23:13.010 [main] results - Extracted JDBC value [1] - [Northeastern]
+[DEBUG] 2024-03-31 16:23:13.010 [main] entity - (EntityResultInitializer) Done materializing entityInstance : edu.matc.entity.Region#4
+[DEBUG] 2024-03-31 16:23:13.010 [main] loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@253b1cbd
+[DEBUG] 2024-03-31 16:23:13.010 [main] TransactionImpl - committing
+[DEBUG] 2024-03-31 16:23:13.010 [main] AbstractFlushingEventListener - Processing flush-time cascades
+[DEBUG] 2024-03-31 16:23:13.010 [main] AbstractFlushingEventListener - Dirty checking collections
+[DEBUG] 2024-03-31 16:23:13.010 [main] Collections - Collection found: [edu.matc.entity.Region.festivals#4], was: [edu.matc.entity.Region.festivals#4] (uninitialized)
+[DEBUG] 2024-03-31 16:23:13.010 [main] AbstractFlushingEventListener - Flushed: 0 insertions, 1 updates, 0 deletions to 1 objects
+[DEBUG] 2024-03-31 16:23:13.010 [main] AbstractFlushingEventListener - Flushed: 0 (re)creations, 0 updates, 0 removals to 1 collections
+[DEBUG] 2024-03-31 16:23:13.010 [main] EntityPrinter - Listing entities:
+[DEBUG] 2024-03-31 16:23:13.010 [main] EntityPrinter - edu.matc.entity.Region{festivals=<uninitialized>, regionID=4, regionName=North Central}
+[DEBUG] 2024-03-31 16:23:13.010 [main] SQL - update Region set region_name=? where region_id=?
+[DEBUG] 2024-03-31 16:23:13.011 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2024-03-31 16:23:13.011 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2024-03-31 16:23:13.011 [main] exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+[DEBUG] 2024-03-31 16:23:13.011 [main] results - Initializer list:
+	  edu.matc.entity.Region.festivals -> DelayedCollectionInitializer(edu.matc.entity.Region.festivals)@1784938289 (PluralAttribute(edu.matc.entity.Region.festivals))
+	  edu.matc.entity.Region -> EntityResultInitializer(edu.matc.entity.Region)@474654465 (SingleTableEntityPersister(edu.matc.entity.Region))
+
+[DEBUG] 2024-03-31 16:23:13.011 [main] SQL - select r1_0.region_id,r1_0.region_name from Region r1_0 where r1_0.region_id=?
+[DEBUG] 2024-03-31 16:23:13.011 [main] entity - (EntityResultInitializer) Hydrated EntityKey (edu.matc.entity.Region): 1
+[DEBUG] 2024-03-31 16:23:13.011 [main] results - Extracted JDBC value [0] - [1]
+[DEBUG] 2024-03-31 16:23:13.011 [main] collection - (DelayedCollectionInitializer) Current row collection key : edu.matc.entity.Region.festivals#1
+[DEBUG] 2024-03-31 16:23:13.011 [main] entity - (EntityResultInitializer) Created new entity instance [edu.matc.entity.Region#1] : 275925618
+[DEBUG] 2024-03-31 16:23:13.011 [main] results - Extracted JDBC value [1] - [North Central]
+[DEBUG] 2024-03-31 16:23:13.011 [main] entity - (EntityResultInitializer) Done materializing entityInstance : edu.matc.entity.Region#1
+[DEBUG] 2024-03-31 16:23:13.011 [main] loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@10301d6f
+[DEBUG] 2024-03-31 16:23:13.012 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2024-03-31 16:23:13.064 [main] exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+[DEBUG] 2024-03-31 16:23:13.064 [main] results - Initializer list:
+	  edu.matc.entity.Region.festivals -> DelayedCollectionInitializer(edu.matc.entity.Region.festivals)@789654238 (PluralAttribute(edu.matc.entity.Region.festivals))
+	  edu.matc.entity.Region -> EntityResultInitializer(edu.matc.entity.Region)@1015200451 (SingleTableEntityPersister(edu.matc.entity.Region))
+
+[DEBUG] 2024-03-31 16:23:13.064 [main] SQL - select r1_0.region_id,r1_0.region_name from Region r1_0 where r1_0.region_id=?
+[DEBUG] 2024-03-31 16:23:13.065 [main] entity - (EntityResultInitializer) Hydrated EntityKey (edu.matc.entity.Region): 3
+[DEBUG] 2024-03-31 16:23:13.065 [main] results - Extracted JDBC value [0] - [3]
+[DEBUG] 2024-03-31 16:23:13.065 [main] collection - (DelayedCollectionInitializer) Current row collection key : edu.matc.entity.Region.festivals#3
+[DEBUG] 2024-03-31 16:23:13.065 [main] entity - (EntityResultInitializer) Created new entity instance [edu.matc.entity.Region#3] : 170201397
+[DEBUG] 2024-03-31 16:23:13.065 [main] results - Extracted JDBC value [1] - [Fox Valley]
+[DEBUG] 2024-03-31 16:23:13.065 [main] entity - (EntityResultInitializer) Done materializing entityInstance : edu.matc.entity.Region#3
+[DEBUG] 2024-03-31 16:23:13.065 [main] loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@446a692f
+[DEBUG] 2024-03-31 16:23:13.065 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2024-03-31 16:23:13.091 [main] create - Created new SQL alias : r1_0
+[DEBUG] 2024-03-31 16:23:13.091 [main] create - Registration of TableGroup [StandardTableGroup(edu.matc.entity.Region(274382679387875))] with identifierForTableGroup [edu.matc.entity.Region] for NavigablePath [edu.matc.entity.Region] 
+[DEBUG] 2024-03-31 16:23:13.092 [main] BaseSqmToSqlAstConverter - Determining mapping-model type for SqmParameter : org.hibernate.query.sqm.tree.expression.SqmJpaCriteriaParameterWrapper@61246109
+[DEBUG] 2024-03-31 16:23:13.092 [main] BaseSqmToSqlAstConverter - Determining mapping-model type for SqmPath : SqmBasicValuedSimplePath(edu.matc.entity.Region(274382679387875).regionID) 
+[DEBUG] 2024-03-31 16:23:13.092 [main] AST - DomainResult Graph:
+ \-EntityResultImpl [edu.matc.entity.Region(274382679387875)]
+ |  +-DelayedCollectionFetch [edu.matc.entity.Region(274382679387875).festivals]
+ |  \-BasicFetch [edu.matc.entity.Region(274382679387875).regionName]
+
+[DEBUG] 2024-03-31 16:23:13.092 [main] tree - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        StandardTableGroup (r1 : edu.matc.entity.Region(274382679387875)) {
+          primaryTableReference : Region as r1_0
+        }
+      }
+    }
+
+[DEBUG] 2024-03-31 16:23:13.092 [main] exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
+[DEBUG] 2024-03-31 16:23:13.092 [main] results - Initializer list:
+	  edu.matc.entity.Region(274382679387875).festivals -> DelayedCollectionInitializer(edu.matc.entity.Region(274382679387875).festivals)@93923756 (PluralAttribute(edu.matc.entity.Region.festivals))
+	  edu.matc.entity.Region(274382679387875) -> EntityResultInitializer(edu.matc.entity.Region(274382679387875))@1318834888 (SingleTableEntityPersister(edu.matc.entity.Region))
+
+[DEBUG] 2024-03-31 16:23:13.092 [main] SQL - select r1_0.region_id,r1_0.region_name from Region r1_0 where r1_0.region_id=?
+[DEBUG] 2024-03-31 16:23:13.093 [main] results - Extracted JDBC value [0] - [3]
+[DEBUG] 2024-03-31 16:23:13.093 [main] entity - (EntityResultInitializer) Hydrated EntityKey (edu.matc.entity.Region(274382679387875)): 3
+[DEBUG] 2024-03-31 16:23:13.093 [main] results - Extracted JDBC value [0] - [3]
+[DEBUG] 2024-03-31 16:23:13.093 [main] collection - (DelayedCollectionInitializer) Current row collection key : edu.matc.entity.Region(274382679387875).festivals#3
+[DEBUG] 2024-03-31 16:23:13.093 [main] entity - (EntityResultInitializer) Created new entity instance [edu.matc.entity.Region(274382679387875)#3] : 597521407
+[DEBUG] 2024-03-31 16:23:13.093 [main] results - Extracted JDBC value [1] - [Fox Valley]
+[DEBUG] 2024-03-31 16:23:13.093 [main] entity - (EntityResultInitializer) Done materializing entityInstance : edu.matc.entity.Region(274382679387875)#3
+[DEBUG] 2024-03-31 16:23:13.093 [main] loading - Calling top-level assembler (0 / 1) : org.hibernate.sql.results.graph.entity.internal.EntityAssembler@64dcf763
+[DEBUG] 2024-03-31 16:23:13.093 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction
+[DEBUG] 2024-03-31 16:23:13.093 [main] LogicalConnectionManagedImpl - Initiating JDBC connection release from afterTransaction

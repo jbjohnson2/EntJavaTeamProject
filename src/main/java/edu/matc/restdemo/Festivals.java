@@ -1,6 +1,7 @@
 package edu.matc.restdemo;
 
 import edu.matc.entity.Festival;
+import edu.matc.entity.Region;
 import edu.matc.persistence.GenericDao;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.LogManager;
@@ -93,12 +94,12 @@ public class Festivals {
     }
 
     @POST
-    @Path("/{name}/{regionId}/{typeId}/{date}")
+    @Path("/{name}/{region}/{typeId}/{date}")
     /**
      * This method's purpose is to return all festivals
      */
     public Response postFestivals(@PathParam("name") String name,
-                                  @PathParam("regionId") int regionId,
+                                  @PathParam("region") Region region,
                                   @PathParam("typeId") int typeId,
                                   @PathParam("date") String date) {
         genericDao = new GenericDao<>(Festival.class);
@@ -106,7 +107,7 @@ public class Festivals {
         LocalDate localDate = LocalDate.parse(date);
 
         festival.setFestivalName(name);
-        festival.setRegionID(regionId);
+        festival.setRegion(region);
         festival.setTypeID(typeId);
         festival.setFestivalStartDate(localDate);
 

@@ -4,6 +4,9 @@ import jakarta.persistence.*;
 import org.hibernate.annotations.GenericGenerator;
 import jakarta.persistence.*;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * class represents a  region.
  */
@@ -18,6 +21,8 @@ public class Region {
     private int regionID;
     @Column (name = "region_name")
     private String regionName;
+    @OneToMany(mappedBy = "region")
+    private List<Festival> festivals = new ArrayList<>();
 
     /**
      * Instantiates a new Region.

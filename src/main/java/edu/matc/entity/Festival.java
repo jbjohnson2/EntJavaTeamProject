@@ -1,12 +1,11 @@
 package edu.matc.entity;
 
+import edu.matc.entity.Region;
 import jakarta.persistence.*;
 import org.hibernate.annotations.GenericGenerator;
 
 
-import javax.ejb.Local;
 import java.time.LocalDate;
-import java.util.Date;
 
 
 /**
@@ -22,30 +21,32 @@ public class Festival {
     @Column(name = "festival_id")
     @GeneratedValue(strategy= GenerationType.AUTO, generator="native")
     @GenericGenerator(name = "native",strategy = "native")
-    int festivalID;
+    private int festivalID;
 
     /**
      * The Festival name.
      */
     @Column(name = "festival_name")
-    String festivalName;
+    private String festivalName;
+
 
     /**
-     * The Region id.
+     * The Region
      */
-    @Column(name = "region_id")
-    int regionID;
+    @ManyToOne
+    @JoinColumn(name="region_id")
+    private Region region;
 
     /**
      * The Type id.
      */
     @Column(name = "type_id")
-    int typeID;
+    private int typeID;
     /**
      * The Festival start date.
      */
     @Column(name = "festival_start_date")
-    LocalDate festivalStartDate;
+    private LocalDate festivalStartDate;
 
     /**
      * Instantiates a new Festival.
@@ -57,13 +58,13 @@ public class Festival {
      * Instantiates a new Festival.
      *
      * @param festivalName      the festival name
-     * @param regionID          the region id
+     * @param region            the region
      * @param typeID            the type id
      * @param festivalStartDate the festival start date
      */
-    public Festival(String festivalName, int regionID, int typeID, LocalDate festivalStartDate) {
+    public Festival(String festivalName, Region region, int typeID, LocalDate festivalStartDate) {
         this.festivalName = festivalName;
-        this.regionID = regionID;
+        this.region = region;
         this.typeID = typeID;
         this.festivalStartDate = festivalStartDate;
     }
@@ -106,21 +107,6 @@ public class Festival {
 
     /**
      * Gets region id.
-     *
-     * @return the region id
-     */
-    public int getRegionID() {
-        return regionID;
-    }
-
-    /**
-     * Sets region id.
-     *
-     * @param regionID the region id
-     */
-    public void setRegionID(int regionID) {
-        this.regionID = regionID;
-    }
 
     /**
      * Gets type id.
@@ -138,6 +124,14 @@ public class Festival {
      */
     public void setTypeID(int typeID) {
         this.typeID = typeID;
+    }
+
+    public Region getRegion() {
+        return region;
+    }
+
+    public void setRegion(Region region) {
+        this.region = region;
     }
 
     /**
@@ -163,7 +157,7 @@ public class Festival {
         return "Festival{" +
                 "festivalID=" + festivalID +
                 ", festivalName='" + festivalName + '\'' +
-                ", regionID=" + regionID +
+                ", region=" + region +
                 ", typeID=" + typeID +
                 ", festivalStartDate=" + festivalStartDate +
                 '}';

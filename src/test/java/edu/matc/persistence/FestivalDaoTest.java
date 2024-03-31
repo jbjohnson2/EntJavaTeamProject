@@ -1,6 +1,7 @@
 package edu.matc.persistence;
 
 import edu.matc.entity.Festival;
+import edu.matc.entity.Region;
 import edu.matc.util.Database;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -64,13 +65,16 @@ class FestivalDaoTest {
      */
     @Test
     void insert() {
-        Festival festivalToInsert = new Festival("Great Festival", 3, 4, LocalDate.parse("2024-11-12"));
+        GenericDao regionDao = new GenericDao(Region.class);
+        Region regionOfFestival = (Region)regionDao.getById(6);
+        Festival festivalToInsert = new Festival("Great Festival", regionOfFestival, 4, LocalDate.parse("2024-11-12"));
         int insertedFestivalID = genericDao.insert(festivalToInsert);
         assertNotEquals(0, insertedFestivalID);
         Festival insertedFestival = (Festival)genericDao.getById(insertedFestivalID);
         assertEquals("Great Festival", insertedFestival.getFestivalName());
 
     }
+
 
     /**
      * Update.
@@ -92,9 +96,9 @@ class FestivalDaoTest {
      */
     @Test
     void findByPropertyEqual() {
-        List<Festival> festivals = genericDao.findByPropertyEqual("regionID", 3);
+        List<Festival> festivals = genericDao.findByPropertyEqual("festivalName", "Free Festival");
         assertEquals(1, festivals.size());
-        assertEquals(4, festivals.get(0).getFestivalID());
+        assertEquals(3, festivals.get(0).getFestivalID());
     }
 
     /**
