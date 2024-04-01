@@ -40,6 +40,7 @@ public class Festival {
     /**
      * The Type id.
      */
+
     @Column(name = "type_id")
     private int typeID;
     /**
@@ -58,7 +59,7 @@ public class Festival {
      * Instantiates a new Festival.
      *
      * @param festivalName      the festival name
-     * @param regionID           the region
+     * @param regionID           the region id
      * @param typeID            the type id
      * @param festivalStartDate the festival start date
      */
@@ -105,23 +106,11 @@ public class Festival {
         this.festivalName = festivalName;
     }
 
-    /**
-     * Gets region id.
 
-    /**
-     * Gets type id.
-     *
-     * @return the type id
-     */
     public int getTypeID() {
         return typeID;
     }
 
-    /**
-     * Sets type id.
-     *
-     * @param typeID the type id
-     */
     public void setTypeID(int typeID) {
         this.typeID = typeID;
     }
