@@ -2,12 +2,14 @@ package edu.matc.persistence;
 
 import edu.matc.entity.Festival;
 import edu.matc.entity.Region;
+import edu.matc.entity.Type;
 import edu.matc.util.Database;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;
 import java.util.List;
+import java.util.Map;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -67,7 +69,9 @@ class FestivalDaoTest {
     void insert() {
         GenericDao regionDao = new GenericDao(Region.class);
         Region regionOfFestival = (Region)regionDao.getById(6);
-        Festival festivalToInsert = new Festival("Great Festival", regionOfFestival, 4, LocalDate.parse("2024-11-12"));
+        GenericDao typeDao = new GenericDao((Type.class));
+        Type typeOfFestival = (Type)typeDao.getById(5);
+        Festival festivalToInsert = new Festival("Great Festival", regionOfFestival, typeOfFestival, LocalDate.parse("2024-11-12"));
         int insertedFestivalID = genericDao.insert(festivalToInsert);
         assertNotEquals(0, insertedFestivalID);
         Festival insertedFestival = (Festival)genericDao.getById(insertedFestivalID);
@@ -81,13 +85,15 @@ class FestivalDaoTest {
      */
     @Test
     void update() {
+        GenericDao typeDao = new GenericDao(Type.class);
+        Type typeToInsert = (Type)typeDao.getById(3);
         Festival festivalToUpdate = (Festival)genericDao.getById(1);
-        festivalToUpdate.setTypeID(4);
+        festivalToUpdate.setType(typeToInsert);
         genericDao.update(festivalToUpdate);
 
         //retrieve the user and check that the name change worked
         Festival actualFestival = (Festival)genericDao.getById(1);
-        assertEquals(4, actualFestival.getTypeID());
+        assertEquals(3, actualFestival.getType().getTypeID());
     }
 
 
@@ -101,11 +107,13 @@ class FestivalDaoTest {
         assertEquals(3, festivals.get(0).getFestivalID());
     }
 
-    /**
-     * Test find by property equal.
-     */
-    @Test
-    void testFindByPropertyEqual() {
-        //TODO write this test
-    }
+//    /**
+//     * Test find by property equal.
+//     */
+//    @Test
+//    void testFindByPropertyEqual() {
+//        List<Festival> festivals = genericDao.findByPropertyEqual("Region", 3);
+//
+//        //TODO write this test
+//    }
 }

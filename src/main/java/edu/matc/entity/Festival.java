@@ -40,8 +40,9 @@ public class Festival {
     /**
      * The Type id.
      */
-    @Column(name = "type_id")
-    private int typeID;
+    @ManyToOne
+    @JoinColumn(name = "type_id")
+    private Type type;
     /**
      * The Festival start date.
      */
@@ -59,13 +60,13 @@ public class Festival {
      *
      * @param festivalName      the festival name
      * @param region            the region
-     * @param typeID            the type id
+     * @param type            the type
      * @param festivalStartDate the festival start date
      */
-    public Festival(String festivalName, Region region, int typeID, LocalDate festivalStartDate) {
+    public Festival(String festivalName, Region region, Type type, LocalDate festivalStartDate) {
         this.festivalName = festivalName;
         this.region = region;
-        this.typeID = typeID;
+        this.type = type;
         this.festivalStartDate = festivalStartDate;
     }
 
@@ -105,25 +106,12 @@ public class Festival {
         this.festivalName = festivalName;
     }
 
-    /**
-     * Gets region id.
-
-    /**
-     * Gets type id.
-     *
-     * @return the type id
-     */
-    public int getTypeID() {
-        return typeID;
+    public Type getType() {
+        return type;
     }
 
-    /**
-     * Sets type id.
-     *
-     * @param typeID the type id
-     */
-    public void setTypeID(int typeID) {
-        this.typeID = typeID;
+    public void setType(Type type) {
+        this.type = type;
     }
 
     public Region getRegion() {
@@ -158,7 +146,7 @@ public class Festival {
                 "festivalID=" + festivalID +
                 ", festivalName='" + festivalName + '\'' +
                 ", region=" + region +
-                ", typeID=" + typeID +
+                ", type=" + type +
                 ", festivalStartDate=" + festivalStartDate +
                 '}';
     }

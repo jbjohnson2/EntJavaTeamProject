@@ -16,7 +16,7 @@
 ### Week 2
 
 - [X] Meeting Monday, March 25th at 10AM
-- [ ] Add Technologies to readMe 
+- [X] Add Technologies to readMe 
 - [X] Add Links to TimeLog and Project Plan to readMe 
 - [X] Create GetAllFestivals ()
 - [X] Create getAllRegions
@@ -30,8 +30,8 @@
 - [ ] Post - need to update to check if region/ type exits
 - [X] combine classes for regions/ festivals/ types
 - [X] update problem statement (jen)
-- [ ] add dao tests for region (jen)
-- [ ] add dao tests for type(jen)
+- [X] add dao tests for region (jen)
+- [X] add dao tests for type(jen)
 - [ ] add test for Festivals
 - [ ] add test for Regions
 - [ ] add test for Types
