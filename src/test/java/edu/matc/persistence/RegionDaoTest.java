@@ -97,11 +97,5 @@ class RegionDaoTest {
         assertEquals(3, regions.get(0).getRegionID());
     }
 
-    /**
-     * Test find by property equal.
-     */
-    @Test
-    void testFindByPropertyEqual() {
-        //TODO write this test
-    }
+
 }
