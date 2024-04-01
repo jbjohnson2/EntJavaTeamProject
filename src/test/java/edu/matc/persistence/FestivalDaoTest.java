@@ -66,8 +66,7 @@ class FestivalDaoTest {
     @Test
     void insert() {
         GenericDao regionDao = new GenericDao(Region.class);
-        Region regionOfFestival = (Region)regionDao.getById(6);
-        Festival festivalToInsert = new Festival("Great Festival", regionOfFestival, 4, LocalDate.parse("2024-11-12"));
+        Festival festivalToInsert = new Festival("Great Festival", 3, 4, LocalDate.parse("2024-11-12"));
         int insertedFestivalID = genericDao.insert(festivalToInsert);
         assertNotEquals(0, insertedFestivalID);
         Festival insertedFestival = (Festival)genericDao.getById(insertedFestivalID);

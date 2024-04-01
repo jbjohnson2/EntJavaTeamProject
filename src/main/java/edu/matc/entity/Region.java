@@ -21,8 +21,6 @@ public class Region {
     private int regionID;
     @Column (name = "region_name")
     private String regionName;
-    @OneToMany(mappedBy = "region")
-    private List<Festival> festivals = new ArrayList<>();
 
     /**
      * Instantiates a new Region.

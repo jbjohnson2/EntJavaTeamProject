@@ -24,3 +24,9 @@
 [INFO ] 2024-03-31 16:23:57.645 [http-nio-8080-exec-7] Regions - OutboundJaxrsResponse{status=200, reason=OK, hasEntity=true, closed=false, buffered=false}
 [INFO ] 2024-03-31 16:24:09.054 [http-nio-8080-exec-8] Types - [{"typeID":5,"type":"arts"},{"typeID":6,"type":"community"},{"typeID":4,"type":"cultural"},{"typeID":2,"type":"film"},{"typeID":3,"type":"food"},{"typeID":7,"type":"misc/other"},{"typeID":1,"type":"music"}]
 [INFO ] 2024-03-31 16:24:09.055 [http-nio-8080-exec-8] Types - OutboundJaxrsResponse{status=200, reason=OK, hasEntity=true, closed=false, buffered=false}
+[DEBUG] 2024-04-01 05:50:48.631 [main] GenericDao - Festival{festivalID=2, festivalName='The 2nd Festival', region=Region{regionID=4, regionName='Northeastern'}, typeID=6, festivalStartDate=2024-02-02}
+[DEBUG] 2024-04-01 05:51:40.214 [main] GenericDao - Festival{festivalID=2, festivalName='The 2nd Festival', region=Region{regionID=4, regionName='Northeastern'}, typeID=6, festivalStartDate=2024-02-02}
+[DEBUG] 2024-04-01 06:12:18.878 [main] GenericDao - Festival{festivalID=2, festivalName='The 2nd Festival', region=4, typeID=6, festivalStartDate=2024-02-02}
+[DEBUG] 2024-04-01 06:15:35.992 [main] GenericDao - Festival{festivalID=2, festivalName='The 2nd Festival', region=4, typeID=6, festivalStartDate=2024-02-02}
+[DEBUG] 2024-04-01 06:16:09.389 [main] GenericDao - Festival{festivalID=2, festivalName='The 2nd Festival', region=4, typeID=6, festivalStartDate=2024-02-02}
+[DEBUG] 2024-04-01 06:17:46.184 [main] GenericDao - Festival{festivalID=2, festivalName='The 2nd Festival', region=4, typeID=6, festivalStartDate=2024-02-02}

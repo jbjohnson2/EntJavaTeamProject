@@ -69,6 +69,61 @@ public class Festivals {
         return Response.status(200).entity(output).build();
     }
 
+    /**
+     * Gets festival by type id.
+     *
+     * @param typeID the id
+     * @return the festival by type id
+     */
+    @GET
+
+    @Path("/types/{param}")
+
+    @Produces("text/plain")
+
+    public Response getFestivalByTypeId(@PathParam("param") int typeID) {
+
+        // Return the festival specified by the id
+        if (genericDao.findByPropertyEqual("typeID", typeID) == null) {
+
+            output = "No festivals could be found";
+
+        } else {
+
+            output = "Here's the festival: " + genericDao.findByPropertyEqual("typeID", typeID);
+        }
+
+        return Response.status(200).entity(output).build();
+    }
+
+
+    /**
+     * Gets festival by region id.
+     *
+     * @param regionID the region id
+     * @return the festival by region id
+     */
+    @GET
+
+    @Path("/regions/{param}")
+
+    @Produces("text/plain")
+
+    public Response getFestivalByRegionId(@PathParam("param") int regionID) {
+
+        // Return the festival specified by the id
+        if (genericDao.findByPropertyEqual("regionID", regionID) == null) {
+
+            output = "No festivals could be found";
+
+        } else {
+
+            output = "Here's the festival: " + genericDao.findByPropertyEqual("regionID", regionID);
+        }
+
+        return Response.status(200).entity(output).build();
+    }
+
     // The Java method will process HTTP GET requests
     @GET
 
@@ -94,12 +149,12 @@ public class Festivals {
     }
 
     @POST
-    @Path("/{name}/{region}/{typeId}/{date}")
+    @Path("/{name}/{regionId}/{typeId}/{date}")
     /**
      * This method's purpose is to return all festivals
      */
     public Response postFestivals(@PathParam("name") String name,
-                                  @PathParam("region") Region region,
+                                  @PathParam("regionId") int regionId,
                                   @PathParam("typeId") int typeId,
                                   @PathParam("date") String date) {
         genericDao = new GenericDao<>(Festival.class);
@@ -107,7 +162,7 @@ public class Festivals {
         LocalDate localDate = LocalDate.parse(date);
 
         festival.setFestivalName(name);
-        festival.setRegion(region);
+        festival.setRegionID(regionId);
         festival.setTypeID(typeId);
         festival.setFestivalStartDate(localDate);
 

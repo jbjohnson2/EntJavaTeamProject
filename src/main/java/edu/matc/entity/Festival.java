@@ -33,9 +33,9 @@ public class Festival {
     /**
      * The Region
      */
-    @ManyToOne
-    @JoinColumn(name="region_id")
-    private Region region;
+
+    @Column(name="region_id")
+    private int regionID;
 
     /**
      * The Type id.
@@ -58,13 +58,13 @@ public class Festival {
      * Instantiates a new Festival.
      *
      * @param festivalName      the festival name
-     * @param region            the region
+     * @param regionID           the region
      * @param typeID            the type id
      * @param festivalStartDate the festival start date
      */
-    public Festival(String festivalName, Region region, int typeID, LocalDate festivalStartDate) {
+    public Festival(String festivalName, int regionID, int typeID, LocalDate festivalStartDate) {
         this.festivalName = festivalName;
-        this.region = region;
+        this.regionID = regionID;
         this.typeID = typeID;
         this.festivalStartDate = festivalStartDate;
     }
@@ -126,12 +126,12 @@ public class Festival {
         this.typeID = typeID;
     }
 
-    public Region getRegion() {
-        return region;
+    public int getRegionID() {
+        return regionID;
     }
 
-    public void setRegion(Region region) {
-        this.region = region;
+    public void setRegionID(int regionID) {
+        this.regionID = regionID;
     }
 
     /**
@@ -157,7 +157,7 @@ public class Festival {
         return "Festival{" +
                 "festivalID=" + festivalID +
                 ", festivalName='" + festivalName + '\'' +
-                ", region=" + region +
+                ", region=" + regionID +
                 ", typeID=" + typeID +
                 ", festivalStartDate=" + festivalStartDate +
                 '}';
