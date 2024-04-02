@@ -161,25 +161,18 @@ public class Festivals {
                                   @PathParam("typeId") int typeId,
                                   @PathParam("date") String date) {
 
-        genericDao = new GenericDao<>(Festival.class);
         GenericDao regionDao = new GenericDao(Region.class);
         GenericDao typeDao = new GenericDao(Type.class);
-        Festival festival = new Festival();
         LocalDate localDate = LocalDate.parse(date);
 
-
-        if (typeId < 1 || typeId > 7) {
+        if (typeDao.getById(typeId) == null) {
             output = "Please enter a valid type id";
-        } else if (regionId < 1 || regionId > 7) {
-            output= "Please enter a valid region ID";
+        } else if (regionDao.getById(regionId) == null) {
+            output = "Please enter a valid region ID";
         } else {
-            festival.setFestivalName(name);
-            festival.setRegionID(regionId);
-            festival.setTypeID(typeId);
-            festival.setFestivalStartDate(localDate);
+            Festival festival = new Festival(name, regionId, typeId, date);
             int id = genericDao.insert(festival);
-            String output = "You've successfully added a festival with an Id of " + id;
-
+            output = "You've successfully added a festival with an Id of " + id;
         }
         return Response.status(200).entity(output).build();
     }
