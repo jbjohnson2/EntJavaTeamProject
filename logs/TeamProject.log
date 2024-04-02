@@ -53,3 +53,6 @@
 [DEBUG] 2024-04-02 09:01:20.553 [main] GenericDao - Festival{festivalID=2, festivalName='The 2nd Festival', region=4, typeID=6, festivalStartDate=2024-02-02}
 [DEBUG] 2024-04-02 09:47:56.690 [main] GenericDao - Festival{festivalID=2, festivalName='The 2nd Festival', region=4, typeID=6, festivalStartDate=2024-02-02}
 [DEBUG] 2024-04-02 09:55:31.886 [main] GenericDao - Festival{festivalID=2, festivalName='The 2nd Festival', region=4, typeID=6, festivalStartDate=2024-02-02}
+[DEBUG] 2024-04-02 10:49:23.322 [main] GenericDao - Festival{festivalID=2, festivalName='The 2nd Festival', region=4, typeID=6, festivalStartDate=2024-02-02}
+[INFO ] 2024-04-02 10:49:41.760 [http-nio-8080-exec-4] Types - {"typeID":3,"type":"food"}
+[INFO ] 2024-04-02 10:49:41.764 [http-nio-8080-exec-4] Types - OutboundJaxrsResponse{status=200, reason=OK, hasEntity=true, closed=false, buffered=false}

@@ -58,4 +58,5 @@ public class Types {
         }
 
         return Response.status(500).entity(typeString).build();
+    }
 }
