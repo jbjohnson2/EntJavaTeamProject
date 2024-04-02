@@ -41,9 +41,22 @@ public class Types {
     @Path("/{id}")
     @Produces("application/json")
     public Response getMessage(@PathParam("id") int id) {
+        ObjectMapper objectMapper = new ObjectMapper();
         GenericDao<Type> typeDao = new GenericDao<>(Type.class);
         Type type = typeDao.getById(id);
+        String typeString = "Error making json file";
 
-        return Response.status(500).entity(type.getType()).build();
+        try {
+            typeString = objectMapper.writeValueAsString(type);
+
+            logger.info(typeString);
+            logger.info(Response.status(200).entity(typeString).build());
+
+            return Response.status(200).entity(typeString).build();
+        } catch (JsonProcessingException jsonProcessingException) {
+            logger.error("Error making json file", jsonProcessingException);
+        }
+
+        return Response.status(500).entity(typeString).build();
     }
 }
