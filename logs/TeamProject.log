@@ -53,3 +53,15 @@
 [DEBUG] 2024-04-02 09:01:20.553 [main] GenericDao - Festival{festivalID=2, festivalName='The 2nd Festival', region=4, typeID=6, festivalStartDate=2024-02-02}
 [DEBUG] 2024-04-02 09:47:56.690 [main] GenericDao - Festival{festivalID=2, festivalName='The 2nd Festival', region=4, typeID=6, festivalStartDate=2024-02-02}
 [DEBUG] 2024-04-02 09:55:31.886 [main] GenericDao - Festival{festivalID=2, festivalName='The 2nd Festival', region=4, typeID=6, festivalStartDate=2024-02-02}
+[DEBUG] 2024-04-02 10:26:23.935 [main] GenericDao - Festival{festivalID=2, festivalName='The 2nd Festival', region=4, typeID=6, festivalStartDate=2024-02-02}
+[DEBUG] 2024-04-02 10:27:46.453 [main] GenericDao - Festival{festivalID=2, festivalName='The 2nd Festival', region=4, typeID=6, festivalStartDate=2024-02-02}
+[DEBUG] 2024-04-02 10:29:16.937 [main] GenericDao - Festival{festivalID=2, festivalName='The 2nd Festival', region=4, typeID=6, festivalStartDate=2024-02-02}
+[DEBUG] 2024-04-02 10:32:14.718 [main] GenericDao - Festival{festivalID=2, festivalName='The 2nd Festival', region=4, typeID=6, festivalStartDate=2024-02-02}
+[INFO ] 2024-04-02 10:33:04.354 [http-nio-8080-exec-8] Regions - [{"regionID":3,"regionName":"Fox Valley"},{"regionID":7,"regionName":"Greater Milwaukee"},{"regionID":1,"regionName":"North Central"},{"regionID":4,"regionName":"Northeastern"},{"regionID":2,"regionName":"Northwestern"},{"regionID":5,"regionName":"South Central"},{"regionID":6,"regionName":"South Eastern"}]
+[INFO ] 2024-04-02 10:33:04.358 [http-nio-8080-exec-8] Regions - OutboundJaxrsResponse{status=200, reason=OK, hasEntity=true, closed=false, buffered=false}
+[INFO ] 2024-04-02 10:33:07.375 [http-nio-8080-exec-9] Regions - {"regionID":3,"regionName":"Fox Valley"}
+[INFO ] 2024-04-02 10:33:07.375 [http-nio-8080-exec-9] Regions - OutboundJaxrsResponse{status=200, reason=OK, hasEntity=true, closed=false, buffered=false}
+[INFO ] 2024-04-02 10:33:24.469 [http-nio-8080-exec-10] Regions - {"regionID":7,"regionName":"Greater Milwaukee"}
+[INFO ] 2024-04-02 10:33:24.469 [http-nio-8080-exec-10] Regions - OutboundJaxrsResponse{status=200, reason=OK, hasEntity=true, closed=false, buffered=false}
+[INFO ] 2024-04-02 10:34:21.519 [http-nio-8080-exec-2] Regions - {"regionID":4,"regionName":"Northeastern"}
+[INFO ] 2024-04-02 10:34:21.519 [http-nio-8080-exec-2] Regions - OutboundJaxrsResponse{status=200, reason=OK, hasEntity=true, closed=false, buffered=false}

@@ -44,9 +44,23 @@ public class Regions {
     @Path("/{id}")
     @Produces("application/json")
     public Response getMessage(@PathParam("id") int id) {
+        ObjectMapper objectMapper = new ObjectMapper();
         GenericDao<Region> regionDao = new GenericDao<>(Region.class);
         Region region = regionDao.getById(id);
 
-        return Response.status(500).entity(region.getRegionName()).build();
+        String regionString = "Error making json file";
+
+        try {
+            regionString = objectMapper.writeValueAsString(region);
+
+            logger.info(regionString);
+            logger.info(Response.status(200).entity(regionString).build());
+            return Response.status(200).entity(regionString).build();
+
+        } catch (JsonProcessingException jsonProcessingException) {
+            logger.error("Error making json file", jsonProcessingException);
+        }
+
+        return Response.status(500).entity(regionString).build();
     }
 }
