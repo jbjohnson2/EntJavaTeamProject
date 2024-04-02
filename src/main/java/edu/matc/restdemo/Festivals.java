@@ -167,6 +167,7 @@ public class Festivals {
         Festival festival = new Festival();
         LocalDate localDate = LocalDate.parse(date);
 
+
         if (typeId < 1 || typeId > 7) {
             output = "Please enter a valid type id";
         } else if (regionId < 1 || regionId > 7) {
@@ -176,11 +177,10 @@ public class Festivals {
             festival.setRegionID(regionId);
             festival.setTypeID(typeId);
             festival.setFestivalStartDate(localDate);
+            int id = genericDao.insert(festival);
+            String output = "You've successfully added a festival with an Id of " + id;
+
         }
-
-        int id = genericDao.insert(festival);
-
-        String output = "You've successfully added a festival with an Id of " + id;
         return Response.status(200).entity(output).build();
     }
 }

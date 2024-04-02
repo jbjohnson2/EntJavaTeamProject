@@ -52,3 +52,4 @@
 [DEBUG] 2024-04-01 07:22:37.854 [main] GenericDao - Festival{festivalID=2, festivalName='The 2nd Festival', region=4, typeID=6, festivalStartDate=2024-02-02}
 [DEBUG] 2024-04-02 09:01:20.553 [main] GenericDao - Festival{festivalID=2, festivalName='The 2nd Festival', region=4, typeID=6, festivalStartDate=2024-02-02}
 [DEBUG] 2024-04-02 09:47:56.690 [main] GenericDao - Festival{festivalID=2, festivalName='The 2nd Festival', region=4, typeID=6, festivalStartDate=2024-02-02}
+[DEBUG] 2024-04-02 09:55:31.886 [main] GenericDao - Festival{festivalID=2, festivalName='The 2nd Festival', region=4, typeID=6, festivalStartDate=2024-02-02}
