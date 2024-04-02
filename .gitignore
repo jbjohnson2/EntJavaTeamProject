@@ -53,3 +53,4 @@ fabric.properties
 /src/test/resources/
 /src/main/resources/
 /src/test/resources/cleanDB.sql
+/logs/

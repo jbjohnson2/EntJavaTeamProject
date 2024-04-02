@@ -55,6 +55,13 @@ public class Festival {
     public Festival() {
     }
 
+    public Festival(String name, int regionID, int typeID, String date) {
+        this.festivalName = name;
+        this.regionID = regionID;
+        this.typeID = typeID;
+        this.festivalStartDate = LocalDate.parse(date);
+    }
+
     /**
      * Instantiates a new Festival.
      *
