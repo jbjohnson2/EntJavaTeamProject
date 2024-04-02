@@ -161,7 +161,6 @@ public class Festivals {
                                   @PathParam("typeId") int typeId,
                                   @PathParam("date") String date) {
 
-        genericDao = new GenericDao<>(Festival.class);
         GenericDao regionDao = new GenericDao(Region.class);
         GenericDao typeDao = new GenericDao(Type.class);
         LocalDate localDate = LocalDate.parse(date);
