@@ -42,9 +42,10 @@
 ### Week 3
 - [ ] Meeting Tuesday April 2nd at 9am 
 - [ ] Display the data
-- [ ] Work on documentation page
-- [ ] 
-- [ ] 
+- [ ] Work on documentation page (look into swagger)
+- [ ] Make sure all methods can return JSON 
+- [ ] possibly deploy to aws
+- [ ] add link to documentation in readme or add what info/methods we have 
 - [ ] Meeting Friday April at 10am 
 
 #### April 5th - Project complete and ready for review 

@@ -167,11 +167,16 @@ public class Festivals {
         Festival festival = new Festival();
         LocalDate localDate = LocalDate.parse(date);
 
-
-        festival.setFestivalName(name);
-        festival.setRegionID(regionId);
-        festival.setTypeID(typeId);
-        festival.setFestivalStartDate(localDate);
+        if (typeId < 1 || typeId > 7) {
+            output = "Please enter a valid type id";
+        } else if (regionId < 1 || regionId > 7) {
+            output= "Please enter a valid region ID";
+        } else {
+            festival.setFestivalName(name);
+            festival.setRegionID(regionId);
+            festival.setTypeID(typeId);
+            festival.setFestivalStartDate(localDate);
+        }
 
         int id = genericDao.insert(festival);
 
