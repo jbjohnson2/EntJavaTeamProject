@@ -21,9 +21,6 @@ public class Type {
     @Column(name = "type")
     private String type;
 
-    @OneToMany(mappedBy = "type")
-    private List<Festival> festivals = new ArrayList<>();
-
 
     /**
      * Instantiates a new Type.

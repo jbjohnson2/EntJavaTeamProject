@@ -33,16 +33,16 @@ public class Festival {
     /**
      * The Region
      */
-    @ManyToOne
-    @JoinColumn(name="region_id")
-    private Region region;
+
+    @Column(name="region_id")
+    private int regionID;
 
     /**
      * The Type id.
      */
-    @ManyToOne
-    @JoinColumn(name = "type_id")
-    private Type type;
+
+    @Column(name = "type_id")
+    private int typeID;
     /**
      * The Festival start date.
      */
@@ -59,14 +59,14 @@ public class Festival {
      * Instantiates a new Festival.
      *
      * @param festivalName      the festival name
-     * @param region            the region
-     * @param type            the type
+     * @param regionID           the region id
+     * @param typeID            the type id
      * @param festivalStartDate the festival start date
      */
-    public Festival(String festivalName, Region region, Type type, LocalDate festivalStartDate) {
+    public Festival(String festivalName, int regionID, int typeID, LocalDate festivalStartDate) {
         this.festivalName = festivalName;
-        this.region = region;
-        this.type = type;
+        this.regionID = regionID;
+        this.typeID = typeID;
         this.festivalStartDate = festivalStartDate;
     }
 
@@ -106,20 +106,21 @@ public class Festival {
         this.festivalName = festivalName;
     }
 
-    public Type getType() {
-        return type;
+
+    public int getTypeID() {
+        return typeID;
     }
 
-    public void setType(Type type) {
-        this.type = type;
+    public void setTypeID(int typeID) {
+        this.typeID = typeID;
     }
 
-    public Region getRegion() {
-        return region;
+    public int getRegionID() {
+        return regionID;
     }
 
-    public void setRegion(Region region) {
-        this.region = region;
+    public void setRegionID(int regionID) {
+        this.regionID = regionID;
     }
 
     /**
@@ -145,8 +146,8 @@ public class Festival {
         return "Festival{" +
                 "festivalID=" + festivalID +
                 ", festivalName='" + festivalName + '\'' +
-                ", region=" + region +
-                ", type=" + type +
+                ", region=" + regionID +
+                ", typeID=" + typeID +
                 ", festivalStartDate=" + festivalStartDate +
                 '}';
     }

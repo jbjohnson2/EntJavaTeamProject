@@ -67,11 +67,8 @@ class FestivalDaoTest {
      */
     @Test
     void insert() {
-        GenericDao regionDao = new GenericDao(Region.class);
-        Region regionOfFestival = (Region)regionDao.getById(6);
-        GenericDao typeDao = new GenericDao((Type.class));
-        Type typeOfFestival = (Type)typeDao.getById(5);
-        Festival festivalToInsert = new Festival("Great Festival", regionOfFestival, typeOfFestival, LocalDate.parse("2024-11-12"));
+
+        Festival festivalToInsert = new Festival("Great Festival", 3, 4, LocalDate.parse("2024-11-12"));
         int insertedFestivalID = genericDao.insert(festivalToInsert);
         assertNotEquals(0, insertedFestivalID);
         Festival insertedFestival = (Festival)genericDao.getById(insertedFestivalID);
@@ -85,15 +82,14 @@ class FestivalDaoTest {
      */
     @Test
     void update() {
-        GenericDao typeDao = new GenericDao(Type.class);
-        Type typeToInsert = (Type)typeDao.getById(3);
+
         Festival festivalToUpdate = (Festival)genericDao.getById(1);
-        festivalToUpdate.setType(typeToInsert);
+        festivalToUpdate.setTypeID(5);
         genericDao.update(festivalToUpdate);
 
         //retrieve the user and check that the name change worked
         Festival actualFestival = (Festival)genericDao.getById(1);
-        assertEquals(3, actualFestival.getType().getTypeID());
+        assertEquals(5, actualFestival.getTypeID());
     }
 
 
