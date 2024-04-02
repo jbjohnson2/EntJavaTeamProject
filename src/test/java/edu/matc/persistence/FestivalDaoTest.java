@@ -1,12 +1,15 @@
 package edu.matc.persistence;
 
 import edu.matc.entity.Festival;
+import edu.matc.entity.Region;
+import edu.matc.entity.Type;
 import edu.matc.util.Database;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;
 import java.util.List;
+import java.util.Map;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -64,6 +67,7 @@ class FestivalDaoTest {
      */
     @Test
     void insert() {
+
         Festival festivalToInsert = new Festival("Great Festival", 3, 4, LocalDate.parse("2024-11-12"));
         int insertedFestivalID = genericDao.insert(festivalToInsert);
         assertNotEquals(0, insertedFestivalID);
@@ -72,18 +76,20 @@ class FestivalDaoTest {
 
     }
 
+
     /**
      * Update.
      */
     @Test
     void update() {
+
         Festival festivalToUpdate = (Festival)genericDao.getById(1);
-        festivalToUpdate.setTypeID(4);
+        festivalToUpdate.setTypeID(5);
         genericDao.update(festivalToUpdate);
 
         //retrieve the user and check that the name change worked
         Festival actualFestival = (Festival)genericDao.getById(1);
-        assertEquals(4, actualFestival.getTypeID());
+        assertEquals(5, actualFestival.getTypeID());
     }
 
 
@@ -92,16 +98,18 @@ class FestivalDaoTest {
      */
     @Test
     void findByPropertyEqual() {
-        List<Festival> festivals = genericDao.findByPropertyEqual("regionID", 3);
+        List<Festival> festivals = genericDao.findByPropertyEqual("festivalName", "Free Festival");
         assertEquals(1, festivals.size());
-        assertEquals(4, festivals.get(0).getFestivalID());
+        assertEquals(3, festivals.get(0).getFestivalID());
     }
 
-    /**
-     * Test find by property equal.
-     */
-    @Test
-    void testFindByPropertyEqual() {
-        //TODO write this test
-    }
+//    /**
+//     * Test find by property equal.
+//     */
+//    @Test
+//    void testFindByPropertyEqual() {
+//        List<Festival> festivals = genericDao.findByPropertyEqual("Region", 3);
+//
+//        //TODO write this test
+//    }
 }

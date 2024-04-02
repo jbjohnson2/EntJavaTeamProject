@@ -69,6 +69,7 @@ public class GenericDao<T> {
         Session session = getSession();
         Transaction transaction = session.beginTransaction();
         session.remove(entity);
+        logger.debug(entity);
         transaction.commit();
         session.close();
     }

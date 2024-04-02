@@ -10,7 +10,7 @@
 | 03/29/24 | Team meeting                                                           | 2     |       | All         |
 |          | add post                                                               |       |       | oj          |
 |          | refactor/combine classes                                               |       |       | jb          |
-|          |                                                                        |       |       |             |
+| 03/31/24 | Add typeDaoTest and RegionDaoTest                                      | 2     |       | JC          |
 |          |                                                                        |       |       |             |
 |          |                                                                        |       |       |             |
 |          |                                                                        |       |       |             |
