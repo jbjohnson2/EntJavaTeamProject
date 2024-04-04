@@ -1,6 +1,7 @@
 openapi: 3.0.3
 info:
   title: Festival Tracker - OpenAPI 3.0
+
   description: |-
     This is a sample Pet Store Server based on the OpenAPI 3.0 specification.  You can find out more about
     Swagger at [https://swagger.io](https://swagger.io). In the third iteration of the pet store, we've switched to the design first approach!
@@ -71,30 +72,12 @@ paths:
           description: Invalid input
         '422':
           description: Validation exception
-      security:
-        - petstore_auth:
-            - write:pets
-            - read:pets
-  /festivals/findByRegion:
     get:
       tags:
         - festival
-      summary: Finds Festivals by region
-      description: Multiple status values can be provided with comma separated strings
-      operationId: findPetsByRegion
-      parameters:
-        - name: status
-          in: query
-          description: Status values that need to be considered for filter
-          required: false
-          explode: true
-          schema:
-            type: string
-            default: available
-            enum:
-              - available
-              - pending
-              - sold
+      summary: Finds All Festivals
+      description: returns a list of all festivals
+      operationId: findAllFestivals
       responses:
         '200':
           description: successful operation
@@ -110,11 +93,7 @@ paths:
                 items:
                   $ref: '#/components/schemas/Festival'
         '400':
-          description: Invalid status value
-      security:
-        - petstore_auth:
-            - write:pets
-            - read:pets
+          description: Invalid value
   /festivals/{festivalId}:
     get:
       tags:
@@ -144,48 +123,35 @@ paths:
           description: Invalid ID supplied
         '404':
           description: Festival not found
-      security:
-        - api_key: []
-        - petstore_auth:
-            - write:pets
-            - read:pets
   /festivals/regions/{regionId}:
     get:
       tags:
         - festival
-      summary: Finds Festivals by region
-      description: Finds a list of festivals by region
-      operationId: findFestivalsByRegion
+      summary: Find festival by region
+      description: Returns a lisf of festivals in the specified region
+      operationId: getByRegion
       parameters:
         - name: regionId
           in: path
-          description: Region to filter by
+          description: ID of region to return
           required: true
-          explode: true
           schema:
-            type: array
-            items:
-              type: string
+            type: integer
+            format: int64
       responses:
         '200':
           description: successful operation
           content:
             application/json:
               schema:
-                type: array
-                items:
-                  $ref: '#/components/schemas/Festival'          
+                $ref: '#/components/schemas/Festival'          
             application/xml:
               schema:
-                type: array
-                items:
-                  $ref: '#/components/schemas/Festival'
+                $ref: '#/components/schemas/Festival'
         '400':
-          description: Invalid region value
-      security:
-        - petstore_auth:
-            - write:pets
-            - read:pets
+          description: Invalid ID supplied
+        '404':
+          description: No festivals found
   /festivals/types/{typeId}:
     get:
       tags:
@@ -196,33 +162,25 @@ paths:
       parameters:
         - name: typeId
           in: path
-          description: Type to filter by
+          description: ID of type to return
           required: true
-          explode: true
           schema:
-            type: array
-            items:
-              type: string
+            type: integer
+            format: int64
       responses:
         '200':
           description: successful operation
           content:
             application/json:
               schema:
-                type: array
-                items:
-                  $ref: '#/components/schemas/Festival'          
+                $ref: '#/components/schemas/Festival'          
             application/xml:
               schema:
-                type: array
-                items:
-                  $ref: '#/components/schemas/Festival'
+                $ref: '#/components/schemas/Festival'
         '400':
-          description: Invalid region value
-      security:
-        - petstore_auth:
-            - write:pets
-            - read:pets
+          description: Invalid ID supplied
+        '404':
+          description: No festivals found
   /regions:
     get:
       tags:
@@ -240,8 +198,6 @@ paths:
                 additionalProperties:
                   type: integer
                   format: int32
-      security:
-        - api_key: []
   /regions/{regionId}:
     get:
       tags:
@@ -288,8 +244,6 @@ paths:
                 additionalProperties:
                   type: integer
                   format: int32
-      security:
-        - api_key: []
   /types/{typeId}:
     get:
       tags:
@@ -347,11 +301,11 @@ components:
         name: region
     Festival:
       required:
-        - id
         - name
         - typeId
         - regionId
         - date
+        - startDate
       type: object
       properties:
         id:
