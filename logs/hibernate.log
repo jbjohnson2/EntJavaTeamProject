@@ -1,0 +1,291 @@
+[DEBUG] 2024-04-04 11:27:06.089 [http-nio-8080-exec-5] IntegratorServiceImpl - Adding Integrator [org.hibernate.boot.beanvalidation.BeanValidationIntegrator].
+[DEBUG] 2024-04-04 11:27:06.095 [http-nio-8080-exec-5] IntegratorServiceImpl - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+[INFO ] 2024-04-04 11:27:06.127 [http-nio-8080-exec-5] Version - HHH000412: Hibernate ORM core version 6.4.3.Final
+[DEBUG] 2024-04-04 11:27:06.128 [http-nio-8080-exec-5] Environment - HHH000206: 'hibernate.properties' not found
+[DEBUG] 2024-04-04 11:27:06.161 [http-nio-8080-exec-5] LocalXmlResourceResolver - Checking public/system identifiers `-//Hibernate/Hibernate Configuration DTD//EN`/`http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd` as DTD references
+[DEBUG] 2024-04-04 11:27:06.164 [http-nio-8080-exec-5] JaxbCfgProcessor - cfg.xml document did not define namespaces; wrapping in custom event reader to introduce namespace information
+[DEBUG] 2024-04-04 11:27:06.348 [http-nio-8080-exec-5] factory - Ignoring CDI for resolving IdentifierGenerator instances as extended or delayed CDI support was enabled
+[DEBUG] 2024-04-04 11:27:06.352 [http-nio-8080-exec-5] factory - Registering IdentifierGenerator strategy [uuid2] -> [org.hibernate.id.UUIDGenerator]
+[DEBUG] 2024-04-04 11:27:06.353 [http-nio-8080-exec-5] factory - Registering IdentifierGenerator strategy [guid] -> [org.hibernate.id.GUIDGenerator]
+[DEBUG] 2024-04-04 11:27:06.353 [http-nio-8080-exec-5] factory - Registering IdentifierGenerator strategy [uuid] -> [org.hibernate.id.UUIDHexGenerator]
+[DEBUG] 2024-04-04 11:27:06.353 [http-nio-8080-exec-5] factory - Registering IdentifierGenerator strategy [uuid.hex] -> [org.hibernate.id.UUIDHexGenerator]
+[DEBUG] 2024-04-04 11:27:06.354 [http-nio-8080-exec-5] factory - Registering IdentifierGenerator strategy [assigned] -> [org.hibernate.id.Assigned]
+[DEBUG] 2024-04-04 11:27:06.357 [http-nio-8080-exec-5] factory - Registering IdentifierGenerator strategy [identity] -> [org.hibernate.id.IdentityGenerator]
+[DEBUG] 2024-04-04 11:27:06.357 [http-nio-8080-exec-5] factory - Registering IdentifierGenerator strategy [select] -> [org.hibernate.id.SelectGenerator]
+[DEBUG] 2024-04-04 11:27:06.358 [http-nio-8080-exec-5] factory - Registering IdentifierGenerator strategy [sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[DEBUG] 2024-04-04 11:27:06.358 [http-nio-8080-exec-5] factory - Registering IdentifierGenerator strategy [increment] -> [org.hibernate.id.IncrementGenerator]
+[DEBUG] 2024-04-04 11:27:06.358 [http-nio-8080-exec-5] factory - Registering IdentifierGenerator strategy [foreign] -> [org.hibernate.id.ForeignGenerator]
+[DEBUG] 2024-04-04 11:27:06.359 [http-nio-8080-exec-5] factory - Registering IdentifierGenerator strategy [enhanced-sequence] -> [org.hibernate.id.enhanced.SequenceStyleGenerator]
+[DEBUG] 2024-04-04 11:27:06.359 [http-nio-8080-exec-5] factory - Registering IdentifierGenerator strategy [enhanced-table] -> [org.hibernate.id.enhanced.TableGenerator]
+[DEBUG] 2024-04-04 11:27:06.370 [http-nio-8080-exec-5] RegionFactoryInitiator - Cannot default RegionFactory based on registered strategies as `[]` RegionFactory strategies were registered
+[INFO ] 2024-04-04 11:27:06.371 [http-nio-8080-exec-5] RegionFactoryInitiator - HHH000026: Second-level cache disabled
+[DEBUG] 2024-04-04 11:27:06.456 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BasicTypeReference@219de88b
+[DEBUG] 2024-04-04 11:27:06.456 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration boolean -> org.hibernate.type.BasicTypeReference@219de88b
+[DEBUG] 2024-04-04 11:27:06.457 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration java.lang.Boolean -> org.hibernate.type.BasicTypeReference@219de88b
+[DEBUG] 2024-04-04 11:27:06.457 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration numeric_boolean -> org.hibernate.type.BasicTypeReference@25ed10d
+[DEBUG] 2024-04-04 11:27:06.457 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration org.hibernate.type.NumericBooleanConverter -> org.hibernate.type.BasicTypeReference@25ed10d
+[DEBUG] 2024-04-04 11:27:06.457 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration true_false -> org.hibernate.type.BasicTypeReference@f504d8f
+[DEBUG] 2024-04-04 11:27:06.457 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration org.hibernate.type.TrueFalseConverter -> org.hibernate.type.BasicTypeReference@f504d8f
+[DEBUG] 2024-04-04 11:27:06.457 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration yes_no -> org.hibernate.type.BasicTypeReference@6e6cec54
+[DEBUG] 2024-04-04 11:27:06.457 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration org.hibernate.type.YesNoConverter -> org.hibernate.type.BasicTypeReference@6e6cec54
+[DEBUG] 2024-04-04 11:27:06.457 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.BasicTypeReference@20fb88a2
+[DEBUG] 2024-04-04 11:27:06.457 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration byte -> org.hibernate.type.BasicTypeReference@20fb88a2
+[DEBUG] 2024-04-04 11:27:06.457 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration java.lang.Byte -> org.hibernate.type.BasicTypeReference@20fb88a2
+[DEBUG] 2024-04-04 11:27:06.457 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration binary -> org.hibernate.type.BasicTypeReference@54d9e309
+[DEBUG] 2024-04-04 11:27:06.457 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration byte[] -> org.hibernate.type.BasicTypeReference@54d9e309
+[DEBUG] 2024-04-04 11:27:06.457 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration [B -> org.hibernate.type.BasicTypeReference@54d9e309
+[DEBUG] 2024-04-04 11:27:06.457 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration binary_wrapper -> org.hibernate.type.BasicTypeReference@5968f028
+[DEBUG] 2024-04-04 11:27:06.457 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration wrapper-binary -> org.hibernate.type.BasicTypeReference@5968f028
+[DEBUG] 2024-04-04 11:27:06.457 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration image -> org.hibernate.type.BasicTypeReference@506fb91d
+[DEBUG] 2024-04-04 11:27:06.457 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration blob -> org.hibernate.type.BasicTypeReference@2c2d952a
+[DEBUG] 2024-04-04 11:27:06.457 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration java.sql.Blob -> org.hibernate.type.BasicTypeReference@2c2d952a
+[DEBUG] 2024-04-04 11:27:06.457 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration materialized_blob -> org.hibernate.type.BasicTypeReference@37f7ea0d
+[DEBUG] 2024-04-04 11:27:06.457 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration materialized_blob_wrapper -> org.hibernate.type.BasicTypeReference@2900a56b
+[DEBUG] 2024-04-04 11:27:06.457 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration short -> org.hibernate.type.BasicTypeReference@48a4607
+[DEBUG] 2024-04-04 11:27:06.457 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration short -> org.hibernate.type.BasicTypeReference@48a4607
+[DEBUG] 2024-04-04 11:27:06.457 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration java.lang.Short -> org.hibernate.type.BasicTypeReference@48a4607
+[DEBUG] 2024-04-04 11:27:06.457 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration integer -> org.hibernate.type.BasicTypeReference@44ce1779
+[DEBUG] 2024-04-04 11:27:06.457 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration int -> org.hibernate.type.BasicTypeReference@44ce1779
+[DEBUG] 2024-04-04 11:27:06.457 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration java.lang.Integer -> org.hibernate.type.BasicTypeReference@44ce1779
+[DEBUG] 2024-04-04 11:27:06.457 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration long -> org.hibernate.type.BasicTypeReference@4c613a6f
+[DEBUG] 2024-04-04 11:27:06.457 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration long -> org.hibernate.type.BasicTypeReference@4c613a6f
+[DEBUG] 2024-04-04 11:27:06.457 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration java.lang.Long -> org.hibernate.type.BasicTypeReference@4c613a6f
+[DEBUG] 2024-04-04 11:27:06.457 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration float -> org.hibernate.type.BasicTypeReference@60e6e575
+[DEBUG] 2024-04-04 11:27:06.458 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration float -> org.hibernate.type.BasicTypeReference@60e6e575
+[DEBUG] 2024-04-04 11:27:06.458 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration java.lang.Float -> org.hibernate.type.BasicTypeReference@60e6e575
+[DEBUG] 2024-04-04 11:27:06.458 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration double -> org.hibernate.type.BasicTypeReference@368a3d10
+[DEBUG] 2024-04-04 11:27:06.458 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration double -> org.hibernate.type.BasicTypeReference@368a3d10
+[DEBUG] 2024-04-04 11:27:06.458 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration java.lang.Double -> org.hibernate.type.BasicTypeReference@368a3d10
+[DEBUG] 2024-04-04 11:27:06.458 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration big_integer -> org.hibernate.type.BasicTypeReference@2cb9167
+[DEBUG] 2024-04-04 11:27:06.458 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration java.math.BigInteger -> org.hibernate.type.BasicTypeReference@2cb9167
+[DEBUG] 2024-04-04 11:27:06.458 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration big_decimal -> org.hibernate.type.BasicTypeReference@473c6113
+[DEBUG] 2024-04-04 11:27:06.458 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration java.math.BigDecimal -> org.hibernate.type.BasicTypeReference@473c6113
+[DEBUG] 2024-04-04 11:27:06.458 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration character -> org.hibernate.type.BasicTypeReference@1026e9cc
+[DEBUG] 2024-04-04 11:27:06.458 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration char -> org.hibernate.type.BasicTypeReference@1026e9cc
+[DEBUG] 2024-04-04 11:27:06.458 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration java.lang.Character -> org.hibernate.type.BasicTypeReference@1026e9cc
+[DEBUG] 2024-04-04 11:27:06.458 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration character_nchar -> org.hibernate.type.BasicTypeReference@77232465
+[DEBUG] 2024-04-04 11:27:06.458 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration string -> org.hibernate.type.BasicTypeReference@293dd34f
+[DEBUG] 2024-04-04 11:27:06.458 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration java.lang.String -> org.hibernate.type.BasicTypeReference@293dd34f
+[DEBUG] 2024-04-04 11:27:06.458 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration nstring -> org.hibernate.type.BasicTypeReference@dad0b82
+[DEBUG] 2024-04-04 11:27:06.458 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration characters -> org.hibernate.type.BasicTypeReference@2a62eb72
+[DEBUG] 2024-04-04 11:27:06.458 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration char[] -> org.hibernate.type.BasicTypeReference@2a62eb72
+[DEBUG] 2024-04-04 11:27:06.458 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration [C -> org.hibernate.type.BasicTypeReference@2a62eb72
+[DEBUG] 2024-04-04 11:27:06.458 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration wrapper-characters -> org.hibernate.type.BasicTypeReference@448cf257
+[DEBUG] 2024-04-04 11:27:06.458 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration text -> org.hibernate.type.BasicTypeReference@36cf622
+[DEBUG] 2024-04-04 11:27:06.458 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration ntext -> org.hibernate.type.BasicTypeReference@66f81cd6
+[DEBUG] 2024-04-04 11:27:06.458 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration clob -> org.hibernate.type.BasicTypeReference@5b7c5200
+[DEBUG] 2024-04-04 11:27:06.458 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration java.sql.Clob -> org.hibernate.type.BasicTypeReference@5b7c5200
+[DEBUG] 2024-04-04 11:27:06.458 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration nclob -> org.hibernate.type.BasicTypeReference@78411d72
+[DEBUG] 2024-04-04 11:27:06.458 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration java.sql.NClob -> org.hibernate.type.BasicTypeReference@78411d72
+[DEBUG] 2024-04-04 11:27:06.458 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration materialized_clob -> org.hibernate.type.BasicTypeReference@1cf839be
+[DEBUG] 2024-04-04 11:27:06.458 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration materialized_clob_char_array -> org.hibernate.type.BasicTypeReference@3a40985b
+[DEBUG] 2024-04-04 11:27:06.458 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration materialized_clob_character_array -> org.hibernate.type.BasicTypeReference@3952141
+[DEBUG] 2024-04-04 11:27:06.458 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration materialized_nclob -> org.hibernate.type.BasicTypeReference@73cf06cc
+[DEBUG] 2024-04-04 11:27:06.458 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration materialized_nclob_character_array -> org.hibernate.type.BasicTypeReference@2ea7e4c2
+[DEBUG] 2024-04-04 11:27:06.458 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration materialized_nclob_char_array -> org.hibernate.type.BasicTypeReference@101b330d
+[DEBUG] 2024-04-04 11:27:06.459 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration Duration -> org.hibernate.type.BasicTypeReference@3a2e9766
+[DEBUG] 2024-04-04 11:27:06.459 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration java.time.Duration -> org.hibernate.type.BasicTypeReference@3a2e9766
+[DEBUG] 2024-04-04 11:27:06.459 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration LocalDateTime -> org.hibernate.type.BasicTypeReference@315c0f89
+[DEBUG] 2024-04-04 11:27:06.459 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration java.time.LocalDateTime -> org.hibernate.type.BasicTypeReference@315c0f89
+[DEBUG] 2024-04-04 11:27:06.459 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration LocalDate -> org.hibernate.type.BasicTypeReference@204c6c94
+[DEBUG] 2024-04-04 11:27:06.459 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration java.time.LocalDate -> org.hibernate.type.BasicTypeReference@204c6c94
+[DEBUG] 2024-04-04 11:27:06.459 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration LocalTime -> org.hibernate.type.BasicTypeReference@6986b0cb
+[DEBUG] 2024-04-04 11:27:06.459 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration java.time.LocalTime -> org.hibernate.type.BasicTypeReference@6986b0cb
+[DEBUG] 2024-04-04 11:27:06.459 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration OffsetDateTime -> org.hibernate.type.BasicTypeReference@275d8f3a
+[DEBUG] 2024-04-04 11:27:06.459 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.BasicTypeReference@275d8f3a
+[DEBUG] 2024-04-04 11:27:06.459 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration OffsetDateTimeWithTimezone -> org.hibernate.type.BasicTypeReference@762cec1f
+[DEBUG] 2024-04-04 11:27:06.459 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration OffsetDateTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@35470682
+[DEBUG] 2024-04-04 11:27:06.459 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration OffsetTime -> org.hibernate.type.BasicTypeReference@691be809
+[DEBUG] 2024-04-04 11:27:06.459 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration java.time.OffsetTime -> org.hibernate.type.BasicTypeReference@691be809
+[DEBUG] 2024-04-04 11:27:06.459 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration OffsetTimeUtc -> org.hibernate.type.BasicTypeReference@22f49e4f
+[DEBUG] 2024-04-04 11:27:06.459 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration OffsetTimeWithTimezone -> org.hibernate.type.BasicTypeReference@33a9d21a
+[DEBUG] 2024-04-04 11:27:06.459 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration OffsetTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@3ed7a1fb
+[DEBUG] 2024-04-04 11:27:06.459 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration ZonedDateTime -> org.hibernate.type.BasicTypeReference@83a4d88
+[DEBUG] 2024-04-04 11:27:06.459 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.BasicTypeReference@83a4d88
+[DEBUG] 2024-04-04 11:27:06.459 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration ZonedDateTimeWithTimezone -> org.hibernate.type.BasicTypeReference@e3aac26
+[DEBUG] 2024-04-04 11:27:06.459 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration ZonedDateTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@73fe96f9
+[DEBUG] 2024-04-04 11:27:06.459 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration date -> org.hibernate.type.BasicTypeReference@70252904
+[DEBUG] 2024-04-04 11:27:06.459 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration java.sql.Date -> org.hibernate.type.BasicTypeReference@70252904
+[DEBUG] 2024-04-04 11:27:06.459 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration time -> org.hibernate.type.BasicTypeReference@2aa96c85
+[DEBUG] 2024-04-04 11:27:06.459 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration java.sql.Time -> org.hibernate.type.BasicTypeReference@2aa96c85
+[DEBUG] 2024-04-04 11:27:06.459 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration timestamp -> org.hibernate.type.BasicTypeReference@7129ae6a
+[DEBUG] 2024-04-04 11:27:06.459 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration java.sql.Timestamp -> org.hibernate.type.BasicTypeReference@7129ae6a
+[DEBUG] 2024-04-04 11:27:06.459 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration java.util.Date -> org.hibernate.type.BasicTypeReference@7129ae6a
+[DEBUG] 2024-04-04 11:27:06.459 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration calendar -> org.hibernate.type.BasicTypeReference@7667a7e8
+[DEBUG] 2024-04-04 11:27:06.459 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration java.util.Calendar -> org.hibernate.type.BasicTypeReference@7667a7e8
+[DEBUG] 2024-04-04 11:27:06.459 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.BasicTypeReference@7667a7e8
+[DEBUG] 2024-04-04 11:27:06.459 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration calendar_date -> org.hibernate.type.BasicTypeReference@2fd3dd29
+[DEBUG] 2024-04-04 11:27:06.459 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration calendar_time -> org.hibernate.type.BasicTypeReference@4e7f5112
+[DEBUG] 2024-04-04 11:27:06.460 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration instant -> org.hibernate.type.BasicTypeReference@7299fc49
+[DEBUG] 2024-04-04 11:27:06.460 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration java.time.Instant -> org.hibernate.type.BasicTypeReference@7299fc49
+[DEBUG] 2024-04-04 11:27:06.460 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration uuid -> org.hibernate.type.BasicTypeReference@390a5d15
+[DEBUG] 2024-04-04 11:27:06.460 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration java.util.UUID -> org.hibernate.type.BasicTypeReference@390a5d15
+[DEBUG] 2024-04-04 11:27:06.460 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration pg-uuid -> org.hibernate.type.BasicTypeReference@390a5d15
+[DEBUG] 2024-04-04 11:27:06.460 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration uuid-binary -> org.hibernate.type.BasicTypeReference@881f588
+[DEBUG] 2024-04-04 11:27:06.460 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration uuid-char -> org.hibernate.type.BasicTypeReference@3cc2d24b
+[DEBUG] 2024-04-04 11:27:06.460 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration class -> org.hibernate.type.BasicTypeReference@1841a2e
+[DEBUG] 2024-04-04 11:27:06.460 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration java.lang.Class -> org.hibernate.type.BasicTypeReference@1841a2e
+[DEBUG] 2024-04-04 11:27:06.460 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration currency -> org.hibernate.type.BasicTypeReference@6a0d0dfe
+[DEBUG] 2024-04-04 11:27:06.460 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration Currency -> org.hibernate.type.BasicTypeReference@6a0d0dfe
+[DEBUG] 2024-04-04 11:27:06.460 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration java.util.Currency -> org.hibernate.type.BasicTypeReference@6a0d0dfe
+[DEBUG] 2024-04-04 11:27:06.460 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration locale -> org.hibernate.type.BasicTypeReference@6da79882
+[DEBUG] 2024-04-04 11:27:06.460 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration java.util.Locale -> org.hibernate.type.BasicTypeReference@6da79882
+[DEBUG] 2024-04-04 11:27:06.460 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration serializable -> org.hibernate.type.BasicTypeReference@47dd5ff7
+[DEBUG] 2024-04-04 11:27:06.460 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration java.io.Serializable -> org.hibernate.type.BasicTypeReference@47dd5ff7
+[DEBUG] 2024-04-04 11:27:06.460 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration timezone -> org.hibernate.type.BasicTypeReference@66a97848
+[DEBUG] 2024-04-04 11:27:06.460 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration java.util.TimeZone -> org.hibernate.type.BasicTypeReference@66a97848
+[DEBUG] 2024-04-04 11:27:06.460 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration ZoneOffset -> org.hibernate.type.BasicTypeReference@64c9fb9e
+[DEBUG] 2024-04-04 11:27:06.460 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration java.time.ZoneOffset -> org.hibernate.type.BasicTypeReference@64c9fb9e
+[DEBUG] 2024-04-04 11:27:06.460 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration url -> org.hibernate.type.BasicTypeReference@357b0c0d
+[DEBUG] 2024-04-04 11:27:06.460 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration java.net.URL -> org.hibernate.type.BasicTypeReference@357b0c0d
+[DEBUG] 2024-04-04 11:27:06.460 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration vector -> org.hibernate.type.BasicTypeReference@1874cfb2
+[DEBUG] 2024-04-04 11:27:06.460 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration row_version -> org.hibernate.type.BasicTypeReference@35b29fcc
+[DEBUG] 2024-04-04 11:27:06.464 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration object -> org.hibernate.type.JavaObjectType@653196ad
+[DEBUG] 2024-04-04 11:27:06.464 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration java.lang.Object -> org.hibernate.type.JavaObjectType@653196ad
+[DEBUG] 2024-04-04 11:27:06.465 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration null -> org.hibernate.type.NullType@43fd9aed
+[DEBUG] 2024-04-04 11:27:06.465 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration imm_date -> org.hibernate.type.BasicTypeReference@41625a72
+[DEBUG] 2024-04-04 11:27:06.465 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration imm_time -> org.hibernate.type.BasicTypeReference@7067e69f
+[DEBUG] 2024-04-04 11:27:06.465 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration imm_timestamp -> org.hibernate.type.BasicTypeReference@26ac2bff
+[DEBUG] 2024-04-04 11:27:06.465 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration imm_calendar -> org.hibernate.type.BasicTypeReference@9a9e735
+[DEBUG] 2024-04-04 11:27:06.465 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration imm_calendar_date -> org.hibernate.type.BasicTypeReference@5acb8db8
+[DEBUG] 2024-04-04 11:27:06.465 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration imm_calendar_time -> org.hibernate.type.BasicTypeReference@1557cb60
+[DEBUG] 2024-04-04 11:27:06.465 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration imm_binary -> org.hibernate.type.BasicTypeReference@5263f9e6
+[DEBUG] 2024-04-04 11:27:06.466 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration imm_serializable -> org.hibernate.type.BasicTypeReference@14352cd0
+[INFO ] 2024-04-04 11:27:06.491 [http-nio-8080-exec-5] c3p0 - HHH010002: C3P0 using driver: com.mysql.cj.jdbc.Driver at URL: jdbc:mysql://localhost:3306/wisconsin_festivals_local
+[INFO ] 2024-04-04 11:27:06.491 [http-nio-8080-exec-5] c3p0 - HHH10001001: Connection properties: {password=****, user=root}
+[INFO ] 2024-04-04 11:27:06.491 [http-nio-8080-exec-5] c3p0 - HHH10001003: Autocommit mode: false
+[INFO ] 2024-04-04 11:27:06.557 [http-nio-8080-exec-5] c3p0 - HHH10001007: JDBC isolation level: <unknown>
+[DEBUG] 2024-04-04 11:27:06.804 [http-nio-8080-exec-5] JdbcEnvironmentInitiator - Database ->
+       name : MySQL
+    version : 8.3.0
+      major : 8
+      minor : 3
+[DEBUG] 2024-04-04 11:27:06.804 [http-nio-8080-exec-5] JdbcEnvironmentInitiator - Driver ->
+       name : MySQL Connector/J
+    version : mysql-connector-j-8.0.33 (Revision: 7d6b0800528b6b25c68b52dc10d6c1c8429c100c)
+      major : 8
+      minor : 0
+[DEBUG] 2024-04-04 11:27:06.804 [http-nio-8080-exec-5] JdbcEnvironmentInitiator - JDBC version : 4.2
+[DEBUG] 2024-04-04 11:27:06.864 [http-nio-8080-exec-5] dialect - HHH035001: Using dialect: org.hibernate.dialect.MySQLDialect, version: 8.3
+[DEBUG] 2024-04-04 11:27:06.871 [http-nio-8080-exec-5] IdentifierHelperBuilder - JDBC driver metadata reported database stores quoted identifiers in more than one case
+[DEBUG] 2024-04-04 11:27:06.871 [http-nio-8080-exec-5] IdentifierHelperBuilder - IdentifierCaseStrategy for both quoted and unquoted identifiers was set to the same strategy [MIXED]; that will likely lead to problems in schema update and validation if using quoted identifiers
+[DEBUG] 2024-04-04 11:27:06.885 [http-nio-8080-exec-5] DdlTypeRegistry - addDescriptor(12, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@507ecf97) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@60b2b466)
+[DEBUG] 2024-04-04 11:27:06.885 [http-nio-8080-exec-5] DdlTypeRegistry - addDescriptor(-9, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@21889a16) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@64ab6d13)
+[DEBUG] 2024-04-04 11:27:06.885 [http-nio-8080-exec-5] DdlTypeRegistry - addDescriptor(-3, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@428f0466) replaced previous registration(org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@37eb89d5)
+[DEBUG] 2024-04-04 11:27:06.885 [http-nio-8080-exec-5] DdlTypeRegistry - addDescriptor(4003, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@52d6ed14) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@6daac1a8)
+[DEBUG] 2024-04-04 11:27:06.885 [http-nio-8080-exec-5] DdlTypeRegistry - addDescriptor(4001, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@57bc544f) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@3cf2ca4c)
+[DEBUG] 2024-04-04 11:27:06.885 [http-nio-8080-exec-5] DdlTypeRegistry - addDescriptor(4002, org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@59293e8b) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@62b51387)
+[DEBUG] 2024-04-04 11:27:06.885 [http-nio-8080-exec-5] DdlTypeRegistry - addDescriptor(2004, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@579e2db2) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@7d942da7)
+[DEBUG] 2024-04-04 11:27:06.885 [http-nio-8080-exec-5] DdlTypeRegistry - addDescriptor(2005, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@6d5989f8) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@27ba96ff)
+[DEBUG] 2024-04-04 11:27:06.885 [http-nio-8080-exec-5] DdlTypeRegistry - addDescriptor(2011, org.hibernate.type.descriptor.sql.internal.CapacityDependentDdlType@1efdc07) replaced previous registration(org.hibernate.type.descriptor.sql.internal.DdlTypeImpl@5d4a2088)
+[DEBUG] 2024-04-04 11:27:06.886 [http-nio-8080-exec-5] JdbcTypeRegistry - addDescriptor(NCharTypeDescriptor) replaced previous registration(CharTypeDescriptor)
+[DEBUG] 2024-04-04 11:27:06.886 [http-nio-8080-exec-5] JdbcTypeRegistry - addDescriptor(NVarcharTypeDescriptor) replaced previous registration(VarcharTypeDescriptor)
+[DEBUG] 2024-04-04 11:27:06.887 [http-nio-8080-exec-5] JdbcTypeRegistry - addDescriptor(LongNVarcharTypeDescriptor) replaced previous registration(LongVarcharTypeDescriptor)
+[DEBUG] 2024-04-04 11:27:06.889 [http-nio-8080-exec-5] JdbcTypeRegistry - addDescriptor(NClobTypeDescriptor(DEFAULT)) replaced previous registration(ClobTypeDescriptor(DEFAULT))
+[DEBUG] 2024-04-04 11:27:06.889 [http-nio-8080-exec-5] JdbcTypeRegistry - addDescriptor(2005, ClobTypeDescriptor(STREAM_BINDING)) replaced previous registration(ClobTypeDescriptor(DEFAULT))
+[DEBUG] 2024-04-04 11:27:06.892 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration null -> org.hibernate.type.NullType@3df92f36
+[DEBUG] 2024-04-04 11:27:06.892 [http-nio-8080-exec-5] BasicTypeRegistry - Type registration key [null] overrode previous entry : `org.hibernate.type.NullType@43fd9aed`
+[DEBUG] 2024-04-04 11:27:06.897 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration org.hibernate.type.DurationType -> basicType@1(java.time.Duration,2)
+[DEBUG] 2024-04-04 11:27:06.897 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration Duration -> basicType@1(java.time.Duration,2)
+[DEBUG] 2024-04-04 11:27:06.897 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration java.time.Duration -> basicType@1(java.time.Duration,2)
+[DEBUG] 2024-04-04 11:27:06.899 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration org.hibernate.type.OffsetDateTimeType -> basicType@2(java.time.OffsetDateTime,3003)
+[DEBUG] 2024-04-04 11:27:06.900 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration OffsetDateTime -> basicType@2(java.time.OffsetDateTime,3003)
+[DEBUG] 2024-04-04 11:27:06.900 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration java.time.OffsetDateTime -> basicType@2(java.time.OffsetDateTime,3003)
+[DEBUG] 2024-04-04 11:27:06.900 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration org.hibernate.type.ZonedDateTimeType -> basicType@3(java.time.ZonedDateTime,3003)
+[DEBUG] 2024-04-04 11:27:06.900 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration ZonedDateTime -> basicType@3(java.time.ZonedDateTime,3003)
+[DEBUG] 2024-04-04 11:27:06.900 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration java.time.ZonedDateTime -> basicType@3(java.time.ZonedDateTime,3003)
+[DEBUG] 2024-04-04 11:27:06.900 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration org.hibernate.type.OffsetTimeType -> basicType@4(java.time.OffsetTime,3007)
+[DEBUG] 2024-04-04 11:27:06.900 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration OffsetTime -> basicType@4(java.time.OffsetTime,3007)
+[DEBUG] 2024-04-04 11:27:06.900 [http-nio-8080-exec-5] BasicTypeRegistry - Adding type registration java.time.OffsetTime -> basicType@4(java.time.OffsetTime,3007)
+[DEBUG] 2024-04-04 11:27:06.901 [http-nio-8080-exec-5] TypeConfiguration$Scope - Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@9901a01] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@1a5b8e19]
+[DEBUG] 2024-04-04 11:27:06.943 [http-nio-8080-exec-5] Namespace - Created database namespace [logicalName=Name{catalog=null, schema=null}, physicalName=Name{catalog=null, schema=null}]
+[DEBUG] 2024-04-04 11:27:06.968 [http-nio-8080-exec-5] EntityBinder - Binding entity from annotated class: edu.matc.entity.Festival
+[DEBUG] 2024-04-04 11:27:06.976 [http-nio-8080-exec-5] EntityBinder - Import with entity name Festival
+[DEBUG] 2024-04-04 11:27:06.982 [http-nio-8080-exec-5] EntityBinder - Bind entity edu.matc.entity.Festival on table Festival
+[DEBUG] 2024-04-04 11:27:06.990 [http-nio-8080-exec-5] AnnotatedColumn - Binding column: AnnotatedDiscriminatorColumn(column='DTYPE')
+[DEBUG] 2024-04-04 11:27:07.004 [http-nio-8080-exec-5] AnnotatedColumn - Binding column: AnnotatedColumn(column='festival_id')
+[DEBUG] 2024-04-04 11:27:07.005 [http-nio-8080-exec-5] ClassLoaderAccessImpl - Not known whether passed class name [edu.matc.entity.Festival] is safe
+[DEBUG] 2024-04-04 11:27:07.005 [http-nio-8080-exec-5] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : edu.matc.entity.Festival
+[DEBUG] 2024-04-04 11:27:07.007 [http-nio-8080-exec-5] PropertyBinder - MetadataSourceProcessor property festivalID with lazy=false
+[DEBUG] 2024-04-04 11:27:07.010 [http-nio-8080-exec-5] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.Festival:festivalID]
+[DEBUG] 2024-04-04 11:27:07.014 [http-nio-8080-exec-5] BasicValueBinder - building BasicValue for festivalID
+[DEBUG] 2024-04-04 11:27:07.016 [http-nio-8080-exec-5] BasicValue - Skipping column re-registration: Festival.festival_id
+[DEBUG] 2024-04-04 11:27:07.016 [http-nio-8080-exec-5] PropertyBinder - Building property festivalID
+[DEBUG] 2024-04-04 11:27:07.020 [http-nio-8080-exec-5] BinderHelper - #makeIdGenerator(BasicValue([Column(festival_id)]), festivalID, org.hibernate.id.enhanced.SequenceStyleGenerator, native, ...)
+[DEBUG] 2024-04-04 11:27:07.021 [http-nio-8080-exec-5] AnnotatedColumn - Binding column: AnnotatedColumn(column='festival_name')
+[DEBUG] 2024-04-04 11:27:07.021 [http-nio-8080-exec-5] PropertyBinder - MetadataSourceProcessor property festivalName with lazy=false
+[DEBUG] 2024-04-04 11:27:07.021 [http-nio-8080-exec-5] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.Festival:festivalName]
+[DEBUG] 2024-04-04 11:27:07.021 [http-nio-8080-exec-5] BasicValueBinder - building BasicValue for festivalName
+[DEBUG] 2024-04-04 11:27:07.022 [http-nio-8080-exec-5] BasicValue - Skipping column re-registration: Festival.festival_name
+[DEBUG] 2024-04-04 11:27:07.022 [http-nio-8080-exec-5] PropertyBinder - Building property festivalName
+[DEBUG] 2024-04-04 11:27:07.022 [http-nio-8080-exec-5] AnnotatedColumn - Binding column: AnnotatedColumn(column='festival_start_date')
+[DEBUG] 2024-04-04 11:27:07.022 [http-nio-8080-exec-5] PropertyBinder - MetadataSourceProcessor property festivalStartDate with lazy=false
+[DEBUG] 2024-04-04 11:27:07.022 [http-nio-8080-exec-5] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.Festival:festivalStartDate]
+[DEBUG] 2024-04-04 11:27:07.022 [http-nio-8080-exec-5] BasicValueBinder - building BasicValue for festivalStartDate
+[DEBUG] 2024-04-04 11:27:07.022 [http-nio-8080-exec-5] BasicValue - Skipping column re-registration: Festival.festival_start_date
+[DEBUG] 2024-04-04 11:27:07.022 [http-nio-8080-exec-5] PropertyBinder - Building property festivalStartDate
+[DEBUG] 2024-04-04 11:27:07.022 [http-nio-8080-exec-5] AnnotatedColumn - Binding column: AnnotatedColumn(column='region_id')
+[DEBUG] 2024-04-04 11:27:07.022 [http-nio-8080-exec-5] PropertyBinder - MetadataSourceProcessor property regionID with lazy=false
+[DEBUG] 2024-04-04 11:27:07.022 [http-nio-8080-exec-5] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.Festival:regionID]
+[DEBUG] 2024-04-04 11:27:07.022 [http-nio-8080-exec-5] BasicValueBinder - building BasicValue for regionID
+[DEBUG] 2024-04-04 11:27:07.022 [http-nio-8080-exec-5] BasicValue - Skipping column re-registration: Festival.region_id
+[DEBUG] 2024-04-04 11:27:07.022 [http-nio-8080-exec-5] PropertyBinder - Building property regionID
+[DEBUG] 2024-04-04 11:27:07.022 [http-nio-8080-exec-5] AnnotatedColumn - Binding column: AnnotatedColumn(column='type_id')
+[DEBUG] 2024-04-04 11:27:07.022 [http-nio-8080-exec-5] PropertyBinder - MetadataSourceProcessor property typeID with lazy=false
+[DEBUG] 2024-04-04 11:27:07.022 [http-nio-8080-exec-5] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.Festival:typeID]
+[DEBUG] 2024-04-04 11:27:07.022 [http-nio-8080-exec-5] BasicValueBinder - building BasicValue for typeID
+[DEBUG] 2024-04-04 11:27:07.022 [http-nio-8080-exec-5] BasicValue - Skipping column re-registration: Festival.type_id
+[DEBUG] 2024-04-04 11:27:07.022 [http-nio-8080-exec-5] PropertyBinder - Building property typeID
+[DEBUG] 2024-04-04 11:27:07.023 [http-nio-8080-exec-5] ClassLoaderServiceImpl - HHH000194: Package not found or wo package-info.java: edu.matc.entity
+[DEBUG] 2024-04-04 11:27:07.027 [http-nio-8080-exec-5] EntityBinder - Binding entity from annotated class: edu.matc.entity.Region
+[DEBUG] 2024-04-04 11:27:07.027 [http-nio-8080-exec-5] EntityBinder - Import with entity name Region
+[DEBUG] 2024-04-04 11:27:07.027 [http-nio-8080-exec-5] EntityBinder - Bind entity edu.matc.entity.Region on table Region
+[DEBUG] 2024-04-04 11:27:07.028 [http-nio-8080-exec-5] AnnotatedColumn - Binding column: AnnotatedDiscriminatorColumn(column='DTYPE')
+[DEBUG] 2024-04-04 11:27:07.028 [http-nio-8080-exec-5] AnnotatedColumn - Binding column: AnnotatedColumn(column='region_id')
+[DEBUG] 2024-04-04 11:27:07.028 [http-nio-8080-exec-5] ClassLoaderAccessImpl - Not known whether passed class name [edu.matc.entity.Region] is safe
+[DEBUG] 2024-04-04 11:27:07.028 [http-nio-8080-exec-5] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : edu.matc.entity.Region
+[DEBUG] 2024-04-04 11:27:07.028 [http-nio-8080-exec-5] PropertyBinder - MetadataSourceProcessor property regionID with lazy=false
+[DEBUG] 2024-04-04 11:27:07.028 [http-nio-8080-exec-5] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.Region:regionID]
+[DEBUG] 2024-04-04 11:27:07.028 [http-nio-8080-exec-5] BasicValueBinder - building BasicValue for regionID
+[DEBUG] 2024-04-04 11:27:07.028 [http-nio-8080-exec-5] BasicValue - Skipping column re-registration: Region.region_id
+[DEBUG] 2024-04-04 11:27:07.028 [http-nio-8080-exec-5] PropertyBinder - Building property regionID
+[DEBUG] 2024-04-04 11:27:07.028 [http-nio-8080-exec-5] BinderHelper - #makeIdGenerator(BasicValue([Column(region_id)]), regionID, org.hibernate.id.enhanced.SequenceStyleGenerator, native, ...)
+[DEBUG] 2024-04-04 11:27:07.028 [http-nio-8080-exec-5] AnnotatedColumn - Binding column: AnnotatedColumn(column='region_name')
+[DEBUG] 2024-04-04 11:27:07.028 [http-nio-8080-exec-5] PropertyBinder - MetadataSourceProcessor property regionName with lazy=false
+[DEBUG] 2024-04-04 11:27:07.028 [http-nio-8080-exec-5] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.Region:regionName]
+[DEBUG] 2024-04-04 11:27:07.028 [http-nio-8080-exec-5] BasicValueBinder - building BasicValue for regionName
+[DEBUG] 2024-04-04 11:27:07.028 [http-nio-8080-exec-5] BasicValue - Skipping column re-registration: Region.region_name
+[DEBUG] 2024-04-04 11:27:07.028 [http-nio-8080-exec-5] PropertyBinder - Building property regionName
+[DEBUG] 2024-04-04 11:27:07.029 [http-nio-8080-exec-5] ClassLoaderServiceImpl - HHH000194: Package not found or wo package-info.java: edu.matc.entity
+[DEBUG] 2024-04-04 11:27:07.029 [http-nio-8080-exec-5] EntityBinder - Binding entity from annotated class: edu.matc.entity.Type
+[DEBUG] 2024-04-04 11:27:07.029 [http-nio-8080-exec-5] EntityBinder - Import with entity name Type
+[DEBUG] 2024-04-04 11:27:07.029 [http-nio-8080-exec-5] EntityBinder - Bind entity edu.matc.entity.Type on table Type
+[DEBUG] 2024-04-04 11:27:07.029 [http-nio-8080-exec-5] AnnotatedColumn - Binding column: AnnotatedDiscriminatorColumn(column='DTYPE')
+[DEBUG] 2024-04-04 11:27:07.029 [http-nio-8080-exec-5] AnnotatedColumn - Binding column: AnnotatedColumn(column='type_id')
+[DEBUG] 2024-04-04 11:27:07.029 [http-nio-8080-exec-5] ClassLoaderAccessImpl - Not known whether passed class name [edu.matc.entity.Type] is safe
+[DEBUG] 2024-04-04 11:27:07.029 [http-nio-8080-exec-5] ClassLoaderAccessImpl - No temp ClassLoader provided; using live ClassLoader for loading potentially unsafe class : edu.matc.entity.Type
+[DEBUG] 2024-04-04 11:27:07.029 [http-nio-8080-exec-5] PropertyBinder - MetadataSourceProcessor property typeID with lazy=false
+[DEBUG] 2024-04-04 11:27:07.029 [http-nio-8080-exec-5] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.Type:typeID]
+[DEBUG] 2024-04-04 11:27:07.029 [http-nio-8080-exec-5] BasicValueBinder - building BasicValue for typeID
+[DEBUG] 2024-04-04 11:27:07.029 [http-nio-8080-exec-5] BasicValue - Skipping column re-registration: Type.type_id
+[DEBUG] 2024-04-04 11:27:07.029 [http-nio-8080-exec-5] PropertyBinder - Building property typeID
+[DEBUG] 2024-04-04 11:27:07.029 [http-nio-8080-exec-5] BinderHelper - #makeIdGenerator(BasicValue([Column(type_id)]), typeID, org.hibernate.id.enhanced.SequenceStyleGenerator, native, ...)
+[DEBUG] 2024-04-04 11:27:07.030 [http-nio-8080-exec-5] AnnotatedColumn - Binding column: AnnotatedColumn(column='type')
+[DEBUG] 2024-04-04 11:27:07.030 [http-nio-8080-exec-5] PropertyBinder - MetadataSourceProcessor property type with lazy=false
+[DEBUG] 2024-04-04 11:27:07.030 [http-nio-8080-exec-5] AbstractPropertyHolder - Attempting to locate auto-apply AttributeConverter for property [edu.matc.entity.Type:type]
+[DEBUG] 2024-04-04 11:27:07.030 [http-nio-8080-exec-5] BasicValueBinder - building BasicValue for type
+[DEBUG] 2024-04-04 11:27:07.030 [http-nio-8080-exec-5] BasicValue - Skipping column re-registration: Type.type
+[DEBUG] 2024-04-04 11:27:07.030 [http-nio-8080-exec-5] PropertyBinder - Building property type
+[DEBUG] 2024-04-04 11:27:07.030 [http-nio-8080-exec-5] ClassLoaderServiceImpl - HHH000194: Package not found or wo package-info.java: edu.matc.entity
+[DEBUG] 2024-04-04 11:27:07.031 [http-nio-8080-exec-5] BasicValueBinder - Starting `BasicValueBinder#fillSimpleValue` for festivalID
+[DEBUG] 2024-04-04 11:27:07.031 [http-nio-8080-exec-5] BasicValueBinder - Starting `BasicValueBinder#fillSimpleValue` for festivalName
+[DEBUG] 2024-04-04 11:27:07.032 [http-nio-8080-exec-5] BasicValueBinder - Starting `BasicValueBinder#fillSimpleValue` for festivalStartDate
+[DEBUG] 2024-04-04 11:27:07.032 [http-nio-8080-exec-5] BasicValueBinder - Starting `BasicValueBinder#fillSimpleValue` for regionID
+[DEBUG] 2024-04-04 11:27:07.032 [http-nio-8080-exec-5] BasicValueBinder - Starting `BasicValueBinder#fillSimpleValue` for typeID
+[DEBUG] 2024-04-04 11:27:07.032 [http-nio-8080-exec-5] BasicValueBinder - Starting `BasicValueBinder#fillSimpleValue` for regionID
+[DEBUG] 2024-04-04 11:27:07.032 [http-nio-8080-exec-5] BasicValueBinder - Starting `BasicValueBinder#fillSimpleValue` for regionName
+[DEBUG] 2024-04-04 11:27:07.032 [http-nio-8080-exec-5] BasicValueBinder - Starting `BasicValueBinder#fillSimpleValue` for typeID
+[DEBUG] 2024-04-04 11:27:07.032 [http-nio-8080-exec-5] BasicValueBinder - Starting `BasicValueBinder#fillSimpleValue` for type
+[DEBUG] 2024-04-04 11:27:07.034 [http-nio-8080-exec-5] PrimaryKey - Forcing column [festival_id] to be non-null as it is part of the primary key for table [festival]
+[DEBUG] 2024-04-04 11:27:07.034 [http-nio-8080-exec-5] PrimaryKey - Forcing column [region_id] to be non-null as it is part of the primary key for table [region]
+[DEBUG] 2024-04-04 11:27:07.034 [http-nio-8080-exec-5] PrimaryKey - Forcing column [type_id] to be non-null as it is part of the primary key for table [type]

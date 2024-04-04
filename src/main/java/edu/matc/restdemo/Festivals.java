@@ -173,10 +173,7 @@ public class Festivals {
             Festival festival = new Festival(name, regionId, typeId, date);
             int id = genericDao.insert(festival);
             output = "You've successfully added a festival with an Id of " + id;
-<<<<<<< HEAD
 
-=======
->>>>>>> main
         }
         return Response.status(200).entity(output).build();
     }

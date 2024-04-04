@@ -1,0 +1,405 @@
+openapi: 3.0.3
+info:
+  title: Festival Tracker - OpenAPI 3.0
+  description: |-
+    This is a sample Pet Store Server based on the OpenAPI 3.0 specification.  You can find out more about
+    Swagger at [https://swagger.io](https://swagger.io). In the third iteration of the pet store, we've switched to the design first approach!
+    You can now help us improve the API whether it's by making changes to the definition itself or to the code.
+    That way, with time, we can improve the API in general, and expose some of the new features in OAS3.
+
+    _If you're looking for the Swagger 2.0/OAS 2.0 version of Petstore, then click [here](https://editor.swagger.io/?url=https://petstore.swagger.io/v2/swagger.yaml). Alternatively, you can load via the `Edit > Load Petstore OAS 2.0` menu option!_
+    
+    Some useful links:
+    - [The Pet Store repository](https://github.com/swagger-api/swagger-petstore)
+    - [The source API definition for the Pet Store](https://github.com/swagger-api/swagger-petstore/blob/master/src/main/resources/openapi.yaml)
+  termsOfService: http://swagger.io/terms/
+  contact:
+    email: apiteam@swagger.io
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  version: 1.0.11
+externalDocs:
+  description: Find out more about Swagger
+  url: http://swagger.io
+servers:
+  - url: http://localhost:8080/EntJavaTeamProject_war/services/
+tags:
+  - name: festival
+    description: Everything about your Festivals
+    externalDocs:
+      description: Find out more
+      url: http://swagger.io
+  - name: region
+    description: Operations about region
+  - name: type
+    description: Operations about type
+x-wso2-disable-security: true
+paths:
+  /festivals:
+    
+    post:
+      tags:
+        - festival
+      summary: Add a new festival 
+      description: Add a new festival 
+      operationId: addPet
+      requestBody:
+        description: Create a new festival 
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Festival'
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/Festival'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Festival'
+        required: true
+      responses:
+        '200':
+          description: Successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Festival'          
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/Festival'
+        '400':
+          description: Invalid input
+        '422':
+          description: Validation exception
+      security:
+        - petstore_auth:
+            - write:pets
+            - read:pets
+  /festivals/findByRegion:
+    get:
+      tags:
+        - festival
+      summary: Finds Festivals by region
+      description: Multiple status values can be provided with comma separated strings
+      operationId: findPetsByRegion
+      parameters:
+        - name: status
+          in: query
+          description: Status values that need to be considered for filter
+          required: false
+          explode: true
+          schema:
+            type: string
+            default: available
+            enum:
+              - available
+              - pending
+              - sold
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Festival'          
+            application/xml:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Festival'
+        '400':
+          description: Invalid status value
+      security:
+        - petstore_auth:
+            - write:pets
+            - read:pets
+  /festivals/{festivalId}:
+    get:
+      tags:
+        - festival
+      summary: Find festival by ID
+      description: Returns a single festival
+      operationId: getById
+      parameters:
+        - name: festivalId
+          in: path
+          description: ID of festival to return
+          required: true
+          schema:
+            type: integer
+            format: int64
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Festival'          
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/Festival'
+        '400':
+          description: Invalid ID supplied
+        '404':
+          description: Festival not found
+      security:
+        - api_key: []
+        - petstore_auth:
+            - write:pets
+            - read:pets
+  /festivals/regions/{regionId}:
+    get:
+      tags:
+        - festival
+      summary: Finds Festivals by region
+      description: Finds a list of festivals by region
+      operationId: findFestivalsByRegion
+      parameters:
+        - name: regionId
+          in: path
+          description: Region to filter by
+          required: true
+          explode: true
+          schema:
+            type: array
+            items:
+              type: string
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Festival'          
+            application/xml:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Festival'
+        '400':
+          description: Invalid region value
+      security:
+        - petstore_auth:
+            - write:pets
+            - read:pets
+  /festivals/types/{typeId}:
+    get:
+      tags:
+        - festival
+      summary: Finds Festivals by type
+      description: Finds a list of festivals by type
+      operationId: findFestivalsByType
+      parameters:
+        - name: typeId
+          in: path
+          description: Type to filter by
+          required: true
+          explode: true
+          schema:
+            type: array
+            items:
+              type: string
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Festival'          
+            application/xml:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Festival'
+        '400':
+          description: Invalid region value
+      security:
+        - petstore_auth:
+            - write:pets
+            - read:pets
+  /regions:
+    get:
+      tags:
+        - region
+      summary: Returns a list of regions
+      description: Returns list of regions
+      operationId: getAllRegions
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                type: object
+                additionalProperties:
+                  type: integer
+                  format: int32
+      security:
+        - api_key: []
+  /regions/{regionId}:
+    get:
+      tags:
+        - region
+      summary: Find region  by ID
+      description: find a region by the region id
+      operationId: getRegionById
+      parameters:
+        - name: regionId
+          in: path
+          description: ID of region that needs to be fetched
+          required: true
+          schema:
+            type: integer
+            format: int64
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Region'          
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/Region'
+        '400':
+          description: Invalid ID supplied
+        '404':
+          description: Region not found
+  /types:
+    get:
+      tags:
+        - type
+      summary: Returns a list of types
+      description: Returns list of types
+      operationId: getAllTypes
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                type: object
+                additionalProperties:
+                  type: integer
+                  format: int32
+      security:
+        - api_key: []
+  /types/{typeId}:
+    get:
+      tags:
+        - type
+      summary: Find type  by ID
+      description: find a type by the type id
+      operationId: getTypeById
+      parameters:
+        - name: typeId
+          in: path
+          description: ID of type that needs to be fetched
+          required: true
+          schema:
+            type: integer
+            format: int64
+      responses:
+        '200':
+          description: successful operation
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Type'          
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/Type'
+        '400':
+          description: Invalid ID supplied
+        '404':
+          description: Region not found
+components:
+  schemas:
+    Type:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+          example: 10
+        type:
+          type: string
+          example: 'exampleType'
+      xml:
+        name: type
+    Region:
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+          example: 10
+        regionName:
+          type: string
+          example: 'exampleRegion'
+      xml:
+        name: region
+    Festival:
+      required:
+        - id
+        - name
+        - typeId
+        - regionId
+        - date
+      type: object
+      properties:
+        id:
+          type: integer
+          format: int64
+          example: 10
+        name:
+          type: string
+          example: 'exampleFestival'
+        typeId:
+          type: integer
+          format: int64
+          example: 4
+        regionId:
+          type: integer
+          format: int64
+          example: 7
+        startDate: 
+          type: string
+          format: date  
+          example: '2014-11-11'
+    # ApiResponse:
+    #   type: object
+    #   properties:
+    #     code:
+    #       type: integer
+    #       format: int32
+    #     type:
+    #       type: string
+    #     message:
+    #       type: string
+    #   xml:
+    #     name: '##default'
+  requestBodies:
+    Festival:
+      description: Festival object that needs to be added to the list
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Festival'
+        application/xml:
+          schema:
+            $ref: '#/components/schemas/Festival'
+    FestivalArray:
+      description: List of festival objects
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: '#/components/schemas/Festival'
