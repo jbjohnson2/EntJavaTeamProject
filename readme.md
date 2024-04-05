@@ -1,17 +1,22 @@
 ## Project
 
 ### Problem Statement
-Do you love festivals? Do you hear about new ones from friends and family but have a hard time keeping track of them all?
-Are you the organizer of a festival but need help getting the word out about your event? Would you like to provide a list 
-local festivals on your community page?
-Wisconsin has many wonderful festivals, but as an individual it is hard to keep track of them all. As an organizer, it 
-can be hard to reach all of your potential attendees. As a developer it can be hard to find all the festivals in  an 
-area so that you can include them on your page .
-The Wisconsin Festival Tracker can help you find all the festivals that you wish to attend. You can find festivals 
-of a certain type or in a specific region. As an organizer(or festival goer) you can add a festival so that others 
-can find it and attend.  As a developer you can find a list of festivals statewide, by region, or by type to include in 
-your community page, business page, or any other applicable page. 
+Introducing the Wisconsin Festival Tracker API, your ultimate solution for 
+discovering and sharing festivals across Wisconsin. Whether you're a festival enthusiast, 
+an event organizer, or a developer integrating festival data into your platform, 
+our API simplifies the process of accessing comprehensive festival information.
 
+Key Features:
+
+Search Functionality: Easily search for festivals based on type (e.g., music, food, cultural) or region within Wisconsin.
+Contribution Capability: Organizers and festival-goers can add their events to the database, 
+enabling others to discover and attend them.
+Customization Options: Developers can tailor their queries to retrieve festival data statewide, 
+by specific regions, or based on event types.
+Seamless Integration: Incorporate festival listings into various platforms, including community pages, 
+business pages, and more, to enhance user experience and engagement.
+Get started today with the Wisconsin Festival Tracker API and unlock a wealth of festival information 
+for your users and communities.
 
 ### Specs
 | Category         | Type      | Version     |
