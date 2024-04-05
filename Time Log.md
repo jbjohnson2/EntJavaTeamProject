@@ -12,7 +12,8 @@
 |          | refactor/combine classes                                                   |       |       | jb          |
 | 03/31/24 | Add typeDaoTest and RegionDaoTest                                          | 2     |       | JC          |
 | 04/02/24 | Cleaned up the festival post, changed regionbyid and typeid to return json | 2     |       |             |
-|          |                                                                            |       |       |             |
+|  04/03/24| look into swagger and create documentation                                 | 2     |       |  JC         | 
+| 04/04/24 | Update Festival methods to return JSON                                     | 1     |       | JC          |
 |          |                                                                            |       |       |             |
 |          |                                                                            |       |       |             |
 |          |                                                                            |       |       |             |

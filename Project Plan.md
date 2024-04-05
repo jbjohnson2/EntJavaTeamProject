@@ -46,6 +46,7 @@
 - [ ] Make sure all methods can return JSON 
 - [ ] possibly deploy to aws
 - [ ] add link to documentation in readme or add what info/methods we have 
+- [ ] update yaml file to get rid of remaining petstore info
 - [ ] Meeting Friday April at 10am 
 
 #### April 5th - Project complete and ready for review 
