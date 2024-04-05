@@ -247,7 +247,7 @@ public class Festivals {
 
     @Path("/{name}/{regionId}/{typeId}/{date}")
 
-
+    @Produces ("application/json")
     public Response postFestivals(@PathParam("name") String name,
                                   @PathParam("regionId") int regionId,
                                   @PathParam("typeId") int typeId,
@@ -256,7 +256,9 @@ public class Festivals {
         GenericDao regionDao = new GenericDao(Region.class);
         GenericDao typeDao = new GenericDao(Type.class);
         LocalDate localDate = LocalDate.parse(date);
-
+        String festivalString;
+        ObjectMapper objectMapper = new ObjectMapper();
+        objectMapper.findAndRegisterModules();
         if (typeDao.getById(typeId) == null) {
             output = "Please enter a valid type id";
         } else if (regionDao.getById(regionId) == null) {
@@ -265,6 +267,18 @@ public class Festivals {
             Festival festival = new Festival(name, regionId, typeId, date);
             int id = genericDao.insert(festival);
             output = "You've successfully added a festival with an Id of " + id;
+            Festival insertedFestival = (Festival)genericDao.getById(id);
+            try {
+
+                output = objectMapper.writeValueAsString(insertedFestival);
+
+                logger.info(insertedFestival);
+                logger.info(Response.status(200).entity(insertedFestival).build());
+
+
+            } catch (JsonProcessingException jsonProcessingException) {
+                logger.error("Error making json file", jsonProcessingException);
+            }
 
         }
         return Response.status(200).entity(output).build();

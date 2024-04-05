@@ -71,26 +71,13 @@ paths:
           schema:
             type: string
             format: '2024-01-01'
-      requestBody:
-        description: Create a new festival 
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/Festival'
-          application/xml:
-            schema:
-              $ref: '#/components/schemas/Festival'
-          application/x-www-form-urlencoded:
-            schema:
-              $ref: '#/components/schemas/Festival'
-        required: true
       responses:
         '200':
           description: Successful operation
           content:
             application/json:
               schema:
-                $ref: '#/components/schemas/Festival'          
+                $ref: '#/components/schemas/Festival'
             application/xml:
               schema:
                 $ref: '#/components/schemas/Festival'
