@@ -43,9 +43,11 @@
 - [X] Work on documentation page (look into swagger)
 - [X] Make sure all methods can return JSON 
 - [X] Meeting Friday April at 10am
-- [ ] add link to documentation in readme or add what info/methods we have
-- [ ] update yaml file to get rid of remaining petstore info
+- [ ] add link to documentation yaml in readme or add what info/methods we have
+- [ ] update yaml file to get rid of remaining petstore info (jen)
 - [X] Update top of yaml file with updated problem statement
+- [ ] clean up directories (oscar)
+- [ ] javadoc (jimmy)
 - [ ] See if we need to add tests
 
 #### April 5th - Project complete and ready for review 
