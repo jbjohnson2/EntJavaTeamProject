@@ -35,6 +35,7 @@ public class Festivals {
 
         genericDao = new GenericDao<>(Festival.class);
         objectMapper = new ObjectMapper();
+        objectMapper.findAndRegisterModules();
     }
 
 
@@ -43,7 +44,7 @@ public class Festivals {
     @Produces("application/json")
     public Response getFestivals() {
 
-        objectMapper.findAndRegisterModules();
+
         List<Festival> festivals = genericDao.getAll();
         String festivalsJsonString = "Error making json file";
 
@@ -86,8 +87,6 @@ public class Festivals {
     @Path("/{param}")
     @Produces("application/json")
     public Response getFestivalById(@PathParam("param") int id) {
-
-        objectMapper.findAndRegisterModules();
 
         Festival festival = (Festival)genericDao.getById(id);
 
@@ -137,8 +136,6 @@ public class Festivals {
     @Path("/types/{param}")
     @Produces("application/json")
     public Response getFestivalsByTypeId(@PathParam("param") int typeId) {
-
-        objectMapper.findAndRegisterModules();
 
 
         List festivals = genericDao.findByPropertyEqual("typeID", typeId);
@@ -190,8 +187,6 @@ public class Festivals {
     @Path("/regions/{param}")
     @Produces("application/json")
     public Response getFestivalsByRegionId(@PathParam("param") int regionId) {
-
-        objectMapper.findAndRegisterModules();
 
 
         List festivals = genericDao.findByPropertyEqual("regionID", regionId);
@@ -258,8 +253,7 @@ public class Festivals {
         GenericDao typeDao = new GenericDao(Type.class);
         LocalDate localDate = LocalDate.parse(date);
         String festivalString;
-        
-        objectMapper.findAndRegisterModules();
+
         if (typeDao.getById(typeId) == null) {
             output = "Please enter a valid type id";
         } else if (regionDao.getById(regionId) == null) {
