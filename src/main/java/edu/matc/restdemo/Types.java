@@ -17,7 +17,7 @@ public class Types {
 
     @GET
     @Produces("application/json")
-    public Response getMessage() {
+    public Response getTypes() {
         ObjectMapper objectMapper = new ObjectMapper();
         GenericDao<Type> typeDao = new GenericDao<>(Type.class);
         List<Type> types = typeDao.getAll();
@@ -40,7 +40,7 @@ public class Types {
     @GET
     @Path("/{id}")
     @Produces("application/json")
-    public Response getMessage(@PathParam("id") int id) {
+    public Response getTypeById(@PathParam("id") int id) {
         ObjectMapper objectMapper = new ObjectMapper();
         GenericDao<Type> typeDao = new GenericDao<>(Type.class);
         Type type = typeDao.getById(id);

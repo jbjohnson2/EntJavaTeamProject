@@ -20,7 +20,7 @@ public class Regions {
 
     @GET
     @Produces("application/json")
-    public Response getMessage() {
+    public Response getRegions() {
         ObjectMapper objectMapper = new ObjectMapper();
         GenericDao<Region> regionDao = new GenericDao<>(Region.class);
         List<Region> regions = regionDao.getAll();
@@ -43,7 +43,7 @@ public class Regions {
     @GET
     @Path("/{id}")
     @Produces("application/json")
-    public Response getMessage(@PathParam("id") int id) {
+    public Response getRegionById(@PathParam("id") int id) {
         ObjectMapper objectMapper = new ObjectMapper();
         GenericDao<Region> regionDao = new GenericDao<>(Region.class);
         Region region = regionDao.getById(id);
