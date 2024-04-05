@@ -42,11 +42,10 @@
 - [X] Meeting Tuesday April 2nd at 9am
 - [X] Work on documentation page (look into swagger)
 - [X] Make sure all methods can return JSON 
-- [X] Meeting Friday April at 10am 
-- [ ] possibly deploy to aws
+- [X] Meeting Friday April at 10am
 - [ ] add link to documentation in readme or add what info/methods we have
 - [ ] update yaml file to get rid of remaining petstore info
-- [ ] Update top of yaml file with updated problem statement
+- [X] Update top of yaml file with updated problem statement
 - [ ] See if we need to add tests
 
 #### April 5th - Project complete and ready for review 
