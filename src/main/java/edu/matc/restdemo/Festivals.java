@@ -24,7 +24,7 @@ public class Festivals {
     private final Logger logger = LogManager.getLogger(this.getClass());
     private String output;
 
-    ObjectMapper objectMapper;
+    private ObjectMapper objectMapper;
 
 
 
@@ -34,6 +34,7 @@ public class Festivals {
     public Festivals() {
 
         genericDao = new GenericDao<>(Festival.class);
+        objectMapper = new ObjectMapper();
     }
 
 
@@ -41,7 +42,7 @@ public class Festivals {
 
     @Produces("application/json")
     public Response getFestivals() {
-        objectMapper = new ObjectMapper();
+
         objectMapper.findAndRegisterModules();
         List<Festival> festivals = genericDao.getAll();
         String festivalsJsonString = "Error making json file";
@@ -85,7 +86,7 @@ public class Festivals {
     @Path("/{param}")
     @Produces("application/json")
     public Response getFestivalById(@PathParam("param") int id) {
-        objectMapper = new ObjectMapper();
+
         objectMapper.findAndRegisterModules();
 
         Festival festival = (Festival)genericDao.getById(id);
@@ -136,7 +137,7 @@ public class Festivals {
     @Path("/types/{param}")
     @Produces("application/json")
     public Response getFestivalsByTypeId(@PathParam("param") int typeId) {
-        objectMapper = new ObjectMapper();
+
         objectMapper.findAndRegisterModules();
 
 
@@ -189,7 +190,7 @@ public class Festivals {
     @Path("/regions/{param}")
     @Produces("application/json")
     public Response getFestivalsByRegionId(@PathParam("param") int regionId) {
-        objectMapper = new ObjectMapper();
+
         objectMapper.findAndRegisterModules();
 
 
@@ -257,7 +258,7 @@ public class Festivals {
         GenericDao typeDao = new GenericDao(Type.class);
         LocalDate localDate = LocalDate.parse(date);
         String festivalString;
-        ObjectMapper objectMapper = new ObjectMapper();
+        
         objectMapper.findAndRegisterModules();
         if (typeDao.getById(typeId) == null) {
             output = "Please enter a valid type id";

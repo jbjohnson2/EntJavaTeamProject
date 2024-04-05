@@ -1,0 +1,415 @@
+openapi: 3.0.3
+info:
+  contact:
+    email: apiteam@swagger.io
+  description: |-
+    This is a sample Pet Store Server based on the OpenAPI 3.0 specification.  You can find out more about
+    Swagger at [https://swagger.io](https://swagger.io). In the third iteration of the pet store, we've switched to the design first approach!
+    You can now help us improve the API whether it's by making changes to the definition itself or to the code.
+    That way, with time, we can improve the API in general, and expose some of the new features in OAS3.
+
+    _If you're looking for the Swagger 2.0/OAS 2.0 version of Petstore, then click [here](https://editor.swagger.io/?url=https://petstore.swagger.io/v2/swagger.yaml). Alternatively, you can load via the `Edit > Load Petstore OAS 2.0` menu option!_
+
+    Some useful links:
+    - [The Pet Store repository](https://github.com/swagger-api/swagger-petstore)
+    - [The source API definition for the Pet Store](https://github.com/swagger-api/swagger-petstore/blob/master/src/main/resources/openapi.yaml)
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  termsOfService: http://swagger.io/terms/
+  title: Festival Tracker - OpenAPI 3.0
+  version: 1.0.11
+externalDocs:
+  description: Find out more about Swagger
+  url: http://swagger.io
+servers:
+- url: http://localhost:8080/EntJavaTeamProject_war/services/
+tags:
+- description: Everything about your Festivals
+  externalDocs:
+    description: Find out more
+    url: http://swagger.io
+  name: festival
+- description: Operations about region
+  name: region
+- description: Operations about type
+  name: type
+paths:
+  /festivals/{festivalName}/{regionId}/{typeId}/{startDate}:
+    post:
+      description: Add a new festival
+      operationId: addFestival
+      parameters:
+      - description: name of festival to add
+        explode: false
+        in: path
+        name: festivalName
+        required: true
+        schema:
+          format: Festival
+          type: string
+        style: simple
+      - description: ID of region of festival
+        explode: false
+        in: path
+        name: regionId
+        required: true
+        schema:
+          format: int64
+          type: integer
+        style: simple
+      - description: ID of type of festival
+        explode: false
+        in: path
+        name: typeId
+        required: true
+        schema:
+          format: int64
+          type: integer
+        style: simple
+      - description: start date of festival
+        explode: false
+        in: path
+        name: startDate
+        required: true
+        schema:
+          format: 2024-01-01
+          type: string
+        style: simple
+      requestBody:
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/Festival'
+          application/xml:
+            schema:
+              $ref: '#/components/schemas/Festival'
+          application/x-www-form-urlencoded:
+            schema:
+              $ref: '#/components/schemas/Festival'
+        description: Create a new festival
+        required: true
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Festival'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/Festival'
+          description: Successful operation
+        "400":
+          description: Invalid input
+        "422":
+          description: Validation exception
+      summary: Add a new festival
+      tags:
+      - festival
+      x-content-type: application/json
+      x-accepts: application/json
+  /festivals:
+    get:
+      description: returns a list of all festivals
+      operationId: findAllFestivals
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                items:
+                  $ref: '#/components/schemas/Festival'
+                type: array
+            application/xml:
+              schema:
+                items:
+                  $ref: '#/components/schemas/Festival'
+                type: array
+          description: successful operation
+        "400":
+          description: Invalid value
+      summary: Finds All Festivals
+      tags:
+      - festival
+      x-accepts: application/json
+  /festivals/{festivalId}:
+    get:
+      description: Returns a single festival
+      operationId: getById
+      parameters:
+      - description: ID of festival to return
+        explode: false
+        in: path
+        name: festivalId
+        required: true
+        schema:
+          format: int64
+          type: integer
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Festival'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/Festival'
+          description: successful operation
+        "400":
+          description: Invalid ID supplied
+        "404":
+          description: Festival not found
+      summary: Find festival by ID
+      tags:
+      - festival
+      x-accepts: application/json
+  /festivals/regions/{regionId}:
+    get:
+      description: Returns a lisf of festivals in the specified region
+      operationId: getByRegion
+      parameters:
+      - description: ID of region to return
+        explode: false
+        in: path
+        name: regionId
+        required: true
+        schema:
+          format: int64
+          type: integer
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Festival'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/Festival'
+          description: successful operation
+        "400":
+          description: Invalid ID supplied
+        "404":
+          description: No festivals found
+      summary: Find festival by region
+      tags:
+      - festival
+      x-accepts: application/json
+  /festivals/types/{typeId}:
+    get:
+      description: Finds a list of festivals by type
+      operationId: findFestivalsByType
+      parameters:
+      - description: ID of type to return
+        explode: false
+        in: path
+        name: typeId
+        required: true
+        schema:
+          format: int64
+          type: integer
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Festival'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/Festival'
+          description: successful operation
+        "400":
+          description: Invalid ID supplied
+        "404":
+          description: No festivals found
+      summary: Finds Festivals by type
+      tags:
+      - festival
+      x-accepts: application/json
+  /regions:
+    get:
+      description: Returns list of regions
+      operationId: getAllRegions
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                additionalProperties:
+                  format: int32
+                  type: integer
+                type: object
+          description: successful operation
+      summary: Returns a list of regions
+      tags:
+      - region
+      x-accepts: application/json
+  /regions/{regionId}:
+    get:
+      description: find a region by the region id
+      operationId: getRegionById
+      parameters:
+      - description: ID of region that needs to be fetched
+        explode: false
+        in: path
+        name: regionId
+        required: true
+        schema:
+          format: int64
+          type: integer
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Region'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/Region'
+          description: successful operation
+        "400":
+          description: Invalid ID supplied
+        "404":
+          description: Region not found
+      summary: Find region  by ID
+      tags:
+      - region
+      x-accepts: application/json
+  /types:
+    get:
+      description: Returns list of types
+      operationId: getAllTypes
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                additionalProperties:
+                  format: int32
+                  type: integer
+                type: object
+          description: successful operation
+      summary: Returns a list of types
+      tags:
+      - type
+      x-accepts: application/json
+  /types/{typeId}:
+    get:
+      description: find a type by the type id
+      operationId: getTypeById
+      parameters:
+      - description: ID of type that needs to be fetched
+        explode: false
+        in: path
+        name: typeId
+        required: true
+        schema:
+          format: int64
+          type: integer
+        style: simple
+      responses:
+        "200":
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Type'
+            application/xml:
+              schema:
+                $ref: '#/components/schemas/Type'
+          description: successful operation
+        "400":
+          description: Invalid ID supplied
+        "404":
+          description: Region not found
+      summary: Find type  by ID
+      tags:
+      - type
+      x-accepts: application/json
+components:
+  requestBodies:
+    Festival:
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/Festival'
+        application/xml:
+          schema:
+            $ref: '#/components/schemas/Festival'
+      description: Festival object that needs to be added to the list
+    FestivalArray:
+      content:
+        application/json:
+          schema:
+            items:
+              $ref: '#/components/schemas/Festival'
+            type: array
+      description: List of festival objects
+  schemas:
+    Type:
+      example:
+        id: 10
+        type: exampleType
+      properties:
+        id:
+          example: 10
+          format: int64
+          type: integer
+        type:
+          example: exampleType
+          type: string
+      type: object
+      xml:
+        name: type
+    Region:
+      example:
+        regionName: exampleRegion
+        id: 10
+      properties:
+        id:
+          example: 10
+          format: int64
+          type: integer
+        regionName:
+          example: exampleRegion
+          type: string
+      type: object
+      xml:
+        name: region
+    Festival:
+      example:
+        regionId: 7
+        name: exampleFestival
+        typeId: 4
+        id: 10
+        startDate: 2014-11-11T00:00:00.000+00:00
+      properties:
+        id:
+          example: 10
+          format: int64
+          type: integer
+        name:
+          example: exampleFestival
+          type: string
+        typeId:
+          example: 4
+          format: int64
+          type: integer
+        regionId:
+          example: 7
+          format: int64
+          type: integer
+        startDate:
+          example: 2014-11-11
+          format: date
+          type: string
+      required:
+      - date
+      - name
+      - regionId
+      - startDate
+      - typeId
+      type: object
+
