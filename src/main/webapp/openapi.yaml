@@ -1,7 +1,6 @@
 openapi: 3.0.3
 info:
   title: Festival Tracker - OpenAPI 3.0
-
   description: |-
     This is a sample Pet Store Server based on the OpenAPI 3.0 specification.  You can find out more about
     Swagger at [https://swagger.io](https://swagger.io). In the third iteration of the pet store, we've switched to the design first approach!
@@ -35,16 +34,43 @@ tags:
     description: Operations about region
   - name: type
     description: Operations about type
-x-wso2-disable-security: true
 paths:
-  /festivals:
-    
+  /festivals/{festivalName}/{regionId}/{typeId}/{startDate}:  
     post:
       tags:
         - festival
       summary: Add a new festival 
       description: Add a new festival 
-      operationId: addPet
+      operationId: addFestival
+      parameters:
+        - name: festivalName
+          in: path
+          description: name of festival to add
+          required: true
+          schema:
+            type: string
+            format: "Festival"
+        - name: regionId
+          in: path
+          description: ID of region of festival
+          required: true
+          schema:
+            type: integer
+            format: int64
+        - name: typeId
+          in: path
+          description: ID of type of festival
+          required: true
+          schema:
+            type: integer
+            format: int64
+        - name: startDate
+          in: path
+          description: start date of festival
+          required: true
+          schema:
+            type: string
+            format: '2024-01-01'
       requestBody:
         description: Create a new festival 
         content:
@@ -72,6 +98,7 @@ paths:
           description: Invalid input
         '422':
           description: Validation exception
+  /festivals:
     get:
       tags:
         - festival
