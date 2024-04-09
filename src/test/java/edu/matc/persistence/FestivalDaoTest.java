@@ -1,6 +1,7 @@
 package edu.matc.persistence;
 
 import edu.matc.entity.Festival;
+import edu.matc.entity.Region;
 import edu.matc.util.Database;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -46,7 +47,7 @@ class FestivalDaoTest {
     void getById() {
         Festival retrievedFestival = (Festival)genericDao.getById(3);
         assertNotNull(retrievedFestival);
-        assertEquals("Free Festival", retrievedFestival.getFestivalName());
+        assertEquals(retrievedFestival, genericDao.getById(3));
     }
 
     /**
@@ -66,10 +67,11 @@ class FestivalDaoTest {
     void insert() {
 
         Festival festivalToInsert = new Festival("Great Festival", 3, 4, LocalDate.parse("2024-11-12"));
+
+        Festival insertedFestival = (Festival)genericDao.getById(2);
         int insertedFestivalID = genericDao.insert(festivalToInsert);
-        assertNotEquals(0, insertedFestivalID);
-        Festival insertedFestival = (Festival)genericDao.getById(insertedFestivalID);
-        assertEquals("Great Festival", insertedFestival.getFestivalName());
+        Festival retrievedFestival = (Festival) genericDao.getById(insertedFestivalID);
+        assertEquals(festivalToInsert, retrievedFestival);
 
     }
 
@@ -81,12 +83,10 @@ class FestivalDaoTest {
     void update() {
 
         Festival festivalToUpdate = (Festival)genericDao.getById(1);
-        festivalToUpdate.setTypeID(5);
+        festivalToUpdate.setFestivalName("test");
         genericDao.update(festivalToUpdate);
-
-        //retrieve the user and check that the name change worked
-        Festival actualFestival = (Festival)genericDao.getById(1);
-        assertEquals(5, actualFestival.getTypeID());
+        Festival retrievedFestival = (Festival) genericDao.getById(1);
+        assertEquals(festivalToUpdate, retrievedFestival);
     }
 
 

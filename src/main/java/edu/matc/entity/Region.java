@@ -3,6 +3,8 @@ package edu.matc.entity;
 import jakarta.persistence.*;
 import org.hibernate.annotations.GenericGenerator;
 
+import java.util.Objects;
+
 /**
  * This class' purpose is to be the Javabean of type Region.
  */
@@ -75,5 +77,18 @@ public class Region {
                 "regionID=" + regionID +
                 ", regionName='" + regionName + '\'' +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Region region = (Region) o;
+        return regionID == region.regionID && Objects.equals(regionName, region.regionName);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(regionID, regionName);
     }
 }

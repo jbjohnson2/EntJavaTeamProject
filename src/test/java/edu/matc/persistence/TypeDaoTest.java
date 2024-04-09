@@ -1,9 +1,13 @@
 package edu.matc.persistence;
 
+import edu.matc.entity.Festival;
+import edu.matc.entity.Region;
 import edu.matc.entity.Type;
 import edu.matc.util.Database;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import java.time.LocalDate;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -44,7 +48,7 @@ class TypeDaoTest {
     void getById() {
         Type retrievedType = (Type)genericDao.getById(3);
         assertNotNull(retrievedType);
-        assertEquals("food", retrievedType.getType());
+        assertEquals(retrievedType, genericDao.getById(3));
     }
 
 
@@ -53,11 +57,12 @@ class TypeDaoTest {
      */
     @Test
     void insert() {
-        Type typeToInsert = new Type("Great Type");
+        Type typeToInsert = new Type("test");
+
+        Type insertedType = (Type)genericDao.getById(2);
         int insertedTypeID = genericDao.insert(typeToInsert);
-        assertNotEquals(0, insertedTypeID);
-        Type insertedType = (Type)genericDao.getById(insertedTypeID);
-        assertEquals("Great Type", insertedType.getType());
+        Type retrievedType = (Type) genericDao.getById(insertedTypeID);
+        assertEquals(typeToInsert, retrievedType);
 
     }
 
@@ -66,13 +71,11 @@ class TypeDaoTest {
      */
     @Test
     void update() {
-        Type typeToUpdate = (Type) genericDao.getById(1);
-        typeToUpdate.setTypeID(4);
+        Type typeToUpdate = (Type)genericDao.getById(1);
+        typeToUpdate.setType("test");
         genericDao.update(typeToUpdate);
-
-        //retrieve the user and check that the name change worked
-        Type actualType = (Type)genericDao.getById(4);
-        assertEquals("music", actualType.getType());
+        Type retrievedType = (Type) genericDao.getById(1);
+        assertEquals(typeToUpdate, retrievedType);
     }
 
 

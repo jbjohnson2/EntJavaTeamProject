@@ -3,6 +3,7 @@ package edu.matc.entity;
 import jakarta.persistence.*;
 import org.hibernate.annotations.GenericGenerator;
 import java.time.LocalDate;
+import java.util.Objects;
 
 /**
  * This class' purpose is to be the Javabean of type Festival.
@@ -176,5 +177,18 @@ public class Festival {
                 ", typeID=" + typeID +
                 ", festivalStartDate=" + festivalStartDate +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Festival festival = (Festival) o;
+        return festivalID == festival.festivalID && regionID == festival.regionID && typeID == festival.typeID && Objects.equals(festivalName, festival.festivalName) && Objects.equals(festivalStartDate, festival.festivalStartDate);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(festivalID, festivalName, regionID, typeID, festivalStartDate);
     }
 }
