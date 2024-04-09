@@ -17,3 +17,4 @@
 | 04/05/24 | Team meeting fix Post method to work in yaml                               | 2     |       | All         |
 |          | Update problem statement                                                   |       |       |             |
 | 04/07/24 | update yaml - other file clean up                                          | 1     |       | JC          |
+| 04/09/24 | Polished code, updated tests, created plan for the presentation, and more  | 2     |       | All         |  
