@@ -1,6 +1,5 @@
 package edu.matc.entity;
 
-import edu.matc.entity.Region;
 import jakarta.persistence.*;
 import org.hibernate.annotations.GenericGenerator;
 
@@ -55,6 +54,14 @@ public class Festival {
     public Festival() {
     }
 
+    /**
+     * Instantiates a new Festival.
+     *
+     * @param name     the name
+     * @param regionID the region id
+     * @param typeID   the type id
+     * @param date     the date
+     */
     public Festival(String name, int regionID, int typeID, String date) {
         this.festivalName = name;
         this.regionID = regionID;
@@ -66,7 +73,7 @@ public class Festival {
      * Instantiates a new Festival.
      *
      * @param festivalName      the festival name
-     * @param regionID           the region id
+     * @param regionID          the region id
      * @param typeID            the type id
      * @param festivalStartDate the festival start date
      */
@@ -114,18 +121,38 @@ public class Festival {
     }
 
 
+    /**
+     * Gets type id.
+     *
+     * @return the type id
+     */
     public int getTypeID() {
         return typeID;
     }
 
+    /**
+     * Sets type id.
+     *
+     * @param typeID the type id
+     */
     public void setTypeID(int typeID) {
         this.typeID = typeID;
     }
 
+    /**
+     * Gets region id.
+     *
+     * @return the region id
+     */
     public int getRegionID() {
         return regionID;
     }
 
+    /**
+     * Sets region id.
+     *
+     * @param regionID the region id
+     */
     public void setRegionID(int regionID) {
         this.regionID = regionID;
     }

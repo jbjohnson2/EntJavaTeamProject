@@ -16,4 +16,4 @@
 | 04/04/24 | Update Festival methods to return JSON                                     | 1     |       | JC          |
 | 04/05/24 | Team meeting fix Post method to work in yaml                               | 2     |       | All         |
 |          | Update problem statement                                                   |       |       |             |
-|          | refactor methods in festival                                               |       |       |             |
+| 04/07/24 | update yaml - other file clean up                                          | 1     |       | JC          |

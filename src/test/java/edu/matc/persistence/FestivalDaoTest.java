@@ -1,15 +1,12 @@
 package edu.matc.persistence;
 
 import edu.matc.entity.Festival;
-import edu.matc.entity.Region;
-import edu.matc.entity.Type;
 import edu.matc.util.Database;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;
 import java.util.List;
-import java.util.Map;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -103,13 +100,4 @@ class FestivalDaoTest {
         assertEquals(3, festivals.get(0).getFestivalID());
     }
 
-//    /**
-//     * Test find by property equal.
-//     */
-//    @Test
-//    void testFindByPropertyEqual() {
-//        List<Festival> festivals = genericDao.findByPropertyEqual("Region", 3);
-//
-//        //TODO write this test
-//    }
 }

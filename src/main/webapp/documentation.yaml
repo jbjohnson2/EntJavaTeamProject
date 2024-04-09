@@ -19,39 +19,30 @@ info:
     Get started today with the Wisconsin Festival Tracker API and unlock a wealth of festival information
     for your users and communities.
 
-    _If you're looking for the Swagger 2.0/OAS 2.0 version of Petstore, then click [here](https://editor.swagger.io/?url=https://petstore.swagger.io/v2/swagger.yaml). Alternatively, you can load via the `Edit > Load Petstore OAS 2.0` menu option!_
-    
-    Some useful links:
-    - [The Pet Store repository](https://github.com/swagger-api/swagger-petstore)
-    - [The source API definition for the Pet Store](https://github.com/swagger-api/swagger-petstore/blob/master/src/main/resources/openapi.yaml)
+
   termsOfService: http://swagger.io/terms/
-  contact:
-    email: apiteam@swagger.io
   license:
     name: Apache 2.0
     url: http://www.apache.org/licenses/LICENSE-2.0.html
   version: 1.0.11
-externalDocs:
-  description: Find out more about Swagger
-  url: http://swagger.io
 servers:
   - url: http://localhost:8080/EntJavaTeamProject_war/services/
 tags:
   - name: festival
-    description: Everything about your Festivals
+    description: Add a festival. Get a list of all festivals. Search festivals by region, type, or ID.
     externalDocs:
       description: Find out more
       url: http://swagger.io
   - name: region
-    description: Operations about region
+    description: View all regions or search for a region by ID
   - name: type
-    description: Operations about type
+    description: View all types or search for a type by ID
 paths:
   /festivals/{festivalName}/{regionId}/{typeId}/{startDate}:  
     post:
       tags:
         - festival
-      summary: Add a new festival 
+      summary: Add a festival
       description: Add a new festival 
       operationId: addFestival
       parameters:
@@ -101,8 +92,8 @@ paths:
     get:
       tags:
         - festival
-      summary: Finds All Festivals
-      description: returns a list of all festivals
+      summary: Get All Festivals
+      description: Returns a list of all festivals
       operationId: findAllFestivals
       responses:
         '200':
@@ -124,7 +115,7 @@ paths:
     get:
       tags:
         - festival
-      summary: Find festival by ID
+      summary: Find a festival by ID
       description: Returns a single festival
       operationId: getById
       parameters:
@@ -153,9 +144,9 @@ paths:
     get:
       tags:
         - festival
-      summary: Find festival by region
-      description: Returns a lisf of festivals in the specified region
-      operationId: getByRegion
+      summary: Find festivals by region
+      description: Returns a list of festivals in the specified region
+      operationId: getByRegionID
       parameters:
         - name: regionId
           in: path
@@ -182,9 +173,9 @@ paths:
     get:
       tags:
         - festival
-      summary: Finds Festivals by type
-      description: Finds a list of festivals by type
-      operationId: findFestivalsByType
+      summary: Find Festivals by type
+      description: Returns a list of festivals of the specified type
+      operationId: findFestivalsByTypeID
       parameters:
         - name: typeId
           in: path
@@ -211,8 +202,8 @@ paths:
     get:
       tags:
         - region
-      summary: Returns a list of regions
-      description: Returns list of regions
+      summary: Get all regions
+      description: Returns a list of all regions
       operationId: getAllRegions
       responses:
         '200':
@@ -228,8 +219,8 @@ paths:
     get:
       tags:
         - region
-      summary: Find region  by ID
-      description: find a region by the region id
+      summary: Find region by ID
+      description: Returns a single region
       operationId: getRegionById
       parameters:
         - name: regionId
@@ -257,8 +248,8 @@ paths:
     get:
       tags:
         - type
-      summary: Returns a list of types
-      description: Returns list of types
+      summary: Get all types
+      description: Returns a list of all types
       operationId: getAllTypes
       responses:
         '200':
@@ -274,8 +265,8 @@ paths:
     get:
       tags:
         - type
-      summary: Find type  by ID
-      description: find a type by the type id
+      summary: Find type by ID
+      description: Returns a single type
       operationId: getTypeById
       parameters:
         - name: typeId
@@ -298,7 +289,7 @@ paths:
         '400':
           description: Invalid ID supplied
         '404':
-          description: Region not found
+          description: Type not found
 components:
   schemas:
     Type:

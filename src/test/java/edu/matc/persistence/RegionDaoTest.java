@@ -5,7 +5,6 @@ import edu.matc.util.Database;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import java.time.LocalDate;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -48,16 +47,6 @@ class RegionDaoTest {
         assertNotNull(retrievedRegion);
         assertEquals("Fox Valley", retrievedRegion.getRegionName());
     }
-
-    /**
-     * Delete.
-     */
-//    @Test
-//    void delete() {
-//        Region regionToBeDeleted = (Region)genericDao.getById(2);
-//        genericDao.delete(regionToBeDeleted);
-//        assertNull(genericDao.getById(2));
-//    }
 
     /**
      * Insert.
