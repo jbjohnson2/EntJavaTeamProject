@@ -22,6 +22,7 @@
     <hibernate-version>6.4.3.Final</hibernate-version>
     <jersey-version>2.29.1</jersey-version>
     <jackson-version>2.16.1</jackson-version>
+    <jackson-datatype-version>2.9.9</jackson-datatype-version>
   </properties>
 
   <dependencies>
@@ -126,7 +127,7 @@
     <dependency>
       <groupId>com.fasterxml.jackson.datatype</groupId>
       <artifactId>jackson-datatype-jsr310</artifactId>
-      <version>2.9.9</version>
+      <version>${jackson-datatype-version}</version>
     </dependency>
   </dependencies>
 
