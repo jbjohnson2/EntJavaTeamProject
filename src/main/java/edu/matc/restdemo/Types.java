@@ -32,12 +32,9 @@ public class Types {
         List<Type> types = typeDao.getAll();
 
         try {
-
             typesString = objectMapper.writeValueAsString(types);
             return Response.status(200).entity(typesString).build();
-
         } catch (JsonProcessingException jsonProcessingException) {
-
             logger.error("Error making json file", jsonProcessingException);
         }
         return Response.status(500).entity(typesString).build();
@@ -58,12 +55,9 @@ public class Types {
         Type type = typeDao.getById(id);
 
         try {
-
             typesString = objectMapper.writeValueAsString(type);
             return Response.status(200).entity(typesString).build();
-
         } catch (JsonProcessingException jsonProcessingException) {
-
             logger.error("Error making json file", jsonProcessingException);
         }
         return Response.status(500).entity(typesString).build();

@@ -20,7 +20,7 @@ import java.util.List;
 @Path("/regions")
 public class Regions {
     private final Logger logger = LogManager.getLogger(this.getClass());
-
+    private String regionsString = "Error making json file";
     /**
      * This method's purpose is to retrieve all regions
      * @return all regions
@@ -32,13 +32,10 @@ public class Regions {
         ObjectMapper objectMapper = new ObjectMapper();
         GenericDao<Region> regionDao = new GenericDao<>(Region.class);
         List<Region> regions = regionDao.getAll();
-        String regionsString = "Error making json file";
+
 
         try {
             regionsString = objectMapper.writeValueAsString(regions);
-
-            logger.info(regionsString);
-            logger.info(Response.status(200).entity(regionsString).build());
             return Response.status(200).entity(regionsString).build();
 
         } catch (JsonProcessingException jsonProcessingException) {
@@ -61,19 +58,15 @@ public class Regions {
         GenericDao<Region> regionDao = new GenericDao<>(Region.class);
         Region region = regionDao.getById(id);
 
-        String regionString = "Error making json file";
 
         try {
-            regionString = objectMapper.writeValueAsString(region);
-
-            logger.info(regionString);
-            logger.info(Response.status(200).entity(regionString).build());
-            return Response.status(200).entity(regionString).build();
+            regionsString = objectMapper.writeValueAsString(region);
+            return Response.status(200).entity(regionsString).build();
 
         } catch (JsonProcessingException jsonProcessingException) {
             logger.error("Error making json file", jsonProcessingException);
         }
 
-        return Response.status(500).entity(regionString).build();
+        return Response.status(500).entity(regionsString).build();
     }
 }
