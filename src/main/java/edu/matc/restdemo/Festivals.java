@@ -10,50 +10,55 @@ import javax.ws.rs.*;
 import javax.ws.rs.core.Response;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.core.JsonProcessingException;
+
 import java.util.List;
 
 /**
- * This class' purpose is to perform get and post methods to interact with the data
+ * This class' purpose is to return festivals
+ *
+ * @author jbjohnson2
+ * @author JBostroem
+ * @author OscarJohnson6
+ *
  */
 @Path("/festivals")
 public class Festivals {
-
+    // The Java method will process HTTP GET requests
     private GenericDao genericDao;
     private final Logger logger = LogManager.getLogger(this.getClass());
     private String output;
     private ObjectMapper objectMapper;
+    String festivalsString = "Error making json file";
 
     /**
      * Instantiates a new Festival.
      */
     public Festivals() {
-
         genericDao = new GenericDao<>(Festival.class);
         objectMapper = new ObjectMapper();
         objectMapper.findAndRegisterModules();
     }
 
     /**
-     * This method's purpose is to get all festivals
-     * @return all festivals
+     * Gets festivals.
+     *
+     * @return the festivals
      */
     @GET
+
     @Produces("application/json")
     public Response getFestivals() {
-
         List<Festival> festivals = genericDao.getAll();
-        String festivalsJsonString = "Error making json file";
 
         try {
-            festivalsJsonString = objectMapper.writeValueAsString(festivals);
-            logger.info(festivalsJsonString);
-            logger.info(Response.status(200).entity(festivalsJsonString).build());
-            return Response.status(200).entity(festivalsJsonString).build();
+            festivalsString = objectMapper.writeValueAsString(festivals);
+
+            return Response.status(200).entity(festivalsString).build();
         } catch (JsonProcessingException jsonProcessingException) {
             logger.error("Error processing json file", jsonProcessingException);
         }
 
-        return Response.status(500).entity(festivalsJsonString).build();
+        return Response.status(500).entity(festivalsString).build();
     }
 
     /**
@@ -65,159 +70,154 @@ public class Festivals {
     @Path("/pt")
     @Produces("text/plain")
     public Response getFestivalsPT() {
-        // Return a simple message
         output = "Here's all the festivals: " + genericDao.getAll();
         return Response.status(200).entity(output).build();
     }
 
     /**
-     * This method's purpose is to get the festival by id
-     * @param id the festival id
-     * @return the festival
+     * get festival by id
+     *
+     * @param id festival to be retrieved id
+     * @return festivals by id
      */
     @GET
     @Path("/{param}")
     @Produces("application/json")
     public Response getFestivalById(@PathParam("param") int id) {
-
         Festival festival = (Festival)genericDao.getById(id);
-        String festivalString = "Error making json file";
 
         try {
-            festivalString = objectMapper.writeValueAsString(festival);
+            festivalsString = objectMapper.writeValueAsString(festival);
 
-            logger.info(festivalString);
-            logger.info(Response.status(200).entity(festivalString).build());
-            return Response.status(200).entity(festivalString).build();
-
+            return Response.status(200).entity(festivalsString).build();
         } catch (JsonProcessingException jsonProcessingException) {
             logger.error("Error making json file", jsonProcessingException);
         }
-        return Response.status(500).entity(festivalString).build();
+
+        return Response.status(500).entity(festivalsString).build();
     }
 
     /**
-     * This method's purpose is to get the festival by id in plain text
-     * @param id the festival id
-     * @return the festival
+     * This method's purpose is to get the festival by id
+     *
+     * @param id the id
+     * @return the festival by id pt
      */
     @GET
     @Path("/{param}/pt")
     @Produces("text/plain")
     public Response getFestivalByIdPT(@PathParam("param") int id) {
-
+        // Return the festival specified by the id
         if (genericDao.getById(id) == null) {
 
             output = "No festivals could be found";
 
         } else {
-
             output = "Here's the festival: " + genericDao.getById(id);
         }
+
         return Response.status(200).entity(output).build();
     }
 
     /**
-     * This method's purpose is to get the festival by the type id
+     * Gets festivals by type id.
+     *
      * @param typeId the type id
-     * @return the festival by the type
+     * @return the festivals by type id
      */
     @GET
     @Path("/types/{param}")
     @Produces("application/json")
     public Response getFestivalsByTypeId(@PathParam("param") int typeId) {
-
         List festivals = genericDao.findByPropertyEqual("typeID", typeId);
-        String festivalString = "Error making json file";
 
         try {
-            festivalString = objectMapper.writeValueAsString(festivals);
+            festivalsString = objectMapper.writeValueAsString(festivals);
 
-            logger.info(festivalString);
-            logger.info(Response.status(200).entity(festivalString).build());
-            return Response.status(200).entity(festivalString).build();
-
+            return Response.status(200).entity(festivalsString).build();
         } catch (JsonProcessingException jsonProcessingException) {
             logger.error("Error making json file", jsonProcessingException);
         }
-        return Response.status(500).entity(festivalString).build();
+
+        return Response.status(500).entity(festivalsString).build();
     }
 
     /**
-     * This method's purpose is to get the festival by the type id
-     * @param typeID the type id
-     * @return the festival by the type
+     * Return the festivals specified by the id
+     *
+     * @param typeID the type id for the festivals
+     * @return the festivals by that have matching type id
      */
     @GET
     @Path("/types/{param}/pt")
     @Produces("text/plain")
     public Response getFestivalByTypeIdPT(@PathParam("param") int typeID) {
-
+        // Return the festival specified by the id
         if (genericDao.findByPropertyEqual("typeID", typeID) == null) {
 
             output = "No festivals could be found";
 
         } else {
-
             output = "Here's the festival: " + genericDao.findByPropertyEqual("typeID", typeID);
         }
+
         return Response.status(200).entity(output).build();
     }
 
     /**
-     * This method's purpose is to get the festivals by their region
+     * Gets festivals by region id.
+     *
      * @param regionId the region id
-     * @return the festival by region
+     * @return the festivals by region id
      */
     @GET
     @Path("/regions/{param}")
     @Produces("application/json")
     public Response getFestivalsByRegionId(@PathParam("param") int regionId) {
-
         List festivals = genericDao.findByPropertyEqual("regionID", regionId);
         String festivalString = "Error making json file";
 
         try {
             festivalString = objectMapper.writeValueAsString(festivals);
 
-            logger.info(festivalString);
-            logger.info(Response.status(200).entity(festivalString).build());
             return Response.status(200).entity(festivalString).build();
-
         } catch (JsonProcessingException jsonProcessingException) {
-            logger.error("Error making json file", jsonProcessingException);
+            logger.error("Error processing json file", jsonProcessingException);
         }
+
         return Response.status(500).entity(festivalString).build();
     }
 
     /**
-     * This method's purpose is to get the festivals by their region
+     * Gets festival by region id.
+     *
      * @param regionID the region id
-     * @return the festival by region
+     * @return the festival by region id
      */
     @GET
     @Path("/regions/{param}/pt")
     @Produces("text/plain")
     public Response getFestivalByRegionIdPT(@PathParam("param") int regionID) {
-
+        // Return the festival specified by the id
         if (genericDao.findByPropertyEqual("regionID", regionID) == null) {
 
             output = "No festivals could be found";
 
         } else {
-
             output = "Here's the festival: " + genericDao.findByPropertyEqual("regionID", regionID);
         }
+
         return Response.status(200).entity(output).build();
     }
 
     /**
-     * This method's purpose is to add a festival
-     * @param name the festival name
+     * This method's purpose is to add a  festival
+     *
+     * @param name     the name
      * @param regionId the region id
-     * @param typeId the type id
-     * @param date the date
-     * @return the added festival
+     * @param typeId   the type id
+     * @param date     the date
+     * @return the response
      */
     @POST
     @Path("/{name}/{regionId}/{typeId}/{date}")
@@ -231,32 +231,22 @@ public class Festivals {
         GenericDao typeDao = new GenericDao(Type.class);
 
         if (typeDao.getById(typeId) == null) {
-
             output = "Please enter a valid type id";
-
         } else if (regionDao.getById(regionId) == null) {
-
             output = "Please enter a valid region ID";
-
         } else {
-
             Festival festival = new Festival(name, regionId, typeId, date);
             int id = genericDao.insert(festival);
-            output = "You've successfully added a festival with an Id of " + id;
             Festival insertedFestival = (Festival)genericDao.getById(id);
 
             try {
-
                 output = objectMapper.writeValueAsString(insertedFestival);
 
-                logger.info(insertedFestival);
-                logger.info(Response.status(200).entity(insertedFestival).build());
                 return Response.status(200).entity(output).build();
-
             } catch (JsonProcessingException jsonProcessingException) {
-
                 logger.error("Error making json file", jsonProcessingException);
                 output = "Error processing json response";
+
                 return Response.status(500).entity(output).build();
             }
         }
