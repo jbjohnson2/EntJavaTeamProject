@@ -15,62 +15,65 @@ import javax.ws.rs.core.Response;
 import java.util.List;
 
 /**
- * The type Regions.
- *
- * @author jbjohnson2
- * @author JBostroem
- * @author OscarJohnson6
+ * This class' purpose is to perform get and post methods to interact with the data
  */
 @Path("/regions")
 public class Regions {
     private final Logger logger = LogManager.getLogger(this.getClass());
-    String regionsString = "Error making json file";
 
     /**
-     * Gets regions.
-     *
-     * @return the regions
+     * This method's purpose is to retrieve all regions
+     * @return all regions
      */
     @GET
     @Produces("application/json")
     public Response getRegions() {
+        //reads in an object and write the json response
         ObjectMapper objectMapper = new ObjectMapper();
         GenericDao<Region> regionDao = new GenericDao<>(Region.class);
         List<Region> regions = regionDao.getAll();
+        String regionsString = "Error making json file";
 
         try {
             regionsString = objectMapper.writeValueAsString(regions);
 
+            logger.info(regionsString);
+            logger.info(Response.status(200).entity(regionsString).build());
             return Response.status(200).entity(regionsString).build();
+
         } catch (JsonProcessingException jsonProcessingException) {
             logger.error("Error making json file", jsonProcessingException);
         }
-
         return Response.status(500).entity(regionsString).build();
     }
 
     /**
-     * Gets region by id.
-     *
-     * @param id the id
-     * @return the region by id
+     * This method's purpose is to get the region by its id
+     * @param id the region id
+     * @return the region given its id
      */
     @GET
     @Path("/{id}")
     @Produces("application/json")
     public Response getRegionById(@PathParam("id") int id) {
+
         ObjectMapper objectMapper = new ObjectMapper();
         GenericDao<Region> regionDao = new GenericDao<>(Region.class);
         Region region = regionDao.getById(id);
 
-        try {
-            regionsString = objectMapper.writeValueAsString(region);
+        String regionString = "Error making json file";
 
-            return Response.status(200).entity(regionsString).build();
+        try {
+            regionString = objectMapper.writeValueAsString(region);
+
+            logger.info(regionString);
+            logger.info(Response.status(200).entity(regionString).build());
+            return Response.status(200).entity(regionString).build();
+
         } catch (JsonProcessingException jsonProcessingException) {
             logger.error("Error making json file", jsonProcessingException);
         }
 
-        return Response.status(500).entity(regionsString).build();
+        return Response.status(500).entity(regionString).build();
     }
 }

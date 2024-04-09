@@ -35,7 +35,9 @@ public class Festivals {
      */
     public Festivals() {
         genericDao = new GenericDao<>(Festival.class);
+        //reads in an object and write the json response
         objectMapper = new ObjectMapper();
+        //configures date
         objectMapper.findAndRegisterModules();
     }
 
