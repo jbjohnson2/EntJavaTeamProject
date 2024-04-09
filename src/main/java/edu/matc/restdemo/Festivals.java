@@ -24,11 +24,10 @@ import java.util.List;
 @Path("/festivals")
 public class Festivals {
     // The Java method will process HTTP GET requests
-    private GenericDao genericDao;
+    private final GenericDao genericDao;
     private final Logger logger = LogManager.getLogger(this.getClass());
-    private String output;
-    private ObjectMapper objectMapper;
-    String festivalsString = "Error making json file";
+    private final ObjectMapper objectMapper;
+    private String festivalsString = "Error making json file";
 
     /**
      * Instantiates a new Festival.
@@ -72,8 +71,8 @@ public class Festivals {
     @Path("/pt")
     @Produces("text/plain")
     public Response getFestivalsPT() {
-        output = "Here's all the festivals: " + genericDao.getAll();
-        return Response.status(200).entity(output).build();
+        festivalsString = "Here's all the festivals: " + genericDao.getAll();
+        return Response.status(200).entity(festivalsString).build();
     }
 
     /**
@@ -112,13 +111,13 @@ public class Festivals {
         // Return the festival specified by the id
         if (genericDao.getById(id) == null) {
 
-            output = "No festivals could be found";
+            festivalsString = "No festivals could be found";
 
         } else {
-            output = "Here's the festival: " + genericDao.getById(id);
+            festivalsString = "Here's the festival: " + genericDao.getById(id);
         }
 
-        return Response.status(200).entity(output).build();
+        return Response.status(200).entity(festivalsString).build();
     }
 
     /**
@@ -157,13 +156,13 @@ public class Festivals {
         // Return the festival specified by the id
         if (genericDao.findByPropertyEqual("typeID", typeID) == null) {
 
-            output = "No festivals could be found";
+            festivalsString = "No festivals could be found";
 
         } else {
-            output = "Here's the festival: " + genericDao.findByPropertyEqual("typeID", typeID);
+            festivalsString = "Here's the festival: " + genericDao.findByPropertyEqual("typeID", typeID);
         }
 
-        return Response.status(200).entity(output).build();
+        return Response.status(200).entity(festivalsString).build();
     }
 
     /**
@@ -203,13 +202,13 @@ public class Festivals {
         // Return the festival specified by the id
         if (genericDao.findByPropertyEqual("regionID", regionID) == null) {
 
-            output = "No festivals could be found";
+            festivalsString = "No festivals could be found";
 
         } else {
-            output = "Here's the festival: " + genericDao.findByPropertyEqual("regionID", regionID);
+            festivalsString = "Here's the festival: " + genericDao.findByPropertyEqual("regionID", regionID);
         }
 
-        return Response.status(200).entity(output).build();
+        return Response.status(200).entity(festivalsString).build();
     }
 
     /**
@@ -233,25 +232,25 @@ public class Festivals {
         GenericDao typeDao = new GenericDao(Type.class);
 
         if (typeDao.getById(typeId) == null) {
-            output = "Please enter a valid type id";
+            festivalsString = "Please enter a valid type id";
         } else if (regionDao.getById(regionId) == null) {
-            output = "Please enter a valid region ID";
+            festivalsString = "Please enter a valid region ID";
         } else {
             Festival festival = new Festival(name, regionId, typeId, date);
             int id = genericDao.insert(festival);
             Festival insertedFestival = (Festival)genericDao.getById(id);
 
             try {
-                output = objectMapper.writeValueAsString(insertedFestival);
+                festivalsString = objectMapper.writeValueAsString(insertedFestival);
 
-                return Response.status(200).entity(output).build();
+                return Response.status(200).entity(festivalsString).build();
             } catch (JsonProcessingException jsonProcessingException) {
                 logger.error("Error making json file", jsonProcessingException);
-                output = "Error processing json response";
+                festivalsString = "Error processing json response";
 
-                return Response.status(500).entity(output).build();
+                return Response.status(500).entity(festivalsString).build();
             }
         }
-        return Response.status(400).entity(output).build();
+        return Response.status(400).entity(festivalsString).build();
     }
 }
