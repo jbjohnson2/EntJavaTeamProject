@@ -33,11 +33,11 @@ public class Festivals {
         objectMapper.findAndRegisterModules();
     }
 
-    @GET
     /**
      * This method's purpose is to get all festivals
      * @return all festivals
      */
+    @GET
     @Produces("application/json")
     public Response getFestivals() {
 

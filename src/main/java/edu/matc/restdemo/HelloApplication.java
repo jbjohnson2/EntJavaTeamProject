@@ -5,14 +5,17 @@ import javax.ws.rs.core.Application;
 import java.util.HashSet;
 import java.util.Set;
 
-//Defines the base URI for all resource URIs.
 
-//The java class declares root resource and provider classes
 @ApplicationPath("/services")
-//You may want to add a value here so that all traffic isn't routed to the class below.
+/**
+ * This class' purpose is to use the different classes for our web service by adding them all to the hashset
+ */
 public class HelloApplication extends Application {
 
-    //The method returns a non-empty collection with classes, that must be included in the published JAX-RS application
+    /**
+     * This method's purpose is to add all the classes to be interacted with to the hashset
+     * @return the hashset of all classes to be interacted with
+     */
     @Override
     public Set<Class<?>> getClasses() {
         HashSet h = new HashSet<Class<?>>();
