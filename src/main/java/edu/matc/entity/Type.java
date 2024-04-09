@@ -3,24 +3,20 @@ package edu.matc.entity;
 import jakarta.persistence.*;
 import org.hibernate.annotations.GenericGenerator;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
- * This class represents a type
+ * This class' purpose is to be the Javabean of type Type.
  */
 @Entity
 @Table(name="Type")
 public class Type {
+
     @Id
     @Column(name = "type_id")
     @GeneratedValue(strategy= GenerationType.AUTO, generator="native")
     @GenericGenerator(name = "native",strategy = "native")
     private int typeID;
-
     @Column(name = "type")
     private String type;
-
 
     /**
      * Instantiates a new Type.

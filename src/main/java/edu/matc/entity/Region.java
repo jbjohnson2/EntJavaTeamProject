@@ -2,18 +2,14 @@ package edu.matc.entity;
 
 import jakarta.persistence.*;
 import org.hibernate.annotations.GenericGenerator;
-import jakarta.persistence.*;
-
-import java.util.ArrayList;
-import java.util.List;
 
 /**
- * class represents a  region.
+ * This class' purpose is to be the Javabean of type Region.
  */
-
 @Entity
 @Table(name="Region")
 public class Region {
+
     @Id
     @Column(name = "region_id")
     @GeneratedValue(strategy= GenerationType.AUTO, generator="native")

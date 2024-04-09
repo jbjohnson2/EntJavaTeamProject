@@ -2,17 +2,15 @@ package edu.matc.entity;
 
 import jakarta.persistence.*;
 import org.hibernate.annotations.GenericGenerator;
-
-
 import java.time.LocalDate;
 
-
 /**
- * The type Festival.
+ * This class' purpose is to be the Javabean of type Festival.
  */
 @Entity
 @Table(name="Festival")
 public class Festival {
+
     /**
      * The Festival id.
      */
@@ -21,25 +19,19 @@ public class Festival {
     @GeneratedValue(strategy= GenerationType.AUTO, generator="native")
     @GenericGenerator(name = "native",strategy = "native")
     private int festivalID;
-
     /**
      * The Festival name.
      */
     @Column(name = "festival_name")
     private String festivalName;
-
-
     /**
      * The Region
      */
-
     @Column(name="region_id")
     private int regionID;
-
     /**
      * The Type id.
      */
-
     @Column(name = "type_id")
     private int typeID;
     /**
