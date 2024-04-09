@@ -1,10 +1,12 @@
 package edu.matc.persistence;
 
+import edu.matc.entity.Festival;
 import edu.matc.entity.Region;
 import edu.matc.util.Database;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.time.LocalDate;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -43,9 +45,9 @@ class RegionDaoTest {
      */
     @Test
     void getById() {
-        Region retrievedRegion = (Region)genericDao.getById(3);
+        Region retrievedRegion = (Region) genericDao.getById(3);
         assertNotNull(retrievedRegion);
-        assertEquals("Fox Valley", retrievedRegion.getRegionName());
+        assertEquals(retrievedRegion, genericDao.getById(3));
     }
 
     /**
@@ -53,12 +55,12 @@ class RegionDaoTest {
      */
     @Test
     void insert() {
-        Region regionToInsert = new Region("Great Region");
-        int insertedRegionID = genericDao.insert(regionToInsert);
-        assertNotEquals(0, insertedRegionID);
-        Region insertedRegion = (Region)genericDao.getById(insertedRegionID);
-        assertEquals("Great Region", insertedRegion.getRegionName());
+        Region regionToInsert = new Region("test");
 
+        Region insertedRegion = (Region)genericDao.getById(2);
+        int insertedRegionID = genericDao.insert(regionToInsert);
+        Region retrievedRegion = (Region) genericDao.getById(insertedRegionID);
+        assertEquals(regionToInsert, retrievedRegion);
     }
 
     /**
@@ -66,13 +68,12 @@ class RegionDaoTest {
      */
     @Test
     void update() {
-        Region regionToUpdate = (Region) genericDao.getById(1);
-        regionToUpdate.setRegionID(4);
-        genericDao.update(regionToUpdate);
 
-        //retrieve the user and check that the name change worked
-        Region actualRegion = (Region)genericDao.getById(1);
-        //assertEquals(4, actualRegion.setRegionID());
+        Region regionToUpdate = (Region)genericDao.getById(1);
+        regionToUpdate.setRegionName("test");
+        genericDao.update(regionToUpdate);
+        Region retrievedRegion = (Region) genericDao.getById(1);
+        assertEquals(regionToUpdate, retrievedRegion);
     }
 
 

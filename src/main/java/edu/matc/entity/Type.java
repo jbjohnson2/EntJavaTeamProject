@@ -3,6 +3,8 @@ package edu.matc.entity;
 import jakarta.persistence.*;
 import org.hibernate.annotations.GenericGenerator;
 
+import java.util.Objects;
+
 /**
  * This class' purpose is to be the Javabean of type Type.
  */
@@ -75,5 +77,18 @@ public class Type {
                 "typeID=" + typeID +
                 ", type='" + type + '\'' +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Type type1 = (Type) o;
+        return typeID == type1.typeID && Objects.equals(type, type1.type);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(typeID, type);
     }
 }
