@@ -18,6 +18,15 @@ import java.util.List;
 public class Types {
     private final Logger logger = LogManager.getLogger(this.getClass());
     private String typesString = "Error making json file";
+    private ObjectMapper objectMapper;
+    private GenericDao<Type> typeDao;
+
+    public Types() {
+        //reads in an object and write the json response
+        objectMapper = new ObjectMapper();
+        typeDao = new GenericDao<>(Type.class);
+    }
+
     /**
      * This method's purpose is to retrieve all types
      * @return all types
@@ -26,9 +35,6 @@ public class Types {
     @Produces("application/json")
     public Response getTypes() {
 
-        //reads in an object and write the json response
-        ObjectMapper objectMapper = new ObjectMapper();
-        GenericDao<Type> typeDao = new GenericDao<>(Type.class);
         List<Type> types = typeDao.getAll();
 
         try {
@@ -50,8 +56,6 @@ public class Types {
     @Produces("application/json")
     public Response getTypeById(@PathParam("id") int id) {
 
-        ObjectMapper objectMapper = new ObjectMapper();
-        GenericDao<Type> typeDao = new GenericDao<>(Type.class);
         Type type = typeDao.getById(id);
 
         try {
