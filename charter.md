@@ -1,4 +1,6 @@
-## Team Rules
+Team Jen, Jimmy, Oscar
+
+# Team Rules
 - Rule 1: We will meet at least once or twice a week (monday and friday)
 - Rule 2: If someone doesn't show up, post on Slack on what has been done so that the person can catch up
 - Rule 3: Everyone is respectful
