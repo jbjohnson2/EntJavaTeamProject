@@ -46,9 +46,10 @@
 - [X] add link to documentation yaml in readme or add what info/methods we have
 - [X] update yaml file to get rid of remaining petstore info (jen)
 - [X] Update top of yaml file with updated problem statement
-- [ ] clean up directories (oscar)
-- [ ] javadoc (jimmy)
-- [ ] See if we need to add tests
+- [X] clean up directories (oscar)
+- [X] javadoc (jimmy)
+- [X] meeting Tuesday, April 10th at 1pm 
+
 
 #### April 5th - Project complete and ready for review 
-#### April 9th - Record Presentation
+#### April 10th - Record Presentation

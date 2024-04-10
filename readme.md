@@ -1,4 +1,4 @@
-## Project
+## Wisconsin Festival Tracker
 
 ### Problem Statement
 Introducing the Wisconsin Festival Tracker API, your ultimate solution for 
@@ -9,12 +9,16 @@ our API simplifies the process of accessing comprehensive festival information.
 Key Features:
 
 Search Functionality: Easily search for festivals based on type (e.g., music, food, cultural) or region within Wisconsin.
+
 Contribution Capability: Organizers and festival-goers can add their events to the database, 
 enabling others to discover and attend them.
+
 Customization Options: Developers can tailor their queries to retrieve festival data statewide, 
 by specific regions, or based on event types.
+
 Seamless Integration: Incorporate festival listings into various platforms, including community pages, 
 business pages, and more, to enhance user experience and engagement.
+
 Get started today with the Wisconsin Festival Tracker API and unlock a wealth of festival information 
 for your users and communities.
 
