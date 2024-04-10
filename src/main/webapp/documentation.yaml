@@ -42,12 +42,12 @@ tags:
   - name: type
     description: View all types or search for a type by ID
 paths:
-  /festivals/{festivalName}/{regionId}/{typeId}/{startDate}:  
+  /festivals/{festivalName}/{regionId}/{typeId}/{startDate}:
     post:
       tags:
         - festival
       summary: Add a festival
-      description: Add a new festival 
+      description: Add a new festival
       operationId: addFestival
       parameters:
         - name: festivalName
@@ -71,9 +71,9 @@ paths:
           schema:
             type: integer
             format: int64
-        - name: startDate (format YYYY-MM-DD)
+        - name: startDate
           in: path
-          description: start date of festival
+          description: start date of festival (YYYY-MM-DD)
           required: true
           schema:
             type: string
