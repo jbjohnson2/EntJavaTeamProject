@@ -68,7 +68,6 @@ class FestivalDaoTest {
 
         Festival festivalToInsert = new Festival("Great Festival", 3, 4, LocalDate.parse("2024-11-12"));
 
-        Festival insertedFestival = (Festival)genericDao.getById(2);
         int insertedFestivalID = genericDao.insert(festivalToInsert);
         Festival retrievedFestival = (Festival) genericDao.getById(insertedFestivalID);
         assertEquals(festivalToInsert, retrievedFestival);

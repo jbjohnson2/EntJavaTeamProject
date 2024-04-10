@@ -59,7 +59,6 @@ class TypeDaoTest {
     void insert() {
         Type typeToInsert = new Type("test");
 
-        Type insertedType = (Type)genericDao.getById(2);
         int insertedTypeID = genericDao.insert(typeToInsert);
         Type retrievedType = (Type) genericDao.getById(insertedTypeID);
         assertEquals(typeToInsert, retrievedType);

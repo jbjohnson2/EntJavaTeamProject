@@ -57,7 +57,6 @@ class RegionDaoTest {
     void insert() {
         Region regionToInsert = new Region("test");
 
-        Region insertedRegion = (Region)genericDao.getById(2);
         int insertedRegionID = genericDao.insert(regionToInsert);
         Region retrievedRegion = (Region) genericDao.getById(insertedRegionID);
         assertEquals(regionToInsert, retrievedRegion);
