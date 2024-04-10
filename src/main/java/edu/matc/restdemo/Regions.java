@@ -3,6 +3,7 @@ package edu.matc.restdemo;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import edu.matc.entity.Region;
+import edu.matc.entity.Type;
 import edu.matc.persistence.GenericDao;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -21,6 +22,15 @@ import java.util.List;
 public class Regions {
     private final Logger logger = LogManager.getLogger(this.getClass());
     private String regionsString = "Error making json file";
+    private ObjectMapper objectMapper;
+    private GenericDao<Region> regionDao;
+
+
+    public Regions() {
+        //reads in an object and write the json response
+        objectMapper = new ObjectMapper();
+        regionDao = new GenericDao<>(Region.class);
+    }
     /**
      * This method's purpose is to retrieve all regions
      * @return all regions
@@ -28,11 +38,8 @@ public class Regions {
     @GET
     @Produces("application/json")
     public Response getRegions() {
-        //reads in an object and write the json response
-        ObjectMapper objectMapper = new ObjectMapper();
-        GenericDao<Region> regionDao = new GenericDao<>(Region.class);
-        List<Region> regions = regionDao.getAll();
 
+        List<Region> regions = regionDao.getAll();
 
         try {
             regionsString = objectMapper.writeValueAsString(regions);
@@ -53,11 +60,8 @@ public class Regions {
     @Path("/{id}")
     @Produces("application/json")
     public Response getRegionById(@PathParam("id") int id) {
-
-        ObjectMapper objectMapper = new ObjectMapper();
-        GenericDao<Region> regionDao = new GenericDao<>(Region.class);
+        
         Region region = regionDao.getById(id);
-
 
         try {
             regionsString = objectMapper.writeValueAsString(region);
