@@ -4,6 +4,7 @@ info:
   description: |-
     Introducing the Wisconsin Festival Tracker API, your ultimate solution for
     discovering and sharing festivals across Wisconsin. Whether you're a festival enthusiast,
+
     an event organizer, or a developer integrating festival data into your platform,
     our API simplifies the process of accessing comprehensive festival information.
   
@@ -73,11 +74,11 @@ paths:
             format: int64
         - name: startDate
           in: path
-          description: start date of festival (YYYY-MM-DD)
+          description: start date of festival
           required: true
           schema:
             type: string
-            format: '2024-01-01'
+            format: 'YYYY-MM-DD'
       responses:
         '200':
           description: Successful operation
