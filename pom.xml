@@ -23,22 +23,22 @@
     <jersey-version>2.29.1</jersey-version>
     <jackson-version>2.16.1</jackson-version>
     <jackson-datatype-version>2.9.9</jackson-datatype-version>
+    <
   </properties>
 
   <dependencies>
     <dependency>
       <groupId>org.slf4j</groupId>
-      <artifactId>slf4j-log4j12</artifactId>
-      <version>1.7.36</version>
-      <type>pom</type>
-      <scope>test</scope>
+      <artifactId>slf4j-api</artifactId>
+      <version>${slf4j-version}</version>
     </dependency>
 
     <dependency>
-      <groupId>org.glassfish.jersey.containers</groupId>
-      <artifactId>jersey-container-servlet</artifactId>
+      <groupId>org.glassfish.jersey.core</groupId>
+      <artifactId>jersey-client</artifactId>
       <version>${jersey-version}</version>
     </dependency>
+
     <dependency>
       <groupId>org.glassfish.jersey.inject</groupId>
       <artifactId>jersey-hk2</artifactId>
