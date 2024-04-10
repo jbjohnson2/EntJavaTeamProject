@@ -25,7 +25,6 @@ public class Regions {
     private ObjectMapper objectMapper;
     private GenericDao<Region> regionDao;
 
-
     public Regions() {
         //reads in an object and write the json response
         objectMapper = new ObjectMapper();

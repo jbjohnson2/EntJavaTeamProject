@@ -46,7 +46,6 @@ public class Festivals {
      * @return the festivals
      */
     @GET
-
     @Produces("application/json")
     public Response getFestivals() {
         List<Festival> festivals = genericDao.getAll();
